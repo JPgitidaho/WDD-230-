@@ -8,14 +8,14 @@
     <meta name="author" content="Juanita Perez Aguilera">
     <title>Juanita P. Aguilera - WDD 230 - Web Frontend Development</title>
     <!-- Metapropiedades de Open Graph -->
-    <meta property="og:title" content="Juanita P. Aguilera - WDD 230 - Web Frontend Development" >
+    <meta property="og:title" content="Juanita P. Aguilera - WDD 230 - Web Frontend Development">
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://jpgitidaho.github.io/WDD-230-/" >
-    <meta property="og:url" content="https://jpgitidaho.github.io/WDD-230-/" >
+    <meta property="og:image" content="https://jpgitidaho.github.io/WDD-230-/">
+    <meta property="og:url" content="https://jpgitidaho.github.io/WDD-230-/">
     <link rel="icon" href="favicon1.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
+
     <!-- Link to the normalize CSS file -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
@@ -46,8 +46,10 @@
     <div id="container">
         <picture>
             <source media="(max-width: 300px)" srcset="images/Concepcion-Chile-Temple-small.webp" />
-            <source media="(min-width: 401px) and (orientation: landscape)" srcset="images/Concepcion-Chile-Temple-large.webp" />
-            <img src="images/Concepcion-Chile-Temple-large.webp" alt="Templo en vista móvil y en orientación horizontal" />
+            <source media="(min-width: 401px) and (orientation: landscape)"
+                srcset="images/Concepcion-Chile-Temple-large.webp" />
+            <img src="images/Concepcion-Chile-Temple-large.webp"
+                alt="Templo en vista móvil y en orientación horizontal" />
         </picture>
         <div id="temple-text">
             Concepcion, Chile, Temple
@@ -82,7 +84,7 @@
                 <li>
                     <a href="lesson07/lazyload.html">07 Lazyload |</a><a href="/form/form.html"> Form</a>
                 </li>
-               
+
 
             </ul>
         </section>
@@ -92,17 +94,16 @@
             <div id="weather-info">
             </div>
             <div id="counter-info">
-                <p>Visitas: 
+                <p>Visitas:
                     <span id="visit-counter">0</span>
                 </p>
             </div>
-         
+
         </section>
         <section class="iframe">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d26408.832921712852!2d-70.7493888!3d-34.16925565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scl!4v1706273679226!5m2!1ses!2scl"
-                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe id="google-map" title="Interactive Map of Santiago"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d26408.832921712852!2d-70.7493888!3d-34.16925565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scl!4v1706273679226!5m2!1ses!2scl">
+            </iframe>
 
         </section>
     </main>
