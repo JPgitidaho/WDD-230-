@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 - Web Frontend Development-Juanita P. Aguilera-course assignment portal">
+    <meta name="author" content="Juanita Perez Aguilera">
+    <title>Juanita P. Aguilera - WDD 230 - Web Frontend Development</title>
+    <!-- Metapropiedades de Open Graph -->
+    <meta property="og:title" content="Juanita P. Aguilera - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://jpgitidaho.github.io/WDD-230-/">
+    <meta property="og:url" content="https://jpgitidaho.github.io/WDD-230-/">
+    <link rel="icon" href="favicon1.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Link to the main CSS file -->
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/base.css">
+
+</head>
+
+<body>
+    <header id="miHeader">
+        <div class="content">
+            <a href="/chamber/index.html">
+                <img class="logo" src="images/chamber ofcommerce-2.png" alt="imag logo">
+            </a>
+            <nav>
+                <a href="/chamber/discover.html">Discover</a>
+                <a href="">News & Resources</a>
+                <a href="">Events</a>
+
+            </nav>
+            <button id="dark-mode-toggle" onclick="toggleDarkMode()" title="Toggle Dark Mode">🖤 Theme</button>
+            <button id="burger-icon" class="responsive-menu" onclick="toggleMenu()" title="Toggle Menu"></button>
+        </div>
+    </header>
+ 
+    <div id="wrapper">
+
+        <form id="formcon" action="/chamber/gratitude.html" method="get">
+    
+            <label for="nombre">Applicant's Name:</label>
+            <input type="text" id="nombre" name="nombre" required>
+    
+            <label for="apellido">Applicant's Last Name:</label>
+            <input type="text" id="apellido" name="apellido" required>
+    
+            <label for="puesto">Title or Position within the Organization:</label>
+            <input type="text" id="puesto" name="puesto" required pattern="[A-Za-z -]{7,}">
+    
+            <label for="email">Contact Email Address:</label>
+            <input type="email" id="email" name="email" required placeholder="example@email.com">
+    
+            <label for="telefono">Mobile Phone Number:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+    
+            <label for="empresa">Name of the Company/Organization:</label>
+            <input type="text" id="empresa" name="empresa" required>
+    
+            <label for="membresia">Membership Level:</label>
+            <select id="membresia" name="membresia" required>
+                <option value="NP">NP (Non-profit organizations, no cost)</option>
+                <option value="bronce">Bronze Membership</option>
+                <option value="plata">Silver Membership</option>
+                <option value="dorada">Gold Membership</option>
+            </select>
+    
+            <label for="descripcion">Description of the Company/Organization:</label>
+            <textarea id="descripcion" name="descripcion"></textarea>
+    
+            <input type="hidden" id="fechaHora" name="fechaHora">
+    
+            <button type="submit">Submit Form</button>
+    
+        </form>
+    
+        <div class="benefits">
+            <!-- Display the benefits of each membership level here -->
+            <!-- You can use a list structure or any other format -->
+            <h3>Membership Benefits:</h3>
+            <ul>
+                <li>NP: Non-profit organizations, no cost.</li>
+                <li>Bronze: ...</li>
+                <li>Silver: ...</li>
+                <li>Gold: ...</li>
+            </ul>
+        </div>
+    </div>
+    
+
+
+    <footer>
+        <p id="copyright-info"> &copy; - Juanita P. Aguilera</p>
+        <p id="last-modified"></p>
+    </footer>
+    <!-- Script de JavaScript -->
+    <script src="/chamber/scripts/getdates-chamb.js"></script>
+    <script src="/chamber/scripts/weather.js"></script>
+
+</body>
+
+</html>
