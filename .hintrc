@@ -3,7 +3,6 @@
     "development"
   ],
   "hints": {
-    "disown-opener": "off",
     "compat-api/html": [
       "default",
       {
@@ -16,13 +15,6 @@
       "default",
       {
         "frame-title": "off"
-      }
-    ],
-    "no-inline-styles": "off",
-    "axe/keyboard": [
-      "default",
-      {
-        "nested-interactive": "off"
       }
     ]
   }
