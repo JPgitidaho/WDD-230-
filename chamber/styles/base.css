@@ -241,9 +241,11 @@ section {
   padding: 10px;
 }
 .a-discover {
-  color: #3C6E71;
+  color: #c8ddde;
   font-weight: bold;
   text-align: center;
+  background-color: #3C6E71;
+  padding: 10px;
 }
 
 .a-discover:hover {
@@ -286,6 +288,11 @@ section {
 figcaption {
   padding: 10px;
   text-align: center;
+}
+#google-map {
+  width: 100%;
+  height: 450px;
+  border: 0;
 }
 /* Media Query for Mobile */
 @media screen and (max-width: 886px) {

@@ -31,4 +31,15 @@ document.addEventListener('DOMContentLoaded', function () {
   function storeVisitTimestamp() {
     localStorage.setItem('lastVisitTimestamp', Date.now().toString());
   }
+  document.addEventListener('DOMContentLoaded', function () {
+    var iframe = document.querySelector('iframe');
+
+    // Check if the 'loading' attribute is supported
+    if ('loading' in HTMLIFrameElement.prototype) {
+      iframe.loading = 'lazy';
+    } else {
+      
+      iframe.loading = 'lazy';
+    }
+  });
   
