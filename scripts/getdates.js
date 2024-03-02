@@ -31,12 +31,15 @@ function toggleMenu() {
 function toggleDarkMode() {
   // Get the document body
   const body = document.body;
-  // Get the saved dark mode state from localStorage
-  const savedDarkMode = localStorage.getItem('dark-mode');
 
-  // If dark mode is enabled, toggle the 'dark-mode' class on the body
-  if (savedDarkMode === 'true') {
-    body.classList.toggle('dark-mode');
+  // Toggle the 'dark-mode' class on the body
+  body.classList.toggle('dark-mode');
+
+  // Check if the header is present on the page
+  const miHeader = document.getElementById("miHeader");
+  if (miHeader) {
+    // Toggle the 'dark-mode' class on the header for dark mode
+    miHeader.classList.toggle('dark-mode', body.classList.contains('dark-mode'));
   }
 }
 
