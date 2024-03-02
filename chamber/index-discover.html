@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="WDD 230 - Web Frontend Development-Juanita P. Aguilera" content="-course assignment chamber of commerce">
+    <!-- Metapropiedades de Open Graph -->
+    <meta property="og:title" content="Santiago BusiNet|Chamber of Commerce|Santiago, Chile">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://jpgitidaho.github.io/WDD230/">
+    <meta property="og:url" content="https://jpgitidaho.github.io/WDD230/index.html" />
+    <title>Santiago BusiNet|Chamber of Commerce|Santiago, Chile</title>
+    <link rel="icon" href="./images/icon-img.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <script src="https://kit.fontawesome.com/39df3eafe7.js" crossorigin="anonymous"></script>
+    <script src="./scripts/weather.js"></script>
+    <script src="./scripts/getdates-chamb.js"></script>
+    <!-- Link to the main CSS file -->
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/.css">
+
+
+
+</head>
+
+<body>
+    <header id="miHeader">
+        <div class="content">
+            <a href="/chamber/index.html">
+                <img class="logo" src="images/chamber ofcommerce-2.png" alt="imag logo">
+            </a>
+            <nav>
+                <a href="/chamber/index.html">Home</a>
+                <a href="">Member Services</a>
+                <a href="">News & Resources</a>
+                <a href="">Events</a>
+                <a href="contactus.html">Book Now</a>
+            </nav>
+            <button id="dark-mode-toggle" onclick="toggleDarkMode()" title="Toggle Dark Mode"><i
+                    class="fa-solid fa-moon"></i> Theme</button>
+            <button id="burger-icon" class="responsive-menu" onclick="toggleMenu()" title="Toggle Menu"></button>
+
+        </div>
+    </header>
+    <div id="wrapper">
+        <div id="sidebar">
+            <div id="message-container">
+                <p>Your message goes here...</p>
+            </div>
+            <section>
+                <h2>Some Links</h2>
+                <h3>Demography</h3>
+                <hr>
+                <p>Learn more about the population and diversity of our community.</p>
+                <ul>
+                    <li>
+                        <button>
+                            <a class="a-discover" href="https://en.wikipedia.org/wiki/Santiago">Here</a>
+                        </button>
+                    </li>
+                </ul>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3349.5470060508756!2d-70.
+                            6484724848122!3d-33.44888958033361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c49a19e13a6f%3A0xf768b81e633b84b1!2s
+                            Santiago%2C%20Regi%C3%B3n%20Metropolitana%2C%20Chile!5e0!3m2!1sen!2sus!4v1648608682095!5m2!1sen!2sus"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+                <hr>
+            </section>
+            <section>
+                <h3>Cultural Events</h3>
+                <hr>
+                <p>Discover the latest and exciting cultural events in the region.</p>
+                <ul>
+                    <li>
+                        <button><a class="a-discover"
+                                href="https://www.santiagocultura.cl/agenda-cultural/">Here</a></button>
+                    </li>
+                </ul>
+                <hr>
+            </section>
+            <section>
+                <h3>News</h3>
+                <hr>
+                <p>Stay informed with the latest local and global news.</p>
+                <ul>
+                    <li>
+                        <button>
+                            <a class="a-discover" href="https://www.meganoticias.cl/nacional/">Here</a>
+                        </button>
+                    </li>
+                </ul>
+                <hr>
+            </section>
+            <section>
+                <h3>Attractions and Restaurants</h3>
+                <hr>
+                <p>Discover fascinating places to visit in our region.</p>
+                <ul>
+                    <li>
+                        <button>
+                            <a class="a-discover"
+                                href="https://www.getyourguide.com/santiago-l226/?cmp=bing&cmp=bing&ad_id=77790640060867&adgroup_
+                                id=1244647773141042&bid_match_type=be&campaign_id=434042045&device=c&feed_item_id=&keyword
+                                =attractions%20santiago%20de%20chile&loc_interest_ms=143462&loc_physical_ms=38&match_type
+                                =e&msclkid=7c4c89983ca41144f596ec47f141df01&network=o&partner_id=CD951&target_id=kwd-77790825351656
+                                :aud-806259112&utm_adgroup=lc%3D226%3Asantiago%7Cfn%3Df3%7Cci%3D937%3Athings%20to%20do&utm_campaign=
+                                dc%3D11%3Acl%7Clc%3D226%3Asantiago%7Cct%3Dcore%7Cln%3D109%3Aes%7Ctc%3Dall&utm_keyword=attractions%20
+                                santiago%20de%20chile&utm_medium=paid_search&utm_query=attractions%20santiago%20de%20chile&utm_source=bing">
+                                Here
+                            </a>
+                        </button>
+                    </li>
+                </ul>
+                <h3>Attractions and Restaurants</h3>
+                <iframe
+                    src="https://www.google.com/maps/d/embed?mid=1RC6nALSwJ_47c32qfnYcAUh8y_gAqYs&ll=-33.40862821058174%2C-70.5861851&z=13"
+                    width="100%" height="480"></iframe>
+            </section>
+        </div>
+
+        <div class="main-area">
+            <figure>
+                <picture>
+                    <!-- Imagen para pantallas grandes -->
+                    <source media="(min-width: 768px)" srcset="https://raw.githubusercontent.com/JPgitidaho/WDD230/main/chamber/images/discover-1900/1.webp 900w"
+                        type="image/webp">
+                    <!-- Imagen para pantallas pequeñas (móviles) -->
+                    <img src="https://raw.githubusercontent.com/JPgitidaho/WDD230/main/chamber/images/discover-900/1.webp" alt="Portillo Santiago" loading="lazy">
+                </picture>
+                <figcaption>Portillo Santiago</figcaption>
+            </figure>
+
+            <figure>
+                <picture>
+                    <source media="(min-width: 768px)" srcset="https://raw.githubusercontent.com/JPgitidaho/WDD230/main/chamber/images/discover-1900/2.webp 900w"
+                        type="image/webp">
+                    <img src="https://raw.githubusercontent.com/JPgitidaho/WDD230/main/chamber/images/discover-900/2.webp" alt="People walking in Santiago" loading="lazy">
+                </picture>
+                <figcaption>People walking in Santiago</figcaption>
+            </figure>
+
+            <figure>
+                <picture>
+                    <source media="(min-width: 768px)" srcset="https://raw.githubusercontent.com/JPgitidaho/WDD230/main/chamber/images/discover-1900/3.webp 1000w"
+                        type="image/webp">
+                    <img src="https://raw.githubusercontent.com/JPgitidaho/WDD230/main/chamber/images/discover-900/3.webp" alt="Restaurant in Santiago" loading="lazy">
+                </picture>
+                <figcaption>Restaurant in Santiago</figcaption>
+            </figure>
+
+            <figure>
+                <picture>
+                    <source media="(min-width: 768px)" srcset="https://raw.githubusercontent.com/JPgitidaho/WDD230/main/chamber/images/discover-1900/4.webp 1000w"
+                        type="image/webp">
+                    <img src="https://raw.githubusercontent.com/JPgitidaho/WDD230/main/chamber/images/discover-900/4.webp" alt="Transportation train in Santiago"
+                        loading="lazy">
+                </picture>
+                <figcaption>Transportation train in Santiago</figcaption>
+            </figure>
+
+            <figure>
+                <picture>
+                    <source media="(min-width: 768px)" srcset="https://raw.githubusercontent.com/JPgitidaho/WDD230/main/chamber/images/discover-1900/5.webp 1000w"
+                        type="image/webp">
+                    <img src="https://raw.githubusercontent.com/JPgitidaho/WDD230/main/chamber/images/discover-900/5.webp" alt="Casa La Moneda Santiago" loading="lazy">
+                </picture>
+                <figcaption>Casa La Moneda Santiago</figcaption>
+            </figure>
+
+            <figure>
+                <picture>
+                    <source media="(min-width: 768px)" srcset="https://raw.githubusercontent.com/JPgitidaho/WDD230/main/chamber/images/discover-1900/6.webp 1000w"
+                        type="image/webp">
+                    <img src="https://raw.githubusercontent.com/JPgitidaho/WDD230/main/chamber/images/discover-900/6.webp" alt="People in Santiago" loading="lazy">
+                </picture>
+                <figcaption>People in Santiago</figcaption>
+            </figure>
+        </div>
+    </div>
+    <footer>
+
+        <p id="copyright-info"> &copy; - Juanita P. Aguilera</p>
+        <p id="last-modified"></p>
+    </footer>
+</body>
+
+</html>
