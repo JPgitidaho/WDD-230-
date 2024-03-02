@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap");
+body {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    color: #353535; /* Text Color */
+    background-color: #FFFFFF; /* Background Color */
+    text-align: center;
+}
+
+header {
+    background-color: #284b63; /* Header Background Color */
+    padding: 10px;
+    color: #FFFFFF; /* Header Text Color */
+}
+
+section {
+    margin: 20px 0;
+}
+
+h2 {
+    color: #3C6E71; /* Heading Color */
+    padding: 20px;
+    color: #D9D9D9;
+}
+
+#main-color {
+    background-color: #284b63;
+    color:#D9D9D9
+}
+#second-color {
+    background-color: #D9D9D9;
+}
+
+#accent-color {
+    background-color: #3C6E71;
+    color: white;
+    font-size: 1.5rem;
+}
+#baground-color {
+   background-color: #FFFFFF;
+   color: #353535;
+}
+#text-color {
+    background-color: #353535;
+    color: whitesmoke;
+}
+
+a {
+    color: #D9D9D9; /* Link Color */
+    text-decoration: none;
+    font-weight: bold;
+}
+.color-palet {
+    display: block;
+    background-color: rgb(222, 231, 228);
+    padding: 20px;
+}
+a:hover {
+    color: #FFFFFF; /* Link Color on hover */
+}
+h1, h2 {
+    text-align: center;
+    background-color: #284b63;
+}
+p {
+    
+    text-align: center;
+    padding: 30px;
+    margin-block: 10px;
+}
+#secondary-font {
+    font-family: 'Arial';
+}
+#third-font {
+    font-size: larger;
+    font-family: 'Cavear';
+}

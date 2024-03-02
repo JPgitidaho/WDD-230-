@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap");
+
+body {
+  background-color: whitesmoke;
+  padding: 0;
+   
+
+}
+
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d4d1d1;
+  
+
+
+}
+
+header h1 {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 3rem;
+  letter-spacing: 1.5px;
+  text-align: center;
+  padding: 15px;
+  color: #333;
+}
+
+main {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, color 0.3s;
+  padding: 20px;
+}
+
+.card:hover {
+  background-color: rgb(202, 202, 204);
+  color: black;
+}
+
+.card p {
+  margin-bottom: 10px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  
+}
+
+.card .button-container {
+  text-align: left;
+}
+
+.card a {
+  display: block;
+  text-decoration: none;
+  background-color: #0066cc;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.card a:hover {
+  background-color: #004080;
+}
+section .card {
+  display: grid;
+
+}
+
+footer p {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.8rem;
+  margin: 0 auto;
+}
+footer p {
+  text-align: center;
+  color: #fff;
+}
+
+@media (max-width: 640px) {
+ 
+  .card {
+    grid-column: 1/3;
+    
+  }
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 - Web Frontend Development-Juanita P. Aguilera-course assignment portal">
+    <meta name="author" content="Juanita Perez Aguilera">
+    <title>Juanita P. Aguilera - WDD 230 - Web Frontend Development</title>
+    <!-- Metapropiedades de Open Graph -->
+    <meta property="og:title" content="Juanita P. Aguilera - WDD 230 - Web Frontend Development" >
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://jpgitidaho.github.io/WDD-230-/images/my-img.jpg" >
+    <meta property="og:url" content="https://jpgitidaho.github.io/WDD-230-/index.html" >
+    <meta http-equiv="Cache-control" content="public">
+
+
+    <link rel="icon" href="favicon1.ico" type="image/x-icon">
+
+     <!-- Script de JavaScript -->
+
+     <script src="https://kit.fontawesome.com/39df3eafe7.js" crossorigin="anonymous"></script>
+    <!-- Link to the normalize CSS file -->
+    <link rel="stylesheet" href="/styles/normalize.css">
+    <link rel="stylesheet" href="/styles/base.css">
+
+
+</head>
+
+<body>
+    <header class="container">
+        <button id="dark-mode-toggle" onclick="toggleDarkMode()" title="Toggle Dark Mode"><i
+                class="fa-solid fa-moon"></i></button>
+        <button id="burger-icon" class="responsive-menu" onclick="toggleMenu()" title="Toggle Menu"></button>
+
+        <img src="images/my-img1.webp" alt="my-imag-profile">
+        <h1>Juanita P. Aguilera</h1>
+    </header>
+    <div id="menu-container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lesson03/chamber-site-plan.html">Chamber-site-plan</a></li>
+                <li><a href="./chamber/index.html">Chamber Commerce</a></li>
+                <li><a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/moro/10?lang=eng&id=p3-p5#p3"
+                        target="_blank">Scripture</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="container">
+        <picture>
+            <source media="(max-width: 300px)" srcset="images/Concepcion-Chile-Temple-small.webp" />
+            <source media="(min-width: 401px) and (orientation: landscape)" srcset="images/Concepcion-Chile-Temple-large.webp" />
+            <img src="images/Concepcion-Chile-Temple-large.webp" alt="Templo en vista móvil y en orientación horizontal" />
+        </picture>
+        <div id="temple-text">
+            Concepcion, Chile, Temple
+        </div>
+    </div>
+    <main class="grid">
+        <h2>WDD 230: Frontend Web Development</h2>
+        <section class="card">
+            <h3>Learning Activities</h3>
+            <ul>
+                <li>
+                    <a href="lesson01/holygrail.html">01 Holygrail | </a>
+                    <a href="lesson01/jspen.html">js-pen</a>
+                </li>
+                <li>
+                    <a href="lesson02/design-principles.html">02 Design Principles | </a>
+                    <a href="lesson02/design.html">Design | </a>
+                    <a href="lesson02/Media-query.html">Media-query-Example</a>
+                </li>
+                <li>
+                    <a href="lesson03/images/w3schools-screeshot.png">03 Combinators | </a>
+                    <a href="https://codepen.io/JPgitidaho/pen/eYXGqaX">Responsive Menu | </a>
+                    <a href="https://codepen.io/JPgitidaho/pen/ExMbjBN">Pseudo-element |</a>
+                    <a href="lesson03/images/images/landscape.webp">WebP</a>
+                </li>
+                <li>
+                    <a href="https://codepen.io/JPgitidaho/pen/VwRyGqo">04 Pseudo-class pen</a>
+                </li>
+                <li>
+                    <a href="lesson05/bom.html">05 Bom</a>
+                </li>
+                <li>
+                    <a href="lesson07/lazyload.html">07 Lazyload |</a><a href="/form/form.html"> Form</a>
+                </li>
+               
+
+            </ul>
+        </section>
+
+        <section class="card">
+            <h3>Weather</h3>
+            <div id="weather-info">
+            </div>
+            <div id="counter-info">
+                <p>Visitas: 
+                    <span id="visit-counter">0</span>
+                </p>
+            </div>
+         
+        </section>
+        <section class="iframe">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d26408.832921712852!2d-70.7493888!3d-34.16925565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scl!4v1706273679226!5m2!1ses!2scl"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </section>
+    </main>
+    <footer>
+        <p id="copyright-info"> &copy; - Juanita P. Aguilera</p>
+        <p id="last-modified"></p>
+    </footer>
+    <script src="/scripts/getdates.js"></script>
+    <script src="/scripts/visitcount.js"></script>
+    <script src="/scripts/weather.js"></script>
+</body>
+
+</html>

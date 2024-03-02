@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 - Web Frontend Development-Juanita P. Aguilera-course assignment portal">
+    <meta name="author" content="Juanita Perez Aguilera">
+    <title>Juanita P. Aguilera - WDD 230 - Web Frontend Development</title>
+    <!-- Metapropiedades de Open Graph -->
+    <meta property="og:title" content="Juanita P. Aguilera - WDD 230 - Web Frontend Development" >
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://jpgitidaho.github.io/WDD-230-/" >
+    <meta property="og:url" content="https://jpgitidaho.github.io/WDD-230-/index.html" >
+
+    <link rel="icon" href="favicon1.ico" type="image/x-icon">
+
+    <!-- Link to the main CSS file -->
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/base.css">
+
+
+
+</head>
+
+<body>
+    <header id="miHeader">
+        <div class="content">
+            <a href="/chamber/index.html">
+                <img class="logo" src="images/chamber ofcommerce-2.png" alt="imag logo">
+            </a>
+            <nav>
+                <a href="/index.html">Home</a>
+                <a href="/chamber/discover.html">Discover</a>
+                <a href="">News & Resources</a>
+                <a href="">Events</a>
+                <a href="contactus.html">Book Now</a>
+            </nav>
+            <button id="dark-mode-toggle" onclick="toggleDarkMode()" title="Toggle Dark Mode"><i
+                    class="fa-solid fa-moon"></i>  Theme</button>
+            <button id="burger-icon" class="responsive-menu" onclick="toggleMenu()" title="Toggle Menu"></button>
+
+        </div>
+    </header>
+    <div class="hero">
+        <picture>
+            <source media="(max-width: 767px)" srcset="/chamber/images/hero-1-small.jpg" />
+
+            <!-- Para pantallas medianas -->
+            <source media="(min-width: 768px) and (max-width: 991px)" srcset="/chamber/images/hero-1-medium.jpg" />
+
+            <!-- Para pantallas grandes -->
+            <source media="(min-width: 992px)" srcset="/chamber/images/hero.webp" />
+
+            <!-- Imagen por defecto para navegadores que no soportan la etiqueta picture -->
+            <img src="/chamber/images/hero.webp" alt="hero image" />
+        </picture>
+        <a id="book" href="">Book Now</a>
+
+    </div>
+
+    <main class="home-grid">
+        <section class="card information">
+            <h2>Event</h2>
+            <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h3>
+            <h3>Lorem ipsum dolor</h3>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br>
+                Commodi natus dolorem modi doloremque earum praesentium aliquam placeat,
+                id voluptatem accusamus? <br>Voluptatum, nam est. Voluptas inventore excepturi,
+                praesentium ipsam iste debitis!
+            </p>
+        </section>
+        <section class="card weather">
+            <h2>Weather</h2>
+            <div id="weather-info">
+            </div>
+        </section>        
+        <section class="card card1">
+            <h2>Thankful Transport 🚐</h2>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id deleniti facere
+                cupiditate delectus iste commodi dolorum dolore corrupti, atque cumque temporibus
+                doloribus harum impedit perspiciatis voluptatem voluptatum mollitia! Illum, numquam.
+            </p>
+        </section>
+        <section class="card card2">
+            <h2>Code Primera</h2>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id deleniti facere
+                cupiditate delectus iste commodi dolorum dolore corrupti, atque cumque temporibus
+                doloribus harum impedit perspiciatis voluptatem voluptatum mollitia! Illum, numquam.
+            </p>
+        </section>
+        <section class=" card card3">
+            <h2>Built a Treefort 🏗</h2>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id deleniti facere
+                cupiditate delectus iste commodi dolorum dolore corrupti, atque cumque temporibus
+                doloribus harum impedit perspiciatis voluptatem voluptatum mollitia! Illum, numquam.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+    <!-- Script de JavaScript -->
+ 
+
+        <p id="copyright-info"> &copy; - Juanita P. Aguilera</p>
+        <p id="last-modified"></p>
+    </footer>
+    <!-- Script de JavaScript -->
+<script src="/chamber/scripts/getdates-chamb.js"></script>
+<script src="/chamber/scripts/weather.js"></script>
+
+</body>
+
+</html>
