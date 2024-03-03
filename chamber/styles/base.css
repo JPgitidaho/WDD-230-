@@ -353,7 +353,41 @@ figcaption {
 .dark-mode .benefits {
   background-color: transparent;
 }
+.join {
+  color: #333; /* Color del título */
+}
 
+.ul-join {
+  list-style-type: none;
+  padding: 0;
+}
+
+.li-join {
+  margin-bottom: 20px;
+  border-left: 5px solid #ddd; /* Color de borde izquierdo */
+  padding-left: 10px;
+}
+
+li strong {
+  color: #415563; /* Color del texto fuerte (strong) */
+}
+
+/* Colores específicos para cada nivel de membresía */
+li:nth-child(1) {
+  border-color: #27ae60; /* NP - Color verde esmeralda */
+}
+
+li:nth-child(2) {
+  border-color: #e67e22; /* Bronze - Color naranja */
+}
+
+li:nth-child(3) {
+  border-color: #3498db; /* Silver - Color azul */
+}
+
+li:nth-child(4) {
+  border-color: #ffd700; /* Gold - Color amarillo */
+}
 
 /* Añade estos estilos a la página de agradecimiento */
 
