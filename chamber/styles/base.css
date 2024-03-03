@@ -310,7 +310,9 @@ figcaption {
   grid-column: span 2;
 }
 
-
+.dark-mode #formcon {
+  background-color: transparent;
+}
 
 #formcon input,
 #formcon select,
@@ -344,8 +346,14 @@ figcaption {
   background-color: var(--white);
   grid-column: span 1;
   grid-row: 1;
+  font-family: "Roboto Slab";
+  
 
 }
+.dark-mode .benefits {
+  background-color: transparent;
+}
+
 
 /* Añade estos estilos a la página de agradecimiento */
 
