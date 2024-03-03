@@ -347,8 +347,8 @@ figcaption {
   grid-column: span 1;
   grid-row: 1;
   font-family: "Roboto Slab";
+  text-align: center;
   
-
 }
 .dark-mode .benefits {
   background-color: transparent;
