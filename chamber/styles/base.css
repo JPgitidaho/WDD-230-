@@ -8,7 +8,7 @@
   --grey: #353535;
   --blue: #224055;
   --blue-ligth: #4e91c1bc;
-  --green:#83c1c4;
+  --green: #83c1c4;
 }
 
 .dark-mode {
@@ -43,18 +43,20 @@ h2 {
   box-shadow: 1px 1px 2px rgb(178, 177, 177);
   padding: 5px;
 }
+
 #miHeader {
-  cursor: pointer; 
+  cursor: pointer;
   width: 100%;
   position: fixed;
   z-index: 1;
   margin-bottom: 100px;
 }
 
-.dark-mode  a{
-  color: #fff; 
+.dark-mode a {
+  color: #fff;
 
 }
+
 .content .logo {
   max-width: 100px;
 }
@@ -65,13 +67,14 @@ h2 {
   cursor: pointer;
   font-size: 16px;
 
-  
+
 
 }
-.dark-mode #dark-mode-toggle  {
+
+.dark-mode #dark-mode-toggle {
   color: #fff;
- }
- 
+}
+
 nav a:hover {
   text-decoration: overline;
   justify-content: space-around;
@@ -84,7 +87,7 @@ nav a {
   justify-content: space-between;
   letter-spacing: 0.5px;
   font-size: 16px;
- padding: 0 20px;
+  padding: 0 20px;
 
 }
 
@@ -102,16 +105,18 @@ nav a {
 
 .hero {
   position: relative;
-  
+
 }
+
 picture img {
   width: 100%;
 }
+
 .logo,
 .logo-link {
   padding-left: 50px;
   padding-right: 0;
-  
+
 }
 
 #book {
@@ -145,12 +150,13 @@ picture img {
   margin-left: 5%;
   margin-right: 5%;
 }
+
 button {
   text-align: center;
   font-size: 16px;
   padding: 10px;
   font-weight: bold;
- 
+
 }
 
 .card {
@@ -193,6 +199,7 @@ footer {
   margin: 0;
   margin-top: 10px;
 }
+
 .dark-mode footer {
   background: linear-gradient(to bottom, var(--blue), var(--black));
 
@@ -201,10 +208,11 @@ footer {
 #burger-icon {
   display: none;
 }
-/* Estilos Discover */
+
+/* Estilos Discover **********************************************/
 #wrapper {
   display: grid;
-  grid-template-columns: 400px  1fr 1fr; 
+  grid-template-columns: 400px 1fr 1fr;
   grid-template-rows: auto;
   grid-gap: 20px;
 }
@@ -215,24 +223,27 @@ footer {
   padding: 20px;
   box-shadow: 5px 5px 10px rgb(28, 28, 28);
 }
-#sidebar img{
- width: 100%;
+
+#sidebar img {
+  width: 100%;
 
 }
-.dark-mode  #sidebar  {
+
+.dark-mode #sidebar {
   background-color: transparent;
 }
 
 .main-area {
-  grid-column: span 2; 
-  margin-top:100px;
+  grid-column: span 2;
+  margin-top: 100px;
   display: grid;
-  grid-gap:10px;
+  grid-gap: 10px;
   margin-right: 20px;
   justify-content: center;
- 
- 
+
+
 }
+
 section {
   padding-top: 20px;
   padding-bottom: 10px;
@@ -241,6 +252,7 @@ section {
 .card p {
   padding: 10px;
 }
+
 .a-discover {
   color: #c8ddde;
   font-weight: bold;
@@ -257,7 +269,7 @@ section {
 .dark-mode .a-discover {
   color: #1c1a1a;
   font-weight: bold;
-  
+
 }
 
 .dark-mode .a-discover:hover {
@@ -267,14 +279,14 @@ section {
 
 .main-area img {
   width: 100%;
-  filter: blur(8px); 
-  transition: filter 0.3s ease-out; 
+  filter: blur(8px);
+  transition: filter 0.3s ease-out;
   box-shadow: 5px 5px 10px rgb(133, 132, 132);
 
 }
 
 .main-area img:hover {
-  filter: none; 
+  filter: none;
 }
 
 #message-container {
@@ -286,20 +298,23 @@ section {
   color: #353535;
 
 }
+
 figcaption {
   padding: 10px;
   text-align: center;
 }
+
 #google-map {
   width: 100%;
   height: 450px;
   border: 0;
 }
 
-/*  estilos para el formulario */
+/*  estilos para join ****************************/
 .form-div {
   margin-top: 100px;
 }
+
 #formcon {
   max-width: 600px;
   margin: 100px auto;
@@ -342,19 +357,21 @@ figcaption {
 .benefits {
   max-width: 400px;
   margin-top: 100px;
-  padding: 20px ;
+  padding: 20px;
   background-color: var(--white);
   grid-column: span 1;
   grid-row: 1;
   font-family: "Roboto Slab";
   text-align: center;
-  
+
 }
+
 .dark-mode .benefits {
   background-color: transparent;
 }
+
 .join {
-  color: #333; /* Color del título */
+  color: #333;
 }
 
 .ul-join {
@@ -364,32 +381,30 @@ figcaption {
 
 .li-join {
   margin-bottom: 20px;
-  border-left: 5px solid #ddd; /* Color de borde izquierdo */
+  border-left: 5px solid #ddd;
   padding-left: 10px;
 }
 
 li strong {
-  color: #415563; /* Color del texto fuerte (strong) */
+  color: #415563;
 }
 
-/* Colores específicos para cada nivel de membresía */
 li:nth-child(1) {
-  border-color: #27ae60; /* NP - Color verde esmeralda */
+  border-color: #27ae60;
 }
 
 li:nth-child(2) {
-  border-color: #e67e22; /* Bronze - Color naranja */
+  border-color: #cd7f32;
 }
 
 li:nth-child(3) {
-  border-color: #3498db; /* Silver - Color azul */
+  border-color: #c0c0c0;
 }
 
 li:nth-child(4) {
-  border-color: #ffd700; /* Gold - Color amarillo */
+  border-color: #ffd700;
 }
 
-/* Añade estos estilos a la página de agradecimiento */
 
 .gratitude-message {
   max-width: 600px;
@@ -401,7 +416,6 @@ li:nth-child(4) {
   text-align: center;
 }
 
-/* Estilos adicionales para la responsividad del formulario */
 
 @media screen and (max-width: 886px) {
   #formcon {
@@ -412,26 +426,26 @@ li:nth-child(4) {
 /* Media Query for Mobile */
 @media screen and (max-width: 886px) {
   #wrapper {
-      grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 
   #sidebar {
-      grid-column: span 1;
+    grid-column: span 1;
   }
 
   .main-area {
-      grid-column: span 1;
-      margin-right: 0;
+    grid-column: span 1;
+    margin-right: 0;
   }
 }
 
 /* Estilos responsivos */
 
 
-@media  (max-width:820px) {
-#dark-mode-toggle {
- padding: 10px;
-}
+@media (max-width:820px) {
+  #dark-mode-toggle {
+    padding: 10px;
+  }
 
   #burger-icon {
     display: block;
@@ -440,66 +454,73 @@ li:nth-child(4) {
     background-color: transparent;
     right: 10px;
     top: 10px;
-  
+
   }
+
   body.dark-mode #burger-icon::before {
     color: #fff;
   }
+
   #burger-icon::before {
     content: '\2630';
     color: #353535;
     align-items: center;
 
   }
-  
-  
+
+
   #burger-icon.active::before {
     content: '✖';
   }
- .logo {
-padding:0 10px;
- }
+
+  .logo {
+    padding: 0 10px;
+  }
+
   nav {
     display: none;
     width: 100%;
-    
-  
+
+
   }
-  
+
   nav.show {
     display: block;
     text-align: center;
     background-color: #fff;
-  
+
   }
-  .dark-mode nav.show{
+
+  .dark-mode nav.show {
     background-color: transparent;
   }
+
   nav a {
     display: block;
     margin-top: 10%;
     color: #353535;
     margin-bottom: 10%;
-    
+
   }
-  nav a:hover { 
-  text-decoration: overline;
-  color: #224055;
+
+  nav a:hover {
+    text-decoration: overline;
+    color: #224055;
   }
-  
+
   .book {
     padding-top: 5px;
     font-size: 6px;
   }
-  
+
   .home-grid {
-      grid-template-columns: 1fr;
-      display: block;
-      margin-top: 5px;
-    }
-  
-    footer {
-      margin-top: 25px;
-    }
-  
+    grid-template-columns: 1fr;
+    display: block;
+    margin-top: 5px;
   }
+
+  footer {
+    margin-top: 25px;
+  }
+
+}
