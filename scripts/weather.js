@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Function to get the weather icon based on the weather description
   function getWeatherIcon(description) {
-    // Map descriptions to icon names (you can adjust this based on your needs)
+    // Map descriptions to icon names //
     const iconMap = {
       'clear sky': '☀️',
       'few clouds': '🌤️',

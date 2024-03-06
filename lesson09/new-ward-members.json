@@ -1,0 +1,42 @@
+
+{
+  "wardInformation": {
+  "familyName": "Farias",
+  "moveInDate": "2022-03-15",
+  "numberOfPeople": 6,
+  "visitedByBishopric": true,
+  "familyMembers": [
+    {
+      "name": "John Farias",
+      "gender": "Male",
+      "birthdate": "2000-05-20"
+    },
+    {
+      "name": "Jane Farias",
+      "gender": "Female",
+      "birthdate": "2010-11-12"
+    },
+    {
+      "name": "David Farias",
+      "gender": "Male",
+      "birthdate": "2015-02-03"
+    },
+    {
+      "name": "Emily Farias",
+      "gender": "Female",
+      "birthdate": "2020-08-27"
+    },
+    {
+      "name": "Michael Farias",
+      "gender": "Male",
+      "birthdate": "2018-04-10"
+    },
+    {
+      "name": "Sophia Farias",
+      "gender": "Female",
+      "birthdate": "2014-09-18"
+    }
+
+  ]
+  }
+}
