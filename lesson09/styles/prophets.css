@@ -17,7 +17,7 @@ h1 {
 
 #cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));  
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));  
     grid-gap: 20px;
     justify-content: center;
 }
@@ -26,7 +26,7 @@ h1 {
     border: 1px solid #ccc;
     padding: 20px;
     background-color: #f9f9f9;
-    box-shadow: 1px 1px 15px #818dcf;
+    box-shadow: 1px 1px 15px #9da5d4;
     text-align: center;
 }
 
@@ -45,7 +45,7 @@ h1 {
 }
 
 footer {
-    background-color: black;
+    background-color: #333;
     color: aliceblue;
     text-align: center;
     padding: 25px;
