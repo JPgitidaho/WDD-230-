@@ -19,8 +19,8 @@ async function getMemberData() {
             image.src = member.image;
             image.alt = `${member.name} Logo`;
             image.loading = 'lazy';
-            image.width = 100;
-            image.height = 70;
+            image.width = 200;
+            image.height = 100;
 
             // Añade la imagen a la tarjeta
             card.appendChild(image);
