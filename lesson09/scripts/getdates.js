@@ -6,13 +6,13 @@ document.addEventListener("DOMContentLoaded", function () {
   const lastModified = document.lastModified;
 
   const myName = "Juanita P. Aguilera";
-  const myStateOrCountry = "Rancagua - Chile.";
+  const myTask = "Latter-day Prophets"
 
   // Fill the second paragraph with the information of the last modification
   document.getElementById("last-modified").innerHTML = "Last modified: " + lastModified;
 
   // Fill the first paragraph with the copyright symbol, the current year, my name, my state or country
-  document.getElementById("copyright-info").innerHTML = "&copy; " + year + " " + myName + " - " + myStateOrCountry;
+  document.getElementById("copyright-info").innerHTML = "&copy; " + year + " " + myName + " - " + myTask;
 });
 
 // Function to toggle the visibility of the menu
