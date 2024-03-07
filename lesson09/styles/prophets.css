@@ -1,6 +1,23 @@
+
+
+
+body {
+    background-color: rgb(100, 98, 98);
+    font-family: "Roboto Slab", sans-serif;
+  
+  }
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom:0 ;
+    text-shadow: 1px 1px 2px rgb(90, 67, 70);
+}
+
+
 #cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));  
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));  
     grid-gap: 20px;
     justify-content: center;
 }
@@ -9,11 +26,27 @@
     border: 1px solid #ccc;
     padding: 20px;
     background-color: #f9f9f9;
-    box-shadow: 0 0 15px #9da4cc;
+    box-shadow: 1px 1px 15px #818dcf;
     text-align: center;
 }
 
 .card img {
     max-width: 100%;
     height: auto;
+}
+.card img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.card:hover img {
+    transform: scale(1.1); 
+}
+
+footer {
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    padding: 25px;
 }
