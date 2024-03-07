@@ -1,48 +1,58 @@
-
-
-
 body {
     background-color: rgb(100, 98, 98);
     font-family: "Roboto Slab", sans-serif;
-  
-  }
+    padding: 0 20px ;
+
+}
+
 h1 {
     font-size: 3rem;
     text-align: center;
     padding-top: 25px;
-    padding-bottom:0 ;
+    padding-bottom: 0;
     text-shadow: 1px 1px 2px rgb(90, 67, 70);
 }
 
 
 #cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));  
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 20px;
     justify-content: center;
 }
 
 .card {
     border: 1px solid #ccc;
-    padding: 20px;
+    padding: 15px;
     background-color: #f9f9f9;
-    box-shadow: 1px 1px 15px #9da5d4;
+    box-shadow: 0 0 15px #9da4cc;
     text-align: center;
+    margin-bottom: 20px; /* Ajusta según sea necesario */
 }
 
 .card img {
     max-width: 100%;
     height: auto;
-}
-.card img {
-    max-width: 100%;
-    height: auto;
-    transition: transform 0.3s ease-in-out; 
+    transition: transform 0.3s, box-shadow 0.3s; 
+    object-fit: cover;
 }
 
-.card:hover img {
+.card img:hover {
     transform: scale(1.1); 
+    box-shadow: 0 0 20px rgba(4, 30, 81, 0.6); 
 }
+
+.card h2 {
+    font-size: 1.5rem; 
+    color: navy; 
+    margin-bottom: 10px; 
+}
+
+.card p {
+    font-size: 1rem; 
+    color: #666; 
+}
+
 
 footer {
     background-color: #333;
