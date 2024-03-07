@@ -422,7 +422,13 @@ li:nth-child(4) {
   margin-top: 100px;
   text-align: center;
 }
+#cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: auto;
+  grid-gap: 20px;
 
+}
  
 .card {
   justify-items: center;

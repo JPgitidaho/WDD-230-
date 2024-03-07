@@ -37,18 +37,19 @@
       {
         "name": "SKY Airline",
         "website": "https://empresas.skyairline.com/",
-        "address": "Av Del Valle Sur 765 - Santiago / Chile",
+        "address": "Av Del Valle Sur 765, Santiago / Chile",
         "email": "contacto.empresas@skyairline.com",
         "phoneNumber": "+56223842991",
         "image": "https://www.ccs.cl/wp-content/uploads/2021/04/Sky.png"
 
       },
       {
-        "name": "Apply Digital",
-        "website": "https://www.applydigital.com/",
-        "address": "Los Conquistadores 1730, Providencia, Región Metropolitana, Chile",
-        "phoneNumber": "+56233247626",
-        "image": "https://github.com/JPgitidaho/WDD-230-/blob/main/chamber/images/logos-directory/logo-apply.png"
+        "name": "Obrador Digital",
+        "website": "https://obradordigital.cl/",
+        "address": "Nueva Providencia 1881, oficina 1823, Región Metropolitana, Chile",
+        "email": "mariajose@obradordigital.cl",
+        "phoneNumber": "+56966825602",
+        "image": "https://obradordigital.cl/wp-content/uploads/2019/01/od02.png"
 
       },
       {

@@ -5,7 +5,7 @@ const cardsContainer = document.querySelector('#cards');
 async function getMemberData() {
     try {
         // Fetch para obtener el archivo JSON
-        const response = await fetch('https://raw.githubusercontent.com/JPgitidaho/WDD-230-/main/chamber/scripts/members.json');
+        const response = await fetch('https://raw.githubusercontent.com/JPgitidaho/WDD-230-/main/chamber/scripts/directory.json');
         const data = await response.json();
 
         // Itera sobre los miembros y crea las tarjetas
