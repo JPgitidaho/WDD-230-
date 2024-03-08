@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   miHeader.addEventListener("mouseenter", function () {
     isHovered = true;
-    miHeader.style.backgroundColor = "#4e91c1bc";
+    miHeader.style.backgroundColor = "#03556ba1";
   });
 
   miHeader.addEventListener("mouseleave", function () {
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.addEventListener("scroll", function () {
     if (!isHovered) {
       if (window.scrollY > miHeader.clientHeight) {
-        miHeader.style.backgroundColor = "#4e91c1bc";
+        miHeader.style.backgroundColor = "#03556ba1";
       } else {
         miHeader.style.backgroundColor = "transparent";
       }
