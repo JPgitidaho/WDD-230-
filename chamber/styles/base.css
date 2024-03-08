@@ -14,14 +14,14 @@
 
 .dark-mode {
   background: linear-gradient(to left, var(--blue), var(--black));
-  color: #fff;
+  color: var(--white);
 }
 
 body {
   box-sizing: border-box;
   padding: 0;
   transition: background-color 0.5s;
-  background-color: #fff;
+  background-color: var(--white);
   font-family: "Roboto Slab", "Lora", "Caveat";
   margin: 0;
   font-size: 16px;
@@ -31,11 +31,9 @@ body {
 .content {
   display: flex;
   justify-content: space-between;
-  margin-right: 300px;
   align-items: center;
-  margin-top: 0px;
-
-
+  margin-right: 200px;
+  text-align: left;
 }
 
 ul,
@@ -57,7 +55,7 @@ h2 {
 }
 
 .dark-mode a {
-  color: #fff;
+  color: var(--white);
 }
 
 .content .logo {
@@ -66,7 +64,7 @@ h2 {
 
 .logo,
 .logo-link {
-  margin-left:80px;
+  margin-left: 80px;
   margin-top: 0;
 
 }
@@ -75,20 +73,19 @@ h2 {
   background-color: transparent;
   border: none;
   cursor: pointer;
-  font-size: 16px;
   position: absolute;
-  right: 100px;
+  right: 50px;
   top: 20px;
 }
 
 .dark-mode #dark-mode-toggle {
-  color: #fff;
+  color: var(--white);
 }
 
 nav a:hover {
   text-decoration: overline;
   justify-content: space-around;
-  color: #fff;
+  color: var(--white);
 
 }
 
@@ -98,14 +95,14 @@ nav a {
   justify-content: space-between;
   letter-spacing: 0.5px;
   font-size: 16px;
-  padding: 0 20px;
+  margin-right: 20px;
 
 }
 
 
 .dark-mode nav a:hover {
   text-decoration: overline;
-  color: #fff;
+  color: var(--white);
 }
 
 .hero-img {
@@ -123,10 +120,8 @@ picture img {
   width: 100%;
 }
 
-
-
 #book {
-  color: #fff;
+  color: var(--white);
   text-align: center;
   font-size: 1.2rem;
   padding: 10px 25px;
@@ -142,12 +137,11 @@ picture img {
 
 h1 {
   color: #224055;
-  font-size:3rem;
-  padding: 5px;
-  padding-right: 100px;
-  box-shadow: 3px 3px 10px rgb(213, 212, 212);
-  top: 10%;
-  left: 5%;
+  font-size: 3rem;
+  padding: 0;
+  box-shadow: 3px 3px 10px rgb(216, 212, 212);
+  top: 25%;
+  left: 27%;
   font-weight: bold;
   position: absolute;
 
@@ -155,7 +149,7 @@ h1 {
 
 #book:hover {
   background-color: #224055dd;
-  color: #fff;
+  color: var(--white);
   z-index: 1;
 }
 
@@ -214,7 +208,7 @@ footer {
   text-align: center;
   font-size: 16px;
   text-align: center;
-  color: #fff;
+  color: var(--white);
   margin: 0;
   margin-top: 10px;
 }
@@ -450,7 +444,7 @@ li:nth-child(4) {
 }
 
 #cards img {
-  background-color: #fff;
+  background-color: var(--white);
   padding: 5px;
 }
 
@@ -509,7 +503,9 @@ li:nth-child(4) {
   body {
     font-size: small;
   }
-
+.content {
+  margin-right: 0;
+}
   #dark-mode-toggle {
     padding: 10px;
   }
@@ -520,13 +516,13 @@ li:nth-child(4) {
     cursor: pointer;
     background-color: transparent;
     right: 5px;
-    top: 10px;
+    top: 16px;
     position: absolute;
 
   }
 
   body.dark-mode #burger-icon::before {
-    color: #fff;
+    color: var(--white);
   }
 
   #burger-icon::before {
@@ -552,8 +548,8 @@ li:nth-child(4) {
   }
 
   h1 {
-    margin-top: -10px;
-    font-size: 20px;
+    top: 15%;
+    font-size: 24px;
   }
 
   nav {
@@ -561,15 +557,11 @@ li:nth-child(4) {
     width: 100%;
   }
 
-  #myHeader {
-    background-color: #2782c3fc;
-  }
 
   nav.show {
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
-    text-align: center;
-
+    padding: 5px;
   }
 
   .dark-mode nav.show {
@@ -577,16 +569,16 @@ li:nth-child(4) {
   }
 
   nav a {
-    display: block;
-    margin-top: 10%;
-    color: #353535;
-    margin-bottom: 10%;
-
+    
+    margin-top: 15px;
+    color: var(--white);
+    padding: 10px 15px;
+    text-align: left;
   }
 
   nav a:hover {
     text-decoration: overline;
-    color: #224055;
+    color: var(--white);
   }
 
 
