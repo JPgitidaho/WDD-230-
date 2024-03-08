@@ -1,47 +1,79 @@
-// Selector para el contenedor de tarjetas
 const cardsContainer = document.querySelector('#cards');
+const gridButton = document.getElementById('grid');
+const listButton = document.getElementById('list');
 
-// Función asincrónica para obtener y mostrar los datos de los miembros
+// Función para cambiar a la vista de cuadrícula
+function switchToGrid() {
+    cardsContainer.classList.remove('list-view');
+}
+
+// Función para cambiar a la vista de lista
+function switchToList() {
+    cardsContainer.classList.add('list-view');
+}
+
+// Asignar eventos a los botones
+gridButton.addEventListener('click', switchToGrid);
+listButton.addEventListener('click', switchToList);
+
 async function getMemberData() {
     try {
-        // Fetch para obtener el archivo JSON
         const response = await fetch('https://raw.githubusercontent.com/JPgitidaho/WDD-230-/main/chamber/scripts/directory.json');
         const data = await response.json();
 
-        // Itera sobre los miembros y crea las tarjetas
+        const fragment = document.createDocumentFragment();
+
         data.members.forEach(member => {
-            // Crea un elemento div para la tarjeta
             const card = document.createElement('div');
-            card.classList.add('card'); // Añade la clase 'card' para aplicar estilos
+            card.classList.add('card');
+            
 
-            // Crea la imagen del miembro
-            const image = document.createElement('img');
-            image.src = member.image;
-            image.alt = `${member.name} Logo`;
-            image.loading = 'lazy';
-            image.width = 200;
-            image.height = 100;
+            if (!cardsContainer.classList.contains('list-view')) {
+                const image = document.createElement('img');
+                image.src = member.image;
+                image.alt = `${member.name} Logo`;
+                image.loading = 'lazy';
+                image.width = 80;
+                image.height = 80;
+                card.appendChild(image);
+            }
 
-            // Añade la imagen a la tarjeta
-            card.appendChild(image);
+           
 
-            // Crea un elemento h2 para el nombre del miembro
-            const name = document.createElement('h2');
-            name.textContent = member.name;
+            const detailsContainer = document.createElement('div');
+            detailsContainer.classList.add('details-container');
+            card.appendChild(detailsContainer);
 
-            // Añade el nombre a la tarjeta
-            card.appendChild(name);
+            const name = document.createElement("p");
+            name.textContent = `${member.name}`;
+            detailsContainer.appendChild(name);
 
-            // Añade la tarjeta al contenedor de tarjetas
-            cardsContainer.appendChild(card);
+            const address = document.createElement("p");
+            address.textContent = `Address: ${member.address}`;
+            detailsContainer.appendChild(address);
+
+            const phone = document.createElement('p');
+            phone.textContent = `Phone: ${member.phone}`;
+            detailsContainer.appendChild(phone);
+
+            const email = document.createElement('p');
+            email.textContent = `Email: ${member.email}`;
+            detailsContainer.appendChild(email);
+
+            const website = document.createElement("p");
+            website.textContent = `Website: ${member.website}`;
+            detailsContainer.appendChild(website);
+
+            fragment.appendChild(card);
         });
+
+        cardsContainer.innerHTML = ''; // Limpiar el contenedor antes de agregar elementos
+        cardsContainer.appendChild(fragment);
     } catch (error) {
         console.error('Error fetching data:', error);
     }
 }
 
-// Espera a que el DOM esté completamente cargado
 document.addEventListener('DOMContentLoaded', () => {
-    // Llama a la función para obtener y mostrar los datos de los miembros
     getMemberData();
 });
