@@ -26,19 +26,19 @@ async function getMemberData() {
         data.members.forEach(member => {
             const card = document.createElement('div');
             card.classList.add('card');
-            
+
 
             if (!cardsContainer.classList.contains('list-view')) {
                 const image = document.createElement('img');
                 image.src = member.image;
                 image.alt = `${member.name} Logo`;
                 image.loading = 'lazy';
-                image.width = 80;
-                image.height = 80;
+                image.width = 200;
+                image.height = 150;
                 card.appendChild(image);
             }
 
-           
+
 
             const detailsContainer = document.createElement('div');
             detailsContainer.classList.add('details-container');
@@ -49,19 +49,21 @@ async function getMemberData() {
             detailsContainer.appendChild(name);
 
             const address = document.createElement("p");
-            address.textContent = `Address: ${member.address}`;
+            address.textContent = `${member.address}`;
             detailsContainer.appendChild(address);
 
             const phone = document.createElement('p');
-            phone.textContent = `Phone: ${member.phone}`;
+            phone.textContent = member.phoneNumber ? `${member.phoneNumber}` : 'Phone: N/A';
             detailsContainer.appendChild(phone);
 
+
             const email = document.createElement('p');
-            email.textContent = `Email: ${member.email}`;
+            email.innerHTML = `Email: <a href="mailto:${member.email}">${member.email}</a>`;
             detailsContainer.appendChild(email);
 
+
             const website = document.createElement("p");
-            website.textContent = `Website: ${member.website}`;
+            website.innerHTML = `Website: <a href="${member.website}" target="_blank">${member.website}</a>`;
             detailsContainer.appendChild(website);
 
             fragment.appendChild(card);

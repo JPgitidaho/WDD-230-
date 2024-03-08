@@ -66,9 +66,6 @@ h2 {
   border: none;
   cursor: pointer;
   font-size: 16px;
-
-
-
 }
 
 .dark-mode #dark-mode-toggle {
@@ -423,11 +420,14 @@ li:nth-child(4) {
 
 #cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  grid-template-rows: auto;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  grid-template-rows: 400px;
   grid-gap: 20px;
   text-align: center;
+  background-color: #fff;
+ 
 }
+
 
 /* Estilos para la vista de lista ******/
 .list-view#cards {
@@ -438,18 +438,19 @@ li:nth-child(4) {
   display: none;
 }
 
-.list-view .card{
+.list-view .card {
   box-shadow: none;
   margin-left: 15px;
 }
 .list-view .details-container {
   padding-left: 5px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(5, 1fr);
   text-align: left;
-
 }
-
+.details-container p {
+margin: 0; 
+}
 
 
 @media screen and (max-width: 886px) {
