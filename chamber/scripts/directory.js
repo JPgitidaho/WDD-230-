@@ -41,7 +41,7 @@ async function getMemberData() {
 
 
             const detailsContainer = document.createElement('div');
-            detailsContainer.classList.add('details-container');
+            detailsContainer.classList.add('home-grid');
             card.appendChild(detailsContainer);
 
             const name = document.createElement("p");
