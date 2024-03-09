@@ -80,7 +80,9 @@ h2 {
 .dark-mode #dark-mode-toggle {
   color: var(--white);
 }
-
+#miHeader {
+  position: fixed;
+}
 nav a:hover {
   text-decoration: overline;
   justify-content: space-around;
