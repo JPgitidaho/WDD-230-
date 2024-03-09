@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
   miHeader.addEventListener("mouseleave", function () {
     isHovered = false;
     if (window.scrollY <= miHeader.clientHeight) {
-      miHeader.style.backgroundColor = "#2782c3bb";
+      miHeader.style.backgroundColor = "transparent";
     }
   });
 

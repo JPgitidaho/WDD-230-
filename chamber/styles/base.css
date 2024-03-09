@@ -260,6 +260,7 @@ footer {
 .section-disc{
   padding-top: 20px;
   padding-bottom: 10px;
+  
 }
 
 .a-discover {
@@ -432,6 +433,7 @@ li:nth-child(4) {
   grid-template-rows:auto ;
   grid-gap: 20px;
   text-align: center;
+  margin-top: 50px;
 
 }
 
@@ -550,6 +552,7 @@ li:nth-child(4) {
     display: inline-flex;
     flex-direction: column;
     padding: 5px;
+    background-color: var(--green);
   }
 
   .dark-mode nav.show {
