@@ -3,19 +3,13 @@
 body {
   background-color: whitesmoke;
   padding: 0;
-   
-
 }
-
 
 header {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #d4d1d1;
-  
-
-
 }
 
 header h1 {

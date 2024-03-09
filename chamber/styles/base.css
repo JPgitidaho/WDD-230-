@@ -3,25 +3,64 @@
 
 
 :root {
-  --white: #fff;
-  --black: black;
-  --grey: #353535;
-  --blue: #224055;
-  --blue-ligth: #4e91c1;
-  --green: #084151;
+/* CSS HEX */
+--rich-black: #001524ff;
+--caribbean-current: #15616dff;
+--papaya-whip: #ffecd1ff;
+--orange-wheel: #ff7d00ff;
+--sienna: #78290fff;
+--black:black;
 
+/* CSS HSL 
+--rich-black: hsla(205, 100%, 7%, 1);
+--caribbean-current: hsla(188, 68%, 25%, 1);
+--papaya-whip: hsla(35, 100%, 91%, 1);
+--orange-wheel: hsla(29, 100%, 50%, 1);
+--sienna: hsla(15, 78%, 26%, 1);
+
+/* SCSS HEX *
+$rich-black: #001524ff;
+$caribbean-current: #15616dff;
+$papaya-whip: #ffecd1ff;
+$orange-wheel: #ff7d00ff;
+$sienna: #78290fff;
+
+/* SCSS HSL *
+$rich-black: hsla(205, 100%, 7%, 1);
+$caribbean-current: hsla(188, 68%, 25%, 1);
+$papaya-whip: hsla(35, 100%, 91%, 1);
+$orange-wheel: hsla(29, 100%, 50%, 1);
+$sienna: hsla(15, 78%, 26%, 1);
+
+/* SCSS RGB *
+$rich-black: rgba(0, 21, 36, 1);
+$caribbean-current: rgba(21, 97, 109, 1);
+$papaya-whip: rgba(255, 236, 209, 1);
+$orange-wheel: rgba(255, 125, 0, 1);
+$sienna: rgba(120, 41, 15, 1);
+
+/* SCSS Gradient *
+$gradient-top: linear-gradient(0deg, #001524ff, #15616dff, #ffecd1ff, #ff7d00ff, #78290fff);
+$gradient-right: linear-gradient(90deg, #001524ff, #15616dff, #ffecd1ff, #ff7d00ff, #78290fff);
+$gradient-bottom: linear-gradient(180deg, #001524ff, #15616dff, #ffecd1ff, #ff7d00ff, #78290fff);
+$gradient-left: linear-gradient(270deg, #001524ff, #15616dff, #ffecd1ff, #ff7d00ff, #78290fff);
+$gradient-top-right: linear-gradient(45deg, #001524ff, #15616dff, #ffecd1ff, #ff7d00ff, #78290fff);
+$gradient-bottom-right: linear-gradient(135deg, #001524ff, #15616dff, #ffecd1ff, #ff7d00ff, #78290fff);
+$gradient-top-left: linear-gradient(225deg, #001524ff, #15616dff, #ffecd1ff, #ff7d00ff, #78290fff);
+$gradient-bottom-left: linear-gradient(315deg, #001524ff, #15616dff, #ffecd1ff, #ff7d00ff, #78290fff);
+$gradient-radial: radial-gradient(#001524ff, #15616dff, #ffecd1ff, #ff7d00ff, #78290fff);*/
 }
 
 .dark-mode {
-  background: linear-gradient(to left, var(--blue), var(--black));
-  color: var(--white);
+  background: linear-gradient(to top, var(--rich-black), var(--black));
+  color: var(--papaya-whip);
 }
 
 body {
   box-sizing: border-box;
   padding: 0;
   transition: background-color 0.5s;
-  background-color: var(--white);
+  background-color: var(--papaya-whip);
   font-family: "Roboto Slab", "Lora", "Caveat";
   margin: 0;
   font-size: 16px;
@@ -54,7 +93,7 @@ h2 {
 }
 
 .dark-mode a {
-  color: var(--white);
+  color: var(--papaya-whip);
 }
 
 .content .logo {
@@ -78,19 +117,18 @@ h2 {
 }
 
 .dark-mode #dark-mode-toggle {
-  color: var(--white);
+  color: var(--papaya-whip);
 }
 
 nav a:hover {
   text-decoration: overline;
   justify-content: space-around;
-  color: var(--white);
 
 }
 
 nav a {
   font-family: "Roboto Slab";
-  color: #224055;
+  color: var(--papaya-whip);
   justify-content: space-between;
   letter-spacing: 0.5px;
   font-size: 16px;
@@ -101,7 +139,7 @@ nav a {
 
 .dark-mode nav a:hover {
   text-decoration: overline;
-  color: var(--white);
+  color: var(--papaya-whip);
 }
 
 .hero-img {
@@ -120,14 +158,14 @@ picture img {
 }
 
 #book {
-  color: #fff;
+  color: var(--papaya-whip);
   text-align: center;
   font-size: 1.2rem;
   padding: 10px 25px;
-  border: #1c1a1a;
+  border: var(--black);
   border-radius: 5px;
   box-shadow: 3px 3px 8px rgb(28, 28, 28);
-  background-color: #224055;
+  background-color: var(--caribbean-current);
   top: 40%;
   left: 45%;
   position: absolute;
@@ -136,7 +174,7 @@ picture img {
 }
 
 h1 {
-  color: #224055;
+  color: var(--caribbean-current);
   font-size: 3rem;
   padding: 0;
   box-shadow: 3px 3px 10px rgb(216, 212, 212);
@@ -148,8 +186,8 @@ h1 {
 }
 
 #book:hover {
-  background-color: #224055dd;
-  color: #fff;
+  background-color: black;
+  color: var(--papaya-whip);
   z-index: 1;
 }
 
@@ -209,18 +247,18 @@ button {
 }
 
 footer {
-  background: linear-gradient(to left, var(--blue), var(--green));
+  background-color:  var(--rich-black);
   padding: 50px;
   text-align: center;
   font-size: 16px;
   text-align: center;
-  color: var(--white);
+  color: var(--papaya-whip);
   margin: 0;
   margin-top: 10px;
 }
 
 .dark-mode footer {
-  background: linear-gradient(to left, var(--black), var(--blue), var(--black));
+  background: linear-gradient(to left, var(--black), var(--rich-black), var(--black));
 
 }
 
@@ -254,36 +292,33 @@ footer {
 .main-area {
   grid-column:span 2 ;
   margin-top: 100px;
-
-
 }
 
 .section-disc{
   padding-top: 20px;
-  padding-bottom: 10px;
-  
+  padding-bottom: 10px; 
 }
 
 .a-discover {
-  color: #c8ddde;
+  color:var(--papaya-whip);
   text-align: left;
-  background-color: #3C6E71;
+  background: var(--caribbean-current);
   padding: 5px 10px;
 }
 
 .a-discover:hover {
-  color: #224055;
+  color: var(--papaya-whip);
   font-weight: bold;
 }
 
 .dark-mode .a-discover {
-  color: #1c1a1a;
+  color: var(--black);
   font-weight: bold;
 
 }
 
 .dark-mode .a-discover:hover {
-  color: #fff;
+  color: var(--papaya-whip);
   font-weight: bold;
 }
 
@@ -292,7 +327,6 @@ footer {
   filter: blur(8px);
   transition: filter 0.3s ease-out;
   box-shadow: 5px 5px 10px rgb(133, 132, 132);
-
 }
 
 .main-area img:hover {
@@ -302,10 +336,10 @@ footer {
 #message-container {
   box-shadow: 5px 5px 10px rgb(133, 132, 132);
   padding: 10px;
-  background: #a0c0c2;
+  background:var(--orange-wheel);
   margin-right: 100px;
-  border: 1px solid #ccc;
-  color: #353535;
+  border: 1px solid var(--papaya-whip);
+  color:var(--papaya-whip);
 
 }
 
@@ -329,8 +363,8 @@ figcaption {
   max-width: 600px;
   margin: 100px auto;
   padding: 20px;
-  background-color: var(--white);
-  box-shadow: 5px 5px 10px var(--grey);
+  background-color: var(--papaya-whip);
+  box-shadow: 5px 5px 10px var(--caribbean-current);
   border-radius: 8px;
   grid-column: span 2;
 }
@@ -345,14 +379,14 @@ figcaption {
   width: 95%;
   padding: 10px;
   margin-bottom: 15px;
-  border: 1px solid var(--grey);
+  border: 1px solid var(--caribbean-current);
   border-radius: 3px;
 
 }
 
 #formcon button {
-  background-color: var(--blue);
-  color: var(--white);
+  background-color: var(--rich-black);
+  color: var(--papaya-whip);
   padding: 15px;
   border: none;
   border-radius: 5px;
@@ -361,18 +395,19 @@ figcaption {
 }
 
 #formcon button:hover {
-  background-color: var(--blue-ligth);
+  background-color: var(--black);
 }
 
 .benefits {
-  max-width: 400px;
   margin-top: 100px;
-  padding: 20px;
-  background-color: var(--white);
+  padding: 20px ;
+  margin-left: 50px;
+  background-color: var(--caribbean-current);
   grid-column: span 1;
   grid-row: 1;
   font-family: "Roboto Slab";
   text-align: center;
+  color: var(--papaya-whip);
 
 }
 
@@ -381,18 +416,18 @@ figcaption {
 }
 
 .join {
-  color: #333;
+  color:var(--papaya-whip);
 }
 
 
 .li-join {
   margin-bottom: 20px;
-  border-left: 5px solid #ddd;
+  border-left: 5px solid var(--papaya-whip);
   padding-left: 10px;
 }
 
 li strong {
-  color: #415563;
+  color: var(--papaya-whip);
 }
 
 li:nth-child(1) {
@@ -400,7 +435,7 @@ li:nth-child(1) {
 }
 
 li:nth-child(2) {
-  border-color: #cd7f32;
+  border-color: var(--sienna);
 }
 
 li:nth-child(3) {
@@ -408,7 +443,7 @@ li:nth-child(3) {
 }
 
 li:nth-child(4) {
-  border-color: #ffd700;
+  border-color: var(--orange-wheel);
 }
 
 
@@ -416,7 +451,7 @@ li:nth-child(4) {
   max-width: 600px;
   margin: 50px auto;
   padding: 20px;
-  background-color: var(--white);
+  background-color: var(--papaya-whip);
   box-shadow: 5px 5px 10px var(--grey);
   border-radius: 8px;
   text-align: center;
@@ -439,7 +474,7 @@ li:nth-child(4) {
 }
 
 #cards img {
-  background-color: var(--white);
+  background-color: var(--papaya-whip);
   padding: 5px;
 }
 
@@ -492,7 +527,7 @@ li:nth-child(4) {
 /* Estilos responsivos */
 
 
-@media (max-width:820px) and (min-width:400px) {
+@media (max-width:820px) {
   body {
     font-size: small;
   }
@@ -517,12 +552,12 @@ li:nth-child(4) {
   }
 
   body.dark-mode #burger-icon::before {
-    color: var(--white);
+    color: var(--papaya-whip);
   }
 
   #burger-icon::before {
     content: '\2630';
-    color: #353535;
+    color:var(--caribbean-current);
     align-items: center;
   }
 
@@ -563,14 +598,14 @@ li:nth-child(4) {
 
   nav a {
     margin-top: 15px;
-    color: var(--white);
+    color: var(--papaya-whip);
     padding: 10px 15px;
     text-align: left;
   }
 
   nav a:hover {
     text-decoration: overline;
-    color: var(--white);
+    color: var(--papaya-whip);
   }
 
   .home-grid {
