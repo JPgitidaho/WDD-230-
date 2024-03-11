@@ -10,6 +10,7 @@
 --orange-wheel: #ff7d00ff;
 --sienna: #78290fff;
 --black:black;
+--green:#27ae60;
 
 /* CSS HSL 
 --rich-black: hsla(205, 100%, 7%, 1);
@@ -186,7 +187,7 @@ h1 {
 }
 
 #book:hover {
-  background-color: black;
+  background-color: var(--black);
   color: var(--papaya-whip);
   z-index: 1;
 }
@@ -217,7 +218,7 @@ button {
 }
 
 .card {
-  box-shadow: 5px 5px 10px rgb(14, 13, 13);
+  box-shadow: 5px 5px 10px var(--black);
   border-radius: 3px;
   padding: 20px;
 }
@@ -379,7 +380,7 @@ figcaption {
   width: 95%;
   padding: 10px;
   margin-bottom: 15px;
-  border: 1px solid var(--caribbean-current);
+  border: 1px solid var(--papaya-whip);
   border-radius: 3px;
 
 }
@@ -431,7 +432,7 @@ li strong {
 }
 
 li:nth-child(1) {
-  border-color: #27ae60;
+  border-color:var(--green);
 }
 
 li:nth-child(2) {
@@ -439,7 +440,7 @@ li:nth-child(2) {
 }
 
 li:nth-child(3) {
-  border-color: #c0c0c0;
+  border-color: var(--papaya-whip);
 }
 
 li:nth-child(4) {
@@ -452,11 +453,13 @@ li:nth-child(4) {
   margin: 50px auto;
   padding: 20px;
   background-color: var(--papaya-whip);
-  box-shadow: 5px 5px 10px var(--grey);
+  box-shadow: 5px 5px 10px var(--caribbean-current);
   border-radius: 8px;
   text-align: center;
 }
-
+#descripcion {
+ height: 150px;
+}
 /* Estilos generales para el directorio ************************************/
 .grid-list {
   margin-top: 100px;
