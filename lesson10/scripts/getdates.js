@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("last-modified").innerHTML = "Last modified: " + lastModified;
 
   // Fill the first paragraph with the copyright symbol, the current year, my name, my state or country
-  document.getElementById("copyright-info").innerHTML = "&copy; " + year + " " + myName + " - " + OpenWeatherMap;
+  document.getElementById("copyright-info").innerHTML = "&copy; " + year + " " + myName + " " + OpenWeatherMap;
 });
 
 

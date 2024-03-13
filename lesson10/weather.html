@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./styles/styles-weather.css">
+
 </head>
+
 <body>
-    <h1>OpenWeatherMap.org API Test</h1>
-    <main>
-    <p>The current temperature in Trier, Germany is <span id="current-temp"></span></p>
-    <figure>
-        <img src="weather-icon" alt="">
-        <figcaption></figcaption>
-    </figure>
-</main>
-<footer>
-    <p id="copyright-info"> &copy;</p>
+    <div class="sub-title">
+        <h1>OpenWeatherMap.org API Test</h1>
+        <p>The current temperature in Trier, Germany is :</p>
+
+    </div>
+    <main id="city-container">
+      
+    </main>
+    <footer>
+        <p id="copyright-info"> &copy;</p>
         <p id="last-modified"></p>
         <script src="./scripts/weather.js"></script>
-    <script src="./scripts/getdates.js"></script>
-</footer>
+        <script src="./scripts/getdates.js"></script>
+    </footer>
 </body>
+
 </html>
