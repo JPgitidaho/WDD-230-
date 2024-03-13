@@ -72,15 +72,8 @@ footer {
 }
 footer p {
     color: var(--papaya-whip);
-
-}
-#copyright-info {
-    font-size: 16px;
 }
 
-#last-modified {
-    font-size: 16px;
-}
 
 @media (max-width:400px) {
 main{
