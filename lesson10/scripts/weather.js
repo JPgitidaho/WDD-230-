@@ -63,7 +63,6 @@ function displayResults(data, cityName) {
   weatherIcon.alt = data.weather[0].description;
   cityContainer.appendChild(weatherIcon);
   
-
   // Append the city container to the main HTML element
   document.querySelector('main').appendChild(cityContainer);
 }
