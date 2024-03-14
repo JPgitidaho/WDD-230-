@@ -57,14 +57,16 @@ $gradient-radial: radial-gradient(#001524ff, #15616dff, #ffecd1ff, #ff7d00ff, #7
   background: var(--caribbean-current-dark);
   color: var(--papaya-whip);
 }
-
+* {
+  max-width: 2000px;
+}
 body {
   box-sizing: border-box;
+  
   padding: 0;
   transition: background-color 0.5s;
   background-color: var(--papaya-whip);
   font-family: "Roboto Slab", "Lora", "Caveat";
-  margin: 0;
   font-size: 16px;
 
 }
@@ -526,127 +528,4 @@ li:nth-child(4) {
 }
 
 
-@media screen and (max-width: 886px) {
-  #formcon {
-    max-width: 100%;
-  }
-}
 
-/* Media Query for Mobile */
-@media screen and (max-width: 886px) {
-  #wrapper {
-    grid-template-columns: 1fr;
-  }
-
-  #sidebar {
-    grid-column: span 1;
-  }
-
-  .main-area {
-    grid-column: span 1;
-    margin-right: 0;
-  }
-}
-
-/* Estilos responsivos */
-
-
-@media (max-width:820px) {
-  body {
-    font-size: small;
-  }
-.content {
-  margin-right: 0;
-  
-}
-
-  #dark-mode-toggle {
-    padding: 10px;
-  }
-
-  #burger-icon {
-    display: inline-flex;
-    border: none;
-    cursor: pointer;
-    background-color: transparent;
-    right: 5px;
-    top: 16px;
-    position: absolute;
-
-  }
-
-  body.dark-mode #burger-icon::before {
-    color: var(--papaya-whip);
-  }
-
-  #burger-icon::before {
-    content: '\2630';
-    color:var(--rich-black);
-    align-items: center;
-
-  }
-
-  #burger-icon.active::before {
-    content: '✖';
-  }
-
-#banner, .closeBanner{
-  top: 0;
-  font-size: 14px;
-  width: 50%;
-}
-  .logo {
-    display: none;
-  }
-
-  #book {
-    font-size: small;
-    padding: 10px;
-  }
-
-  h1 {
-    top:25%;
-    font-size: 20px;
-    left: 0;
-  }
-
-  nav {
-    display: none;
-    width: 100%;
-  }
-
-  nav.show {
-    display: inline-flex;
-    flex-direction: column;
-    padding: 5px;
-    background-color: var(--caribbean-current);
-  }
-
-  .dark-mode nav.show {
-    background-color: transparent;
-  }
-
-  nav a {
-    margin-top: 15px;
-    color: var(--papaya-whip);
-    padding: 10px 15px;
-    text-align: left;
-  }
-
-  nav a:hover {
-    text-decoration: overline;
-    color: var(--papaya-whip);
-  }
-
-  .home-grid {
-    grid-template-columns: 1fr;
-    display: block;
-    margin: 15px 0;
-
-  }
-
-  footer {
-    margin-top: 25px;
-  }
-
-}

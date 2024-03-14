@@ -1,0 +1,22 @@
+
+@media screen and (max-width: 886px) {
+    #formcon {
+      max-width: 100%;
+    }
+  }
+  
+  /* Media Query for Mobile */
+  @media screen and (max-width: 886px) {
+    #wrapper {
+      grid-template-columns: 1fr;
+    }
+  
+    #sidebar {
+      grid-column: span 1;
+    }
+  
+    .main-area {
+      grid-column: span 1;
+      margin-right: 0;
+    }
+  }
