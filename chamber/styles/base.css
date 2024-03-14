@@ -54,7 +54,7 @@ $gradient-radial: radial-gradient(#001524ff, #15616dff, #ffecd1ff, #ff7d00ff, #7
 }
 
 .dark-mode {
-  background: linear-gradient(to bottom left, var(--rich-black), var(--caribbean-current-dark), var(--rich-black));
+  background: var(--caribbean-current-dark);
   color: var(--papaya-whip);
 }
 
@@ -230,7 +230,7 @@ h1 {
 }
 
 .card {
-  box-shadow: 3px 3px 10px var(--rich-black);
+  box-shadow: 3px 3px 10px var(--caribbean-current-dark);
   border-radius: 3px;
   padding: 20px;
 
@@ -284,7 +284,7 @@ footer {
 }
 
 .dark-mode footer {
-  background: linear-gradient(to left, var(--black), var(--rich-black), var(--black));
+  background: var(--black);
 
 }
 
