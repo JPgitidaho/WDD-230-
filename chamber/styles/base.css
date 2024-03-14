@@ -239,9 +239,9 @@ h1 {
   display: flex;
   text-align: center; 
 }
-#weather-info p{
+.forecast-day p{
 padding: 10px 20px;
-text-align: left;
+text-align: center;
 }
 .weather {
   text-align: center;
