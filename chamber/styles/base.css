@@ -167,14 +167,21 @@ button {
   border: none;
 }
 #banner {
-  color: var(--rich-black);
+  color: var(--papaya-whip);
+  font-size: 1rem;
   top: 10%;
   left: 5%;
   position: absolute;
+  box-shadow: 3px 3px 10px rgba(188, 186, 186, 0.719);
+
   margin: auto 15px;
 }
 #closeBanner {
   background-color: transparent;
+  box-shadow: 3px 3px 10px rgb(216, 212, 212);
+  border-radius: 50%;
+  margin: 10px;
+
 }
 #book {
   color: var(--papaya-whip);
