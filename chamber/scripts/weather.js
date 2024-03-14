@@ -77,7 +77,7 @@ function filterForecastData(forecastData) {
             const descriptionElement = document.createElement('p');
             descriptionElement.textContent = `${dayForecast.description}`;
             dayElement.appendChild(descriptionElement);
-            
+
             const dateElement = document.createElement('p');
             dateElement.textContent = dayForecast.date;
             dayElement.appendChild(dateElement);
@@ -85,9 +85,6 @@ function filterForecastData(forecastData) {
             const temperatureElement = document.createElement('p');
             temperatureElement.textContent = `Tº: ${dayForecast.temperature} °F`;
             dayElement.appendChild(temperatureElement);
-
-
-
 
             weatherInfoElement.appendChild(dayElement);
         });

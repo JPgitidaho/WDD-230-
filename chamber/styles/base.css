@@ -54,7 +54,7 @@ $gradient-radial: radial-gradient(#001524ff, #15616dff, #ffecd1ff, #ff7d00ff, #7
 }
 
 .dark-mode {
-  background: linear-gradient(to right, var(--rich-black), var(--caribbean-current-dark));
+  background: linear-gradient(to bottom right, var(--caribbean-current-dark), var(--rich-black));
   color: var(--papaya-whip);
 }
 
@@ -246,9 +246,11 @@ h1 {
   text-align: center;
   grid-column: 3;
   justify-content: center;
-  background-image: url('https://raw.githubusercontent.com/JPgitidaho/WDD-230-/main/chamber/images/hero-1.webp');
+  background:linear-gradient(to top left, var(--caribbean-current-dark), var(--papaya-whip));
 }
-
+.dark-mode .weather{
+  background: transparent;
+}
 .card.card1 {
   grid-column: 1;
   grid-row: 2;
@@ -265,7 +267,7 @@ h1 {
 }
 
 footer {
-  background-color:  var(--rich-black);
+  background-color:  var(--caribbean-current-dark);
   padding: 50px;
   text-align: center;
   font-size: 16px;
