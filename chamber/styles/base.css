@@ -6,6 +6,7 @@
 /* CSS HEX */
 --rich-black: #001524ff;
 --caribbean-current: #15616dff;
+--caribbean-current-dark: #124b52;
 --papaya-whip: #ffecd1ff;
 --orange-wheel: #ff7d00ff;
 --sienna: #78290fff;
@@ -53,7 +54,7 @@ $gradient-radial: radial-gradient(#001524ff, #15616dff, #ffecd1ff, #ff7d00ff, #7
 }
 
 .dark-mode {
-  background: linear-gradient(to top, var(--rich-black), var(--black));
+  background: linear-gradient(to right, var(--rich-black), var(--caribbean-current-dark));
   color: var(--papaya-whip);
 }
 
@@ -447,14 +448,10 @@ li:nth-child(4) {
   border-color: var(--orange-wheel);
 }
 
-
-.gratitude-message {
-  max-width: 600px;
-  margin: 50px auto;
+.card.gratitude-message {
+  grid-column: 3;
+  margin: 150px 100px;
   padding: 20px;
-  background-color: var(--papaya-whip);
-  box-shadow: 5px 5px 10px var(--caribbean-current);
-  border-radius: 8px;
   text-align: center;
 }
 #descripcion {

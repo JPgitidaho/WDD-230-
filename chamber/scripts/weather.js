@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-  // OpenWeatherMap API key
   const apiKey = '39a93938e81e6967af92542761303653';
   // API URL for Santiago, CL
   const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Santiago,cl&appid=${apiKey}`;
