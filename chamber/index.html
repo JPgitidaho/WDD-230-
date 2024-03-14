@@ -8,15 +8,15 @@
     <meta name="author" content="Juanita Perez Aguilera">
     <title>Chamber of Commerse- Santiago BusiNet </title>
     <!-- Metapropiedades de Open Graph -->
-    <meta property="og:title" content="Juanita P. Aguilera - WDD 230 - Web Frontend Development" >
+    <meta property="og:title" content="Juanita P. Aguilera - WDD 230 - Web Frontend Development">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://jpgitidaho.github.io/WDD-230-/" >
-    <meta property="og:url" content="https://jpgitidaho.github.io/WDD-230-/" >
+    <meta property="og:image" content="https://jpgitidaho.github.io/WDD-230-/">
+    <meta property="og:url" content="https://jpgitidaho.github.io/WDD-230-/">
     <link rel="icon" href="./images/chamberofcommerce.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://coolors.co/001524-15616d-ffecd1-ff7d00-78290f">
 
-        
+
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/base.css">
 
@@ -25,38 +25,47 @@
 </head>
 
 <body>
+
     <header id="miHeader">
         <div class="content">
             <a href="./index.html">
-            <img class="logo" src="./images/chamberofcommerce.png" alt="imag logo">
+                <img class="logo" src="./images/chamberofcommerce.png" alt="imag logo">
             </a>
             <nav>
                 <a href="./discover.html">Discover</a>
                 <a href="./directory.html">Directory</a>
-                <a href="">News & Resources</a>
                 <a href="">Events</a>
                 <a href="./join.html">Book Now</a>
             </nav>
+
             <button id="dark-mode-toggle" onclick="toggleDarkMode()" title="Toggle Dark Mode">🕶 Theme</button>
             <button id="burger-icon" class="responsive-menu" onclick="toggleMenu()" title="Toggle Menu"></button>
-    
         </div>
+
     </header>
     <div class="hero">
         <picture>
-            <source media="(max-width: 767px)" srcset="https://raw.githubusercontent.com/JPgitidaho/WDD-230-/main/chamber/images/hero-1-small.webp">
+            <source media="(max-width: 767px)"
+                srcset="https://raw.githubusercontent.com/JPgitidaho/WDD-230-/main/chamber/images/hero-1-small.webp">
 
             <!-- Para pantallas medianas -->
-            <source media="(min-width: 768px) and (max-width: 991px)" srcset="https://raw.githubusercontent.com/JPgitidaho/WDD-230-/main/chamber/images/hero-1-medium.webp">
+            <source media="(min-width: 768px) and (max-width: 991px)"
+                srcset="https://raw.githubusercontent.com/JPgitidaho/WDD-230-/main/chamber/images/hero-1-medium.webp">
 
             <!-- Para pantallas grandes -->
-            <source media="(min-width: 992px)" srcset="https://raw.githubusercontent.com/JPgitidaho/WDD-230-/main/chamber/images/hero-1.webp">
+            <source media="(min-width: 992px)"
+                srcset="https://raw.githubusercontent.com/JPgitidaho/WDD-230-/main/chamber/images/hero-1.webp">
 
             <!-- Imagen por defecto para navegadores que no soportan la etiqueta picture -->
-            <img src="https://raw.githubusercontent.com/JPgitidaho/WDD-230-/main/chamber/images/hero-1.webp" alt="hero image">
+            <img src="https://raw.githubusercontent.com/JPgitidaho/WDD-230-/main/chamber/images/hero-1.webp"
+                alt="hero image">
         </picture>
         <h1>Santiago BusiNet</h1>
         <a id="book" href="./join.html">Book Now</a>
+        <div id="banner">
+            <p>📣¡No olvides asistir a la reunión de la Cámara de Comercio este miércoles a las 7:00 p.m.!  <button id="closeBanner">❌</button>
+            </p>
+        </div>
 
     </div>
 
@@ -109,6 +118,7 @@
         <p id="last-modified"></p>
     </footer>
     <!-- Script de JavaScript -->
+    <script src="./scripts/banner.js"></script>
     <script src="./scripts/getdates-chamb.js"></script>
     <script src="./scripts/weather.js"></script>
 

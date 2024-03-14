@@ -1,66 +1,98 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const apiKey = '39a93938e81e6967af92542761303653';
-  // API URL for Santiago, CL
-  const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Santiago,cl&appid=${apiKey}`;
+    const apiKey = '39a93938e81e6967af92542761303653';
+    const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=Santiago,cl&appid=${apiKey}&units=imperial`;
 
-  // Function to fetch weather data from the OpenWeatherMap API
-  async function getWeather() {
+// Fetch forecast weather data from the OpenWeatherMap API
+async function getForecastWeather() {
     try {
-      // Fetch weather data from the API
-      const response = await fetch(apiUrl);
-      const data = await response.json();
+        const response = await fetch(apiUrl);
+        const data = await response.json();
 
-      // Extract relevant information from the data object
-      const weatherDescription = data.weather[0].description;
-      const temperature = (data.main.temp - 273.15).toFixed(2); // Temperature in Celsius
-      const feelsLike = (data.main.feels_like - 273.15).toFixed(2); // Feels like temperature in Celsius
-      const humidity = data.main.humidity;
-      const windSpeed = data.wind.speed;
+        // Extract current weather data
+        const currentWeatherData = data.list[0];
+        // Extract forecast weather data for today and the next three days
+        const forecastData = data.list.filter((item, index) => index % 8 === 0);
 
-      // Get the weather icon based on the weather description
-      const weatherIcon = getWeatherIcon(weatherDescription);
-
-      // Create the content to display on the page
-      const weatherInfo = `
-        <p>Weather Description: ${weatherDescription} ${weatherIcon}</p>
-        <p>Temperature: ${temperature} °C</p>
-        <p>Feels Like: ${feelsLike} °C</p>
-        <p>Humidity: ${humidity} %</p>
-        <p>Wind Speed: ${windSpeed} m/s</p>
-      `;
-
-      // Display the information in the element with the id 'weather-info'
-      const weatherInfoElement = document.getElementById('weather-info');
-
-      if (weatherInfoElement) {
-        weatherInfoElement.innerHTML = weatherInfo;
-      } else {
-        console.error('Element with ID "weather-info" not found.');
-      }
+        // Call the callback function to handle forecast weather data
+        getForecastData(currentWeatherData, forecastData);
     } catch (error) {
-      console.error('Error fetching weather information:', error);
+        console.error('Error fetching weather forecast information:', error);
     }
-  }
+}
 
-  // Function to get the weather icon based on the weather description
-  function getWeatherIcon(description) {
-    // Map descriptions to icon names (you can adjust this based on your needs)
-    const iconMap = {
-      'clear sky': '☀️',
-      'few clouds': '🌤️',
-      'scattered clouds': '☁️',
-      'broken clouds': '☁️',
-      'shower rain': '🌦️',
-      'rain': '🌧️',
-      'thunderstorm': '⛈️',
-      'snow': '❄️',
-      'mist': '🌫️'
-    };
 
-    // Look up the corresponding icon or use a generic icon if there is no match
-    return iconMap[description.toLowerCase()] || '❓';
-  }
+    // Callback function to handle forecast weather data
+    function getForecastData(currentWeatherData, forecastData) {
+        // Extract relevant information from the forecast data object
+        // Filter the forecast data to get information for the next three days
+        const nextThreeDaysForecast = filterForecastData(forecastData);
+        // Display forecast weather information on the page
+        displayForecastWeather(nextThreeDaysForecast);
+    }
 
-  // Call the function to get weather information when the page loads
-  getWeather();
+// Function to filter the forecast data to get information for today and the next three days
+function filterForecastData(forecastData) {
+    const nextThreeDaysForecast = [];
+    const today = new Date();
+    let count = 0;
+
+    forecastData.forEach(item => {
+        const forecastDate = new Date(item.dt_txt);
+
+        if (forecastDate >= today && count < 4) {
+            nextThreeDaysForecast.push({
+                date: forecastDate.toLocaleDateString('en-US', { weekday: 'long' }),
+                temperature: item.main.temp.toFixed(1), // Temperature in Celsius
+                description: item.weather[0].description,
+                icon: `https://openweathermap.org/img/w/${item.weather[0].icon}.png`
+            });
+            count++;
+        }
+    });
+
+    return nextThreeDaysForecast;
+}
+
+    // Function to display forecast weather information on the page
+    function displayForecastWeather(forecastData) {
+        const weatherInfoElement = document.getElementById('weather-info');
+        if (!weatherInfoElement) {
+            console.error('Element with ID "weather-info" not found.');
+            return;
+        }
+
+        // Clear previous forecast information
+        weatherInfoElement.innerHTML = '';
+
+        // Loop through the forecast data and create HTML elements to display it
+        forecastData.forEach(dayForecast => {
+            const dayElement = document.createElement('div');
+            dayElement.classList.add('forecast-day');
+
+            const iconElement = document.createElement('img');
+            iconElement.src = dayForecast.icon;
+            iconElement.alt = dayForecast.description;
+            dayElement.appendChild(iconElement);
+
+            const descriptionElement = document.createElement('p');
+            descriptionElement.textContent = `${dayForecast.description}`;
+            dayElement.appendChild(descriptionElement);
+            
+            const dateElement = document.createElement('p');
+            dateElement.textContent = dayForecast.date;
+            dayElement.appendChild(dateElement);
+
+            const temperatureElement = document.createElement('p');
+            temperatureElement.textContent = `Tº: ${dayForecast.temperature} °F`;
+            dayElement.appendChild(temperatureElement);
+
+
+
+
+            weatherInfoElement.appendChild(dayElement);
+        });
+    }
+
+    // Call the function to get forecast weather information when the page loads
+    getForecastWeather();
 });
