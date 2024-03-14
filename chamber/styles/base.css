@@ -240,7 +240,8 @@ h1 {
   text-align: center; 
 }
 #weather-info p{
- margin: 10px;
+padding: 10px 20px;
+text-align: left;
 }
 .weather {
   text-align: center;
