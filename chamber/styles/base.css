@@ -168,12 +168,10 @@ button {
 }
 #banner {
   color: var(--rich-black);
-  font-size: 1.5rem;
-  top: 10%;
-  left: 5%;
+  font-size: 1rem;
+  top: 6%;
+  left: 4.5%;
   position: absolute;
-  box-shadow: 3px 3px 10px rgba(188, 186, 186, 0.719);
-
   margin: auto 15px;
 }
 #closeBanner {
@@ -232,7 +230,7 @@ h1 {
 }
 
 .card {
-  box-shadow: 5px 5px 10px var(--black);
+  box-shadow: 3px 3px 10px var(--rich-black);
   border-radius: 3px;
   padding: 20px;
 
@@ -254,7 +252,7 @@ text-align: center;
   text-align: center;
   grid-column: 3;
   justify-content: center;
-  background:linear-gradient(to top left, var(--caribbean-current-dark), var(--papaya-whip));
+  background:linear-gradient(to top left, var(--caribbean-current), var(--papaya-whip));
 }
 .dark-mode .weather{
   background: transparent;
@@ -583,15 +581,20 @@ li:nth-child(4) {
 
   #burger-icon::before {
     content: '\2630';
-    color:var(--caribbean-current);
+    color:var(--rich-black);
     align-items: center;
-  }
 
+  }
 
   #burger-icon.active::before {
     content: '✖';
   }
 
+#banner, .closeBanner{
+  top: 0;
+  font-size: 14px;
+  width: 50%;
+}
   .logo {
     display: none;
   }
@@ -602,8 +605,9 @@ li:nth-child(4) {
   }
 
   h1 {
-    top: 15%;
-    font-size: 24px;
+    top:25%;
+    font-size: 30px;
+    left: 5%;
   }
 
   nav {
@@ -615,7 +619,7 @@ li:nth-child(4) {
     display: inline-flex;
     flex-direction: column;
     padding: 5px;
-    background-color: var(--green);
+    background-color: var(--caribbean-current);
   }
 
   .dark-mode nav.show {
