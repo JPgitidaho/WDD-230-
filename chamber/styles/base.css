@@ -6,7 +6,7 @@
 /* CSS HEX */
 --rich-black: #001524ff;
 --caribbean-current: #15616dff;
---caribbean-current-dark: #124b52;
+--caribbean-current-dark: #0c3338;
 --papaya-whip: #ffecd1ff;
 --orange-wheel: #ff7d00ff;
 --sienna: #78290fff;
@@ -130,7 +130,7 @@ nav a:hover {
 
 nav a {
   font-family: "Roboto Slab";
-  color: var(--papaya-whip);
+  color: var(--rich-black);
   justify-content: space-between;
   letter-spacing: 0.5px;
   font-size: 16px;
@@ -167,8 +167,8 @@ button {
   border: none;
 }
 #banner {
-  color: var(--papaya-whip);
-  font-size: 1rem;
+  color: var(--rich-black);
+  font-size: 1.5rem;
   top: 10%;
   left: 5%;
   position: absolute;
@@ -200,10 +200,10 @@ button {
 h1 {
   color: var(--caribbean-current);
   font-size: 3rem;
-  padding: 0;
-  box-shadow: 3px 3px 10px rgb(216, 212, 212);
+  padding: 10px;
+  box-shadow: 3px 8px 10px rgb(244, 241, 241);
   top: 25%;
-  left: 27%;
+  left: 17%;
   font-weight: bold;
   position: absolute;
 }
