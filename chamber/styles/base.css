@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap");
 
-
+* {
+  max-width: 1800px;
+}
 
 :root {
 /* CSS HEX */
@@ -57,9 +59,7 @@ $gradient-radial: radial-gradient(#001524ff, #15616dff, #ffecd1ff, #ff7d00ff, #7
   background: var(--caribbean-current-dark);
   color: var(--papaya-whip);
 }
-* {
-  max-width: 2000px;
-}
+
 body {
   box-sizing: border-box;
   
@@ -101,13 +101,13 @@ h2 {
 }
 
 .content .logo {
-  max-width: 80px;
+  max-width:50%;
 }
 
 .logo,
 .logo-link {
   margin-left: 80px;
-  margin-top: 0;
+  margin-top: 10px;
 
 }
 
@@ -244,10 +244,10 @@ h1 {
 }
 #weather-info {
   display: flex;
-  text-align: center; 
+  text-align: center;
 }
 .forecast-day p{
-padding: 10px 20px;
+padding: 10px;
 text-align: center;
 }
 .weather {
@@ -297,13 +297,13 @@ footer {
 /* Estilos Discover **********************************************/
 #wrapper {
   display: grid;
-  grid-template-columns: 400px 1fr 1fr;
+  grid-template-columns: 320px 1fr 1fr;
   grid-template-rows: auto;
   grid-gap: 20px;
 }
 
 #sidebar {
-  margin-top: 100px;
+  margin-top: 120px;
   grid-column: 1;
   padding: 20px;
   box-shadow: 5px 5px 10px rgb(28, 28, 28);
@@ -317,11 +317,14 @@ footer {
   background-color: transparent;
 }
 
-.main-area {
-  grid-column:span 2 ;
+.main-area1 {
+  grid-column:2;
   margin-top: 100px;
 }
-
+.main-area2 {
+  grid-column:3;
+  margin-top: 100px;
+}
 .section-disc{
   padding-top: 20px;
   padding-bottom: 10px; 
@@ -350,14 +353,15 @@ footer {
   font-weight: bold;
 }
 
-.main-area img {
+.main-area1 img, .main-area2 img {
   width: 100%;
+  height: 300px;
   filter: blur(8px);
   transition: filter 0.3s ease-out;
   box-shadow: 5px 5px 10px rgb(133, 132, 132);
 }
 
-.main-area img:hover {
+.main-area1 img:hover, .main-area2 img:hover{
   filter: none;
 }
 
