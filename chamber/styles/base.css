@@ -154,7 +154,6 @@ nav a {
 .hero {
   z-index: 1;
   position: relative;
-
 }
 
 picture img {
@@ -170,24 +169,17 @@ button {
 }
 #banner {
   color: var(--papaya-whip);
-  font-size: 1rem;
+  font-size: 1.5rem;
   top: 16%;
-  left: 4.5%;
-  position: absolute;
-  width: 250px;
   height: auto;
-  padding: 20px;
-  text-align: left;
-  background-color: var(--caribbean-current);
-  box-shadow: 3px 3px 8px rgb(28, 28, 28);
-}
-#banner img {
   width: 100%;
+  padding:8px 20px;
+  text-align: left;
+  background-color: var(--orange-wheel);
 }
 #closeBanner {
   background-color: transparent;
-  box-shadow: 3px 3px 10px rgb(216, 212, 212);
-  border-radius: 50%;
+  margin-left:10px;
 }
 #book {
   color: var(--papaya-whip);
