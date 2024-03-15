@@ -232,7 +232,7 @@ h1 {
 }
 
 .card {
-  box-shadow: 3px 3px 10px var(--caribbean-current-dark);
+  box-shadow: 3px 3px 10px var(--caribbean-current);
   border-radius: 3px;
   padding: 20px;
 
