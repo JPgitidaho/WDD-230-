@@ -2,7 +2,7 @@
 function isBannerDay() {
   const today = new Date();
   const dayOfWeek = today.getDay(); // 0 para domingo, 1 para lunes, etc.
-  return dayOfWeek >= 1 && dayOfWeek <= 3; // Devuelve true si es lunes, martes o miércoles
+  return dayOfWeek >= 1 && dayOfWeek <= 4; // Devuelve true si es lunes, martes o miércoles
 }
 
 // Función para mostrar el banner si es lunes, martes o miércoles

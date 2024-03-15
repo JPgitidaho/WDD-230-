@@ -169,19 +169,25 @@ button {
   border: none;
 }
 #banner {
-  color: var(--rich-black);
+  color: var(--papaya-whip);
   font-size: 1rem;
-  top: 6%;
+  top: 16%;
   left: 4.5%;
   position: absolute;
-  margin: auto 15px;
+  width: 250px;
+  height: auto;
+  padding: 20px;
+  text-align: left;
+  background-color: var(--caribbean-current);
+  box-shadow: 3px 3px 8px rgb(28, 28, 28);
+}
+#banner img {
+  width: 100%;
 }
 #closeBanner {
   background-color: transparent;
   box-shadow: 3px 3px 10px rgb(216, 212, 212);
   border-radius: 50%;
-  margin: 10px;
-
 }
 #book {
   color: var(--papaya-whip);
