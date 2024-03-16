@@ -352,7 +352,7 @@ footer {
 
 .main-area1 img, .main-area2 img {
   width: 100%;
-  height: 50%;
+  height: auto;
   filter: blur(8px);
   transition: filter 0.3s ease-out;
   box-shadow: 5px 5px 10px rgb(133, 132, 132);
