@@ -389,13 +389,14 @@ figcaption {
 }
 
 #formcon {
-  max-width: 600px;
-  margin: 100px 20px;
+  max-width:50%;
+  margin: 100px auto;
   padding: 20px;
   background-color: var(--papaya-whip);
   box-shadow: 5px 5px 10px var(--caribbean-current);
   border-radius: 8px;
   grid-column: span 2;
+  justify-self: center;
 }
 
 .dark-mode #formcon {
@@ -429,8 +430,6 @@ figcaption {
 
 .benefits {
   margin-top: 100px;
-  padding: 20px ;
-  margin-left: 20px;
   background-color: var(--caribbean-current);
   grid-column: span 1;
   grid-row: 1;
@@ -452,7 +451,7 @@ figcaption {
 .li-join {
   margin-bottom: 20px;
   border-left: 5px solid var(--papaya-whip);
-  padding-left: 10px;
+  padding-right: 15%;
 }
 
 li strong {
