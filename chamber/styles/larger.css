@@ -7,20 +7,19 @@
   
   /* Media Query for Mobile */
   @media screen and (max-width: 667px) {
-    #wrapper {
+    .wrapper {
       grid-template-columns: 1fr;
     }
   
     #sidebar {
       grid-column: span 1;
+      margin: 100px 30px;
     }
   
-    .main-area1 {
+    .main-area1, .main-area2 {
       grid-column: span 1;
-      margin-right: 0;
+      margin: 0;
+      height: auto;
     }
-    .main-area2 {
-      grid-column: span 1;
-      margin-right: 0;
-    }
+
   }

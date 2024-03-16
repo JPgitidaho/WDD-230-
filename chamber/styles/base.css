@@ -293,15 +293,14 @@ footer {
 }
 
 /* Estilos Discover **********************************************/
-#wrapper {
+.wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-template-rows: auto;
-  grid-gap: 20px;
 }
 
 #sidebar {
-  margin-top: 120px;
+  margin: 120px 30px;
   grid-column: 1;
   padding: 20px;
   box-shadow: 5px 5px 10px rgb(28, 28, 28);
@@ -391,7 +390,7 @@ figcaption {
 
 #formcon {
   max-width: 600px;
-  margin: 100px auto;
+  margin: 100px 20px;
   padding: 20px;
   background-color: var(--papaya-whip);
   box-shadow: 5px 5px 10px var(--caribbean-current);
@@ -431,7 +430,7 @@ figcaption {
 .benefits {
   margin-top: 100px;
   padding: 20px ;
-  margin-left: 50px;
+  margin-left: 20px;
   background-color: var(--caribbean-current);
   grid-column: span 1;
   grid-row: 1;
