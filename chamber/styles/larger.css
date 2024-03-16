@@ -6,7 +6,7 @@
   }
   
   /* Media Query for Mobile */
-  @media screen and (max-width: 886px) {
+  @media screen and (max-width: 667px) {
     #wrapper {
       grid-template-columns: 1fr;
     }
@@ -15,7 +15,11 @@
       grid-column: span 1;
     }
   
-    .main-area {
+    .main-area1 {
+      grid-column: span 1;
+      margin-right: 0;
+    }
+    .main-area2 {
       grid-column: span 1;
       margin-right: 0;
     }
