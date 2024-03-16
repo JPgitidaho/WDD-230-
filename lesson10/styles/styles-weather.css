@@ -18,15 +18,15 @@ body {
 .sub-title p{
     font-size: 1.5rem;
     text-align: center;
-    margin: 50px;
+    margin: 50px 20px;
     color: var(--papaya-whip);
     padding: 20px;
 }
 
-h1 {
+.sub-title h1 {
     font-size: 2.5rem;
     text-align: center;
-    margin: 50px;
+    margin-right: 50px;
     color: var(--papaya-whip);
     padding: 20px;
 }
@@ -42,11 +42,12 @@ main {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     padding: 5px;
-    gap: 20px;
     text-align: center;
     justify-content: center;
     justify-self: center;
     width: 320px;
+    margin-top: 20px;
+    margin-left: 15px;
 }
 
 #current-temp,
@@ -75,11 +76,16 @@ footer p {
 }
 
 
-@media (max-width:400px) {
+@media (max-width:450px) {
 main{
     grid-template-columns: 1fr;
     display: block;
-   margin-right: 20px;
+     margin: 30px  ;
 
   }
+.sub-title h1 {
+    font-size: 26px;
+    text-align: center;
+    margin: 20px;
+}
 }
