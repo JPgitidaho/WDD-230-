@@ -28,7 +28,7 @@ async function getMemberData() {
             card.classList.add('card');
 
 
-            if (!cardsContainer.classList.contains('list-view')) {
+            if (!cardsContainer.classList.contains('home-grid')) {
                 const image = document.createElement('img');
                 image.src = member.image;
                 image.alt = `${member.name} Logo`;
@@ -53,17 +53,17 @@ async function getMemberData() {
             detailsContainer.appendChild(address);
 
             const phone = document.createElement('p');
-            phone.textContent = member.phoneNumber ? `${member.phoneNumber}` : 'Phone: N/A';
+            phone.textContent = member.phoneNumber ? ` 📱${member.phoneNumber}` : 'Phone: N/A';
             detailsContainer.appendChild(phone);
 
 
             const email = document.createElement('p');
-            email.innerHTML = `Email: <a href="mailto:${member.email}">${member.email}</a>`;
+            email.innerHTML = `📧 <a href="mailto:${member.email}">${member.email}</a>`;
             detailsContainer.appendChild(email);
 
 
             const website = document.createElement("p");
-            website.innerHTML = `Website: <a href="${member.website}" target="_blank">${member.website}</a>`;
+            website.innerHTML = `💻: <a href="${member.website}" target="_blank">${member.website}</a>`;
             detailsContainer.appendChild(website);
 
             fragment.appendChild(card);

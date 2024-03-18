@@ -89,6 +89,7 @@ function filterForecastData(forecastData) {
             weatherInfoElement.appendChild(dayElement);
         });
     }
+ 
 
     // Call the function to get forecast weather information when the page loads
     getForecastWeather();

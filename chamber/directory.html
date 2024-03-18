@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="WDD 230 - Web Frontend Development-Chamber of commerse">
     <meta name="author" content="Juanita Perez Aguilera">
-    <title>Chamber of Commerse- Santiago BusiNet</title>
+    <title>Chamber of Commerse- Santiago Busi.Net </title>
     <!-- Metapropiedades de Open Graph -->
     <meta property="og:title" content="Juanita P. Aguilera - WDD 230 - Web Frontend Development">
     <meta property="og:type" content="website">
@@ -15,14 +15,21 @@
     <link rel="icon" href="./images/chamberofcommerce.ico.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Licorice&family=Love+Light&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://coolors.co/001524-15616d-ffecd1-ff7d00-78290f">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-iYFpBzQfXIWvufS1W3pcY9p+8VnDaTrMtD/7vBjB+ZzvY/YtUooHbeGrxJ7Dg3wP9sNojbpk8DbY2OssZpLw2g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Link to the main CSS file -->
+
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/medium.css">
     <link rel="stylesheet" href="./styles/larger.css">
-
-
 
 
 </head>
@@ -37,36 +44,84 @@
                 <a href="./index.html">Home</a>
                 <a href="./discover.html">Discover</a>
                 <a href="">Events</a>
-                <a href="./join.html">Book Now</a>
+                <button class="button"><a href="./join.html">Book Now</a></button>
             </nav>
             <button id="dark-mode-toggle" onclick="toggleDarkMode()" title="Toggle Dark Mode">🕶 Theme</button>
             <button id="burger-icon" class="responsive-menu" onclick="toggleMenu()" title="Toggle Menu"></button>
 
         </div>
     </header>
+    <div class="hero">
+        <picture>
+            <img src="./images/directorios-comerciales-.webp" alt="hero image">
+        </picture>
+        <h1 class="h1-hero">Directory </h1>
+    </div>
 
-
-    <main class="section-disc">
+    <main class="home-box">
+        
+        <section class="directory">
+            <p >
+                    The <strong>Santiago Busi.Net Chamber of Commerce</strong> collaborates
+                    with various local technology organizations and agencies to advocate
+                    for technological innovation in Santiago. 
+            </p>
+        </section>
         <section>
             <div class="grid-list">
-                <button id="grid">⏹️Grid</button>
-                <button id="list">📄List</button>
+                <button id="grid"><i class="material-icons">menu</i></button>
+                <button id="list"><i class="material-icons">list</i></button>
             </div>
         </section>
-            <section id="cards">
-            </section>  
+        <section id="cards">
+        </section>
     </main>
 
-    <footer>
-        <p id="copyright-info"> &copy; - Juanita P. Aguilera</p>
-        <p id="last-modified"></p>
-    </footer>
-    <!-- Script de JavaScript -->
-    <script src="./scripts/getdates-chamb.js"></script>
-    <script src="./scripts/directory.js"></script>
-    <script src="./scripts/myHeader.js"></script>
-    <script src="./scripts/darkMode.js"></script>
-
-</body>
-
-</html>
+    <footer class="home-grid ">
+        
+        <div class="card1">
+            
+            <img   class="logo-footer" src="./images/chile net.png" alt="imag footer">
+            <ul>
+                <li>
+                    <p>
+                       Founded in 1991 by a group of Chilean executives residing in the county of Santiago, Chile.
+                        <p id="copyright-info"> &copy; - Juanita P. Aguilera</p>
+                        <p id="last-modified"></p>
+                    </p>
+                </li>
+            </ul>
+           
+        </div>
+           
+            <div class =" card social">
+                <h3>Subscribe to our newsletter</h3>
+                <!-- Form -->
+                <form  action="./gratitude.html" method="get">
+                    <!-- Email -->
+                    <label for="email">Your email:</label><br>
+                    <input type="email" id="email" name="email" required placeholder="example@email.com">
+                    <!-- Submit Button -->
+                    <button class="button"  type="submit">Subcribe</button>
+                </form>
+            
+            <a href="https://www.facebook.com/tu_pagina"><i class="fa fa-facebook"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/tu_perfil"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/tu_cuenta"><i class="fa fa-instagram"></i>
+            </a>
+            <a href="#" class="fa fa-youtube"></a>
+       
+        </div>
+    
+        </footer>
+        <!-- Script de JavaScript -->
+        <script src="./scripts/banner.js"></script>
+        <script src="./scripts/getdates-chamb.js"></script>
+        <script src="./scripts/myHeader.js"></script>
+        <script src="./scripts/darkMode.js"></script>
+        <script src="./scripts/weather.js"></script>
+        <script src="./scripts/directory.js"></script>
+    </body>
+    
+    </html>
