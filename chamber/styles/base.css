@@ -85,40 +85,24 @@ h2 {
   box-shadow: 1px 1px 2px rgb(178, 177, 177);
 }
 
-a:hover {
-  color: var(--papaya-whip);
-}
 nav a {
-  color: var(--rich-black);
+  color: var(--papaya-whip);
   justify-content: space-between;
+  justify-self: center;
   padding: 15px;
 }
-
 
 picture img {
   width: 100%;
 }
-.content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-right: 200px;
-  text-align: left;
-}
 
-.h1-hero {
-  position: absolute;
-  color: var(--caribbean-current-dark);
-  top: 35%;
-  left: 10%;
-  font-size: 4rem;
-}
 
 .button {
-  padding: 10px 15px;
-  border-radius: 5px;
-  background-color: rgba(255, 236, 209, 0.39);
+  padding: 10px 20px;
+  border-radius:25px ;
   text-align: center;
+  background: var(--orange-wheel);
+  color: var(--papaya-whip);
 }
 
 .book {
@@ -126,39 +110,43 @@ picture img {
   left: 50%;
   position: absolute;
   box-shadow: 3px 3px 8px rgb(28, 28, 28);
-
 }
 
-.logo, .logo-footer{
-  max-width: 80%;
-}
-
-.logo,
-.logo-link {
-  margin: 0px 50px;
-  text-align: left;
+.logo, .logo-link{
+  max-width: 100%;
+  margin-left: -100px;
 }
 
 .hero-img {
   max-width: 100%;
   margin-top: -100px;
- 
 }
 
 .hero {
   z-index: 1;
   position: relative;
 }
+.h1-hero {
+  position: absolute;
+  color: var(--caribbean-current-dark);
+  top: 35%;
+  left: 50%;
+  font-size: 3rem;
+  transform: translate(-50%, -50%);
+text-align: center;
+}
 .book a {
-  color: var(--rich-black);
+  color: var(--papaya-whip);
 }
 
-
 #miHeader {
+  display: flex;
+  position: fixed;
   z-index: 2;
   width: 100%;
-  position: fixed;
-
+  justify-content: space-around;
+  align-items: center;
+  text-align: left;
 }
 #banner {
   color: var(--papaya-whip);
@@ -184,51 +172,31 @@ picture img {
   right: 50px;
   top: 20px;
 }
-
+a:hover {
+  color: var(--papaya-whip);
+}
 nav a:hover {
   text-decoration: overline;
   justify-content: space-around;
 }
 
-
 .book:hover {
-  background: var(--black);
-  z-index: 1;
-
-
+  background-color: var(--rich-black);
 }
-.book a:hover{
-  color: var(--papaya-whip);
-
-}
-
-
 .dark-mode nav a:hover {
   text-decoration: overline;
   color: var(--papaya-whip);
 }
 
-
 .home-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 20px;
-  margin-top: 10px;
 }
 
 .home-box {
-margin:0 100px;
+margin:50px  100px;
 }
-
-.card.information,
-.card.weather,
-.card.card1,
-.card.card2,
-.card.card3 {
- padding: 10px;
-
-}
-
 
 .card {
   box-shadow: 3px 3px 10px var(--caribbean-current);
@@ -236,15 +204,11 @@ margin:0 100px;
   padding: 30px;
 }
 
-
-
-
 .material-icons {
   color: var(--caribbean-current);
   font-size: 25px;
   margin-bottom: 0;
   right: 10px;
-
 }
 
 .li-join {
@@ -261,7 +225,6 @@ margin:0 100px;
 
 .information {
   grid-column: span 2;
-
 }
 
 .business img {
@@ -272,23 +235,24 @@ margin:0 100px;
   padding: 2px 2px;
   box-shadow: 3px 3px 10px var(--caribbean-current);
 }
+
 .forecast-day p {
   padding: 10px 30px;
   text-align: center;
   font-size: 1rem;
 }
 
-.card.card1 {
+.card1 {
   grid-column: 1;
   grid-row: 3;
 }
 
-.card.card2 {
+.card2 {
   grid-column: 2;
   grid-row: 3;
 }
 
-.card.card3 {
+.card3 {
   grid-column: 3;
   grid-row: 3;
 }
@@ -317,27 +281,29 @@ margin:0 100px;
 }
 
 footer {
-
   background-color: var(--caribbean-current-dark);
-  padding: 50px;
-  text-align: center;
-  font-size: 16px;
+  padding: 25px;
   text-align: left;
   color: var(--papaya-whip);
   margin-top: 10px;
+  font-size: 20px;
 }
 .social {
+  margin-top: 50px;
   align-items: center;
-  margin: 10px;
-  font-size: 1.5rem;
+  font-family: "Loto";
 }
+
 .social a {
-  justify-content: space-between;
-  margin: 10px;
   font-size: 2rem;
-
+  padding: 10px;
+  justify-content: space-between;
+ 
 }
-
+footer img {
+  padding-left: 15px;
+  width: 100%;
+}
 .dark-mode footer {
   background: var(--black);
 
@@ -345,21 +311,14 @@ footer {
 
 
 /* Estilos Discover **********************************************/
-
 .wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-template-rows: auto;
+  z-index: 2;
 }
 #sidebar {
-  margin: 150px 30px;
+  margin: 150px 10px;
   grid-column: 1;
   padding: 20px;
   box-shadow: 5px 5px 10px rgb(28, 28, 28);
-}
-
-#sidebar img {
-  width: 100%;
 }
 
 .dark-mode #sidebar {
@@ -377,52 +336,30 @@ footer {
 }
 
 .section-disc {
-  padding-top: 20px;
+  padding-top: 40px;
+  font-size: 20px;
 
-}
-
-.a-discover {
-  color: var(--papaya-whip);
-  text-align: left;
-  background: var(--caribbean-current);
-  padding: 5px 10px;
-}
-
-.a-discover:hover {
-  color: var(--papaya-whip);
-  font-weight: bold;
-}
-
-.dark-mode .a-discover {
-  color: var(--black);
-  font-weight: bold;
-
-}
-
-.dark-mode .a-discover:hover {
-  color: var(--papaya-whip);
-  font-weight: bold;
 }
 
 .main-area1 img,
 .main-area2 img {
   width: 100%;
   height: auto;
-  filter: blur(8px);
+  filter: grayscale(100%) blur(5px); /* Convertir la imagen a blanco y negro y aplicar desenfoque */
   transition: filter 0.3s ease-out;
   box-shadow: 5px 5px 10px rgb(133, 132, 132);
 }
 
 .main-area1 img:hover,
 .main-area2 img:hover {
-  filter: none;
+  filter: grayscale(0%); /* Restaurar la imagen a su estado original */
 }
+
 
 #message-container {
   box-shadow: 5px 5px 10px rgb(133, 132, 132);
-  padding: 10px;
-  background: var(--orange-wheel);
-  margin-right: 100px;
+  padding: 20px;
+  background: var(--green);
   border: 1px solid var(--papaya-whip);
   color: var(--papaya-whip);
 
@@ -436,19 +373,12 @@ figcaption {
 #google-map,
 iframe {
   width: 100%;
-  height:300px;
+  height:500px;
   border: 0;
 }
 
 /*  estilos para join ****************************/
-.wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-template-rows: auto;
-}
-.form-div {
-  margin-top: 100px;
-}
+
 
 #formcon {
   max-width: 50%;
@@ -540,7 +470,7 @@ li:nth-child(4) {
   height: 150px;
 }
 
-/* Estilos generales para el directorio ************************************/
+/* Estilos generales para el directory ************************************/
 .grid-list {
   margin-top: 10px;
   text-align: center;
@@ -555,23 +485,11 @@ li:nth-child(4) {
 
 }
 #cards{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  grid-template-rows: auto;
-  grid-gap: 20px;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 15pxpx;
 }
-
-#cards img {
-  background-color: var(--papaya-whip);
-  padding: 15px;
-}
-
-#cards p{
-  padding: 0;
-  margin: 0;
-  
+#cards.card {
+  width: 100%;
 }
 /* Estilos para la vista de lista ******/
 .list-view#cards {
@@ -588,7 +506,7 @@ li:nth-child(4) {
 }
 
 .list-view .home-grid {
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   text-align: left;
   padding: 5px;
 }
@@ -596,3 +514,31 @@ li:nth-child(4) {
 .list-view p{
   padding: 0 ;
 }
+
+#cards.home-grid p {
+  margin: 0;
+  padding: 0;
+}
+
+.zoomable {
+  overflow: hidden;
+  width: 100%;
+}
+
+.zoomable img {
+  width: 100%;
+  height: auto;
+  display: block;
+  animation: zoomAnimation 10s infinite ;
+}
+
+@keyframes zoomAnimation {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+

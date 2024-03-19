@@ -16,7 +16,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Licorice&family=Love+Light&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
     <link rel="preconnect" href="https://coolors.co/001524-15616d-ffecd1-ff7d00-78290f">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -33,35 +34,31 @@
 
 <body>
     <header id="miHeader">
-        <div class="content">
-            <a href="./index.html">
-                <img class="logo" src="./images/chile net.png" alt="imag logo">
-            </a>
+        <a href="./index.html">
+            <img class="logo" src="./images/chile net.png" alt="imag logo">
+        </a>
             <nav>
                 <a href="./index.html">Home</a>
                 <a href="./discover.html">Discover</a>
-                <a href="">Events</a>
-                <button class="button"><a href="./join.html">Book Now</a></button>
+                <a href="./directory.html">Directory</a>
+                <button class="button "><a href="./join.html">Book Now</a></button>
             </nav>
             <button id="dark-mode-toggle" onclick="toggleDarkMode()" title="Toggle Dark Mode">🕶 Theme</button>
             <button id="burger-icon" class="responsive-menu" onclick="toggleMenu()" title="Toggle Menu"></button>
-
-        </div>
     </header>
     <div class="hero">
         <picture>
             <img src="./images/directorios-comerciales-.webp" alt="hero image">
         </picture>
-        <h1 class="h1-hero">Directory </h1>
+
     </div>
 
     <main class="home-box">
-        
         <section class="directory">
-            <p >
-                    The <strong>Santiago Busi.Net Chamber of Commerce</strong> collaborates
-                    with various local technology organizations and agencies to advocate
-                    for technological innovation in Santiago. 
+            <p>
+                The <strong>Santiago Busi.Net Chamber of Commerce</strong> collaborates
+                with various local technology organizations and agencies to advocate
+                for technological innovation in Santiago.
             </p>
         </section>
         <section>
@@ -70,53 +67,71 @@
                 <button id="list"><i class="material-icons">list</i></button>
             </div>
         </section>
-        <section id="cards">
+        <section id="cards" class="home-grid">
         </section>
     </main>
-
     <footer class="home-grid ">
-        
-        <div class="card1">
-            
-            <img   class="logo-footer" src="./images/chile net.png" alt="imag footer">
+        <section class="social">
+            <img class="logo-footer" src="./images/chile net.png" alt="imag footer">
             <ul>
                 <li>
                     <p>
-                       Founded in 1991 by a group of Chilean executives residing in the county of Santiago, Chile.
-                        <p id="copyright-info"> &copy; - Juanita P. Aguilera</p>
-                        <p id="last-modified"></p>
+                        Founded in 1991 by a group of Chilean executives residing in the county of Santiago, Chile.
+                    <p id="copyright-info"> &copy; - Juanita P. Aguilera</p>
+                    <p id="last-modified"></p>
                     </p>
                 </li>
             </ul>
-           
+        </section>
+
+        <section class="social">
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/tu_pagina"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/tu_perfil"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/tu_cuenta"><i class="fa fa-instagram"></i></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </li>
+                <li>
+                    <p>
+                        <i class="material-icons">location_on</i> Monjitas 392, 8320113 Santiago, Región
+                        Metropolitana
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <i class="fa fa-phone"></i> +56 2 230000
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <i class="fa fa-envelope"></i><a id="contac" href="mailto:santiagobusi.net@gmail.com"> Email Us!
+                        </a>
+                    </p>
+                </li>
+            </ul>
+
+        </section>
+
+        <div class=" social">
+            <h3>Subscribe to our newsletter</h3>
+            <!-- Form -->
+            <form action="./gratitude.html" method="get">
+                <!-- Email -->
+                <label for="email">Your email:</label><br>
+                <input type="email" id="correo" name="email" required placeholder="example@email.com">
+                <!-- Submit Button -->
+                <button class="button "><a class="button"
+                        href="mailto:santiagobusi.net@gmail.com">Subscribe</a></button>
+            </form>
         </div>
-           
-            <div class =" card social">
-                <h3>Subscribe to our newsletter</h3>
-                <!-- Form -->
-                <form  action="./gratitude.html" method="get">
-                    <!-- Email -->
-                    <label for="email">Your email:</label><br>
-                    <input type="email" id="email" name="email" required placeholder="example@email.com">
-                    <!-- Submit Button -->
-                    <button class="button"  type="submit">Subcribe</button>
-                </form>
-            
-            <a href="https://www.facebook.com/tu_pagina"><i class="fa fa-facebook"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/tu_perfil"><i class="fa fa-linkedin"></i></a>
-            <a href="https://www.instagram.com/tu_cuenta"><i class="fa fa-instagram"></i>
-            </a>
-            <a href="#" class="fa fa-youtube"></a>
-       
-        </div>
-    
-        </footer>
-        <!-- Script de JavaScript -->
-        <script src="./scripts/getdates-chamb.js"></script>
-        <script src="./scripts/myHeader.js"></script>
-        <script src="./scripts/darkMode.js"></script>
-        <script src="./scripts/directory.js"></script>
-    </body>
-    
-    </html>
+
+    </footer>
+    <!-- Script de JavaScript -->
+    <script src="./scripts/getdates-chamb.js"></script>
+    <script src="./scripts/myHeader.js"></script>
+    <script src="./scripts/darkMode.js"></script>
+    <script src="./scripts/directory.js"></script>
+</body>
+
+</html>

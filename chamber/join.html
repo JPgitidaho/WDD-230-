@@ -16,7 +16,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Licorice&family=Love+Light&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
     <link rel="preconnect" href="https://coolors.co/001524-15616d-ffecd1-ff7d00-78290f">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -30,25 +31,23 @@
 
 
 </head>
-<body>
-    <header id="miHeader">
-        <div class="content">
-            <a href="./index.html">
-                <img class="logo" src="./images/chile net.png" alt="imag logo">
-            </a>
-            <nav>
-                <a href="./index.html">Home</a>
-                <a href="./discover.html">Discover</a>
-                <a href="./directory.html">Directory</a>
-                <a href="#">Events</a>
 
-            </nav>
-            <button id="dark-mode-toggle" onclick="toggleDarkMode()" title="Toggle Dark Mode">🕶 Theme</button>
-            <button id="burger-icon" class="responsive-menu" onclick="toggleMenu()" title="Toggle Menu"></button>
-        </div>
-    </header>
+<header id="miHeader">
+    <a href="./index.html">
+        <img class="logo" src="./images/chile net.png" alt="imag logo">
+    </a>
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./discover.html">Discover</a>
+            <a href="./directory.html">Directory</a>
+            <button class="button "><a href="./join.html">Book Now</a></button>
+        </nav>
+        <button id="dark-mode-toggle" onclick="toggleDarkMode()" title="Toggle Dark Mode">🕶 Theme</button>
+        <button id="burger-icon" class="responsive-menu" onclick="toggleMenu()" title="Toggle Menu"></button>
 
-    <div class="wrapper">
+</header>
+
+    <main class="home-grid contact ">
 
         <form id="formcon" action="./gratitude.html" method="get">
 
@@ -90,75 +89,100 @@
             <ul class="ul-join">
                 <li class="li-join">
                     <strong>NP:</strong>
-                    <p>Perfect for non-profit organizations, enjoy all the benefits at no cost. Connect with like-minded
+                    <p>Perfect for non-profit organizations, enjoy all the benefits at no cost. Connect with
+                        like-minded
                         entities and amplify your impact.</p>
                 </li>
                 <li class="li-join">
                     <strong>Bronze:</strong>
-                    <p>Unlock essential features and resources to boost your organization's presence. Ideal for startups
+                    <p>Unlock essential features and resources to boost your organization's presence. Ideal for
+                        startups
                         and small businesses looking to grow.</p>
                 </li>
                 <li class="li-join">
                     <strong>Silver:</strong>
-                    <p>Elevate your membership with advanced perks and exclusive access. Ideal for businesses seeking
+                    <p>Elevate your membership with advanced perks and exclusive access. Ideal for businesses
+                        seeking
                         enhanced visibility and networking opportunities.</p>
                 </li>
                 <li class="li-join">
                     <strong>Gold:</strong>
-                    <p>Experience the ultimate membership package. Enjoy premium benefits, priority support, and stand
-                        out as a leader in your industry. Tailored for established organizations aiming for excellence.
+                    <p>Experience the ultimate membership package. Enjoy premium benefits, priority support, and
+                        stand
+                        out as a leader in your industry. Tailored for established organizations aiming for
+                        excellence.
                     </p>
                 </li>
             </ul>
 
         </div>
-    </div>
+
+    </main>
 
     <footer class="home-grid ">
-        
-        <div class="card1">
-            
-            <img   class="logo-footer" src="./images/chile net.png" alt="imag footer">
+        <section class="social">
+            <img class="logo-footer" src="./images/chile net.png" alt="imag footer">
             <ul>
                 <li>
                     <p>
-                       Founded in 1991 by a group of Chilean executives residing in the county of Santiago, Chile.
-                        <p id="copyright-info"> &copy; - Juanita P. Aguilera</p>
-                        <p id="last-modified"></p>
+                        Founded in 1991 by a group of Chilean executives residing in the county of Santiago, Chile.
+                    <p id="copyright-info"> &copy; - Juanita P. Aguilera</p>
+                    <p id="last-modified"></p>
                     </p>
                 </li>
             </ul>
-           
-        </div>
-           
-            <div class =" card social">
-                <h3>Subscribe to our newsletter</h3>
-                <!-- Form -->
-                <form  action="./gratitude.html" method="get">
-                    <!-- Email -->
-                    <label for="email">Your email:</label><br>
-                    <input type="email" id="email" name="email" required placeholder="example@email.com">
-                    <!-- Submit Button -->
-                    <button class="button"  type="submit">Subcribe</button>
-                </form>
-            
-            <a href="https://www.facebook.com/tu_pagina"><i class="fa fa-facebook"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/tu_perfil"><i class="fa fa-linkedin"></i></a>
-            <a href="https://www.instagram.com/tu_cuenta"><i class="fa fa-instagram"></i>
-            </a>
-            <a href="#" class="fa fa-youtube"></a>
-       
-        </div>
-    
-        </footer>
-        <!-- Script de JavaScript -->
-        <script src="./scripts/getdates-chamb.js"></script>
-        <script src="./scripts/myHeader.js"></script>
-        <script src="./scripts/darkMode.js"></script>
-        <script src="./scripts/join.js"></script>
+        </section>
 
-    
-    </body>
-    
-    </html>
+        <section class="social">
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/tu_pagina"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/tu_perfil"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/tu_cuenta"><i class="fa fa-instagram"></i></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </li>
+                <li>
+                    <p>
+                        <i class="material-icons">location_on</i> Monjitas 392, 8320113 Santiago, Región
+                        Metropolitana
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <i class="fa fa-phone"></i> +56 2 230000
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <i class="fa fa-envelope"></i><a id="contac" href="mailto:santiagobusi.net@gmail.com"> Email Us!
+                        </a>
+                    </p>
+                </li>
+            </ul>
+
+        </section>
+
+        <div class=" social">
+            <h3>Subscribe to our newsletter</h3>
+            <!-- Form -->
+            <form action="./gratitude.html" method="get">
+                <!-- Email -->
+                <label for="email">Your email:</label><br>
+                <input type="email" id="correo" name="email" required placeholder="example@email.com">
+                <!-- Submit Button -->
+                <button class="button "><a class="button"
+                        href="mailto:santiagobusi.net@gmail.com">Subscribe</a></button>
+            </form>
+        </div>
+
+    </footer>
+    <!-- Script de JavaScript -->
+    <script src="./scripts/getdates-chamb.js"></script>
+    <script src="./scripts/myHeader.js"></script>
+    <script src="./scripts/darkMode.js"></script>
+    <script src="./scripts/join.js"></script>
+
+
+</body>
+
+</html>

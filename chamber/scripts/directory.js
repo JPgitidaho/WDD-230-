@@ -28,13 +28,13 @@ async function getMemberData() {
             card.classList.add('card');
 
 
-            if (!cardsContainer.classList.contains('home-grid')) {
+            if (!cardsContainer.classList.contains('cards')) {
                 const image = document.createElement('img');
                 image.src = member.image;
                 image.alt = `${member.name} Logo`;
                 image.loading = 'lazy';
-                image.width = 200;
-                image.height = 150;
+                image.width =200;
+                image.height = 100;
                 card.appendChild(image);
             }
 

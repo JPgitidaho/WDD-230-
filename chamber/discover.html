@@ -34,31 +34,30 @@
 
 <body>
     <header id="miHeader">
-        <div class="content">
-            <a href="./index.html">
-                <img class="logo" src="./images/chile net.png" alt="imag logo">
-            </a>
+        <a href="./index.html">
+            <img class="logo" src="./images/chile net.png" alt="imag logo">
+        </a>
             <nav>
                 <a href="./index.html">Home</a>
+                <a href="./discover.html">Discover</a>
                 <a href="./directory.html">Directory</a>
-                <a href="">Events</a>
-                <button class="button"><a href="./join.html">Book Now</a></button>
+                <button class="button "><a href="./join.html">Book Now</a></button>
             </nav>
             <button id="dark-mode-toggle" onclick="toggleDarkMode()" title="Toggle Dark Mode">🕶 Theme</button>
             <button id="burger-icon" class="responsive-menu" onclick="toggleMenu()" title="Toggle Menu"></button>
-
-        </div>
+    
     </header>
 
-    <main class="wrapper">
+    <main >
+    <div class="home-grid"> 
         <div id="sidebar">
             <div id="message-container">
             </div>
             <section class=" section-disc">
                 <h2>Some Links</h2>
-                <h3> <a class="a-discover" href="https://en.wikipedia.org/wiki/Santiago">Demography 👈</a>
+                <h3> <a class="button" href="https://en.wikipedia.org/wiki/Santiago">Demography 👈</a>
                 </h3>
-                <hr>
+                
                 <p>Learn more about the population and diversity of our community.</p>
 
                 <iframe id="google-map" title="Interactive Map of Santiago"
@@ -68,22 +67,19 @@
                 <hr>
             </section>
             <section class="section-disc">
-                <h3><a class="a-discover" href="https://www.santiagocultura.cl/agenda-cultural/">Cultural Events 👈</a>
+                <h3><a class="button" href="https://www.santiagocultura.cl/agenda-cultural/">Cultural Events 👈</a>
                 </h3>
-                <hr>
                 <p>Discover the latest and exciting cultural events in the region.</p>
-                <hr>
             </section>
             <section class="section-disc">
-                <h3><a class="a-discover" href="https://www.meganoticias.cl/nacional/">News 👈</a>
+                <h3><a class="button" href="https://www.meganoticias.cl/nacional/">News 👈</a>
                 </h3>
-                <hr>
                 <p>Stay informed with the latest local and global news.</p>
                 <hr>
             </section>
             <section class="section-disc">
                 <h3>
-                    <a class="a-discover"
+                    <a class="button"
                         href="https://www.getyourguide.com/santiago-l226/?cmp=bing&cmp=bing&ad_id=77790640060867&adgroup_
                         id=1244647773141042&bid_match_type=be&campaign_id=434042045&device=c&feed_item_id=&keyword
                         =attractions%20santiago%20de%20chile&loc_interest_ms=143462&loc_physical_ms=38&match_type
@@ -94,13 +90,7 @@
                         Attractions and Restaurants 👈
                     </a>
                 </h3>
-                <hr>
                 <p>Discover fascinating places to visit in our region.</p>
-                <ul>
-                    <li>
-
-                    </li>
-                </ul>
                 <h3>Restaurants</h3>
                 <iframe
                     src="https://www.google.com/maps/d/embed?mid=1RC6nALSwJ_47c32qfnYcAUh8y_gAqYs&ll=-33.40862821058174%2C-70.5861851&z=13"
@@ -227,46 +217,64 @@
                 <figcaption>People Santiago</figcaption>
             </figure>
         </div>
-
-    </main>
-    <footer class="home-grid ">
-
-        <div class="card1">
-
-            <img class="logo-footer" src="./images/chile net.png" alt="imag footer">
-            <ul>
-                <li>
-                    <p>
-                        Founded in 1991 by a group of Chilean executives residing in the county of Santiago, Chile.
+    </div>
+</main>
+<footer class="home-grid ">
+    <section class="social">
+        <img class="logo-footer" src="./images/chile net.png" alt="imag footer">
+        <ul>
+            <li>
+                <p>
+                    Founded in 1991 by a group of Chilean executives residing in the county of Santiago, Chile.
                     <p id="copyright-info"> &copy; - Juanita P. Aguilera</p>
-                    <p id="last-modified"></p>
-                    </p>
-                </li>
-            </ul>
+    <p id="last-modified"></p>
+                </p>
+            </li>
+        </ul>
+    </section>
+    
+    <section class="social">
+        <ul>
+            <li>
+                <a href="https://www.facebook.com/tu_pagina"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/tu_perfil"><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/tu_cuenta"><i class="fa fa-instagram"></i></a>
+                <a href="#" class="fa fa-youtube"></a>
+            </li>
+            <li>
+                <p>
+                    <i class="material-icons">location_on</i> Monjitas 392, 8320113 Santiago, Región
+                    Metropolitana
+                </p>
+            </li>
+            <li>
+                <p>
+                    <i class="fa fa-phone"></i> +56 2 230000
+                </p>
+            </li>
+            <li>
+                <p>
+                    <i class="fa fa-envelope"></i><a id="contac" href="mailto:santiagobusi.net@gmail.com"> Email Us!
+                    </a>
+                </p>
+            </li>
+        </ul>
 
-        </div>
+    </section>
 
-        <div class=" card social">
-            <h3>Subscribe to our newsletter</h3>
-            <!-- Form -->
-            <form action="./gratitude.html" method="get">
-                <!-- Email -->
-                <label for="email">Your email:</label><br>
-                <input type="email" id="email" name="email" required placeholder="example@email.com">
-                <!-- Submit Button -->
-                <button class="button" type="submit">Subcribe</button>
-            </form>
+    <div class=" social">
+        <h3>Subscribe to our newsletter</h3>
+        <!-- Form -->
+        <form action="./gratitude.html" method="get">
+            <!-- Email -->
+            <label for="email">Your email:</label><br>
+            <input type="email" id="correo" name="email" required placeholder="example@email.com">
+            <!-- Submit Button -->
+            <button class="button "><a class="button"  href="mailto:santiagobusi.net@gmail.com">Subscribe</a></button>
+        </form>
+    </div>
 
-            <a href="https://www.facebook.com/tu_pagina"><i class="fa fa-facebook"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/tu_perfil"><i class="fa fa-linkedin"></i></a>
-            <a href="https://www.instagram.com/tu_cuenta"><i class="fa fa-instagram"></i>
-            </a>
-            <a href="#" class="fa fa-youtube"></a>
-
-        </div>
-
-    </footer>
+</footer>
     <!-- Script de JavaScript -->
     <script src="./scripts/getdates-chamb.js"></script>
     <script src="./scripts/myHeader.js"></script>

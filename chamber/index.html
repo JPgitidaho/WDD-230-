@@ -16,7 +16,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Licorice&family=Love+Light&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
     <link rel="preconnect" href="https://coolors.co/001524-15616d-ffecd1-ff7d00-78290f">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -28,63 +29,56 @@
     <link rel="stylesheet" href="./styles/medium.css">
     <link rel="stylesheet" href="./styles/larger.css">
 
-
 </head>
 
 <body>
-
-
     <header id="miHeader">
-        <div class="content">
-            <a href="./index.html">
-                <img class="logo" src="./images/chile net.png" alt="imag logo">
-            </a>
-
+        <a class="logo-link"  href="./index.html">
+            <img class="logo" src="./images/chile net.png" alt="imag logo">
+        </a>
             <nav>
+                <a href="./index.html">Home</a>
                 <a href="./discover.html">Discover</a>
                 <a href="./directory.html">Directory</a>
-                <a href="">Events</a>
-                <button class="button"><a href="./join.html">Book Now</a></button>
+                <button class="button "><a href="./join.html">Book Now</a></button>
             </nav>
 
             <button id="dark-mode-toggle" onclick="toggleDarkMode()" title="Toggle Dark Mode">🕶 Theme</button>
             <button id="burger-icon" class="responsive-menu" onclick="toggleMenu()" title="Toggle Menu"></button>
 
-
-        </div>
-        <div id="banner">
-            <p>📢
-                Don't forget to attend the Chamber of Commerce meeting this Wednesday at 7:00 p.m.! <button
-                    id="closeBanner" title="close text"><i class="material-icons">close</i></button>
-            </p>
-
-        </div>
-
     </header>
-    <div class="hero">
-        <picture>
-            <source media="(max-width: 767px)"
-                srcset="https://raw.githubusercontent.com/JPgitidaho/WDD-230-/main/chamber/images/hero-1-small.webp">
-
-            <!-- Para pantallas medianas -->
-            <source media="(min-width: 768px) and (max-width: 991px)"
-                srcset="https://raw.githubusercontent.com/JPgitidaho/WDD-230-/main/chamber/images/hero-1-medium.webp">
-
-            <!-- Para pantallas grandes -->
-            <source media="(min-width: 992px)"
-                srcset="https://raw.githubusercontent.com/JPgitidaho/WDD-230-/main/chamber/images/hero-1.webp">
-
-            <!-- Imagen por defecto para navegadores que no soportan la etiqueta picture -->
-            <img src="https://raw.githubusercontent.com/JPgitidaho/WDD-230-/main/chamber/images/hero-1.webp"
-                alt="hero image">
-        </picture>
-        <h1 class="h1-hero">Promoting cultural and economic integration</h1>
-        <button class="button book"><a href="./join.html">Book Now</a></button>
-
+    <div id="banner">
+        <p>📢
+            Don't forget to attend the Chamber of Commerce meeting this Wednesday at 7:00 p.m.! <button
+                id="closeBanner" title="close text"><i class="material-icons">close</i></button>
+        </p>
     </div>
+    <div class="hero">
+        <div class="zoomable">
+            <picture>
+                <source media="(max-width: 767px)"
+                    srcset="https://raw.githubusercontent.com/JPgitidaho/WDD-230-/main/chamber/images/hero-1-small.webp">
 
-    <main class="home-grid">
-        <div class="home-grid home-box">
+                <!-- Para pantallas medianas -->
+                <source media="(min-width: 768px) and (max-width: 991px)"
+                    srcset="https://raw.githubusercontent.com/JPgitidaho/WDD-230-/main/chamber/images/hero-1-medium.webp">
+
+                <!-- Para pantallas grandes -->
+                <source media="(min-width: 992px)"
+                    srcset="https://raw.githubusercontent.com/JPgitidaho/WDD-230-/main/chamber/images/hero-1.webp">
+
+                <!-- Imagen por defecto para navegadores que no soportan la etiqueta picture -->
+                <img src="https://raw.githubusercontent.com/JPgitidaho/WDD-230-/main/chamber/images/hero-1.webp"
+                    alt="hero image">
+            </picture>
+            <h1 class="h1-hero">Promoting cultural and economic integration</h1>
+            <button class="button book"><a href="./join.html">Book Now</a></button>
+
+        </div>
+    </div>
+    <main class=" home-box">
+
+        <div class="home-grid">
 
             <section class="card information">
                 <ul>
@@ -102,7 +96,7 @@
                     and technologically advanced communities.
                 </p>
 
-                <h2 class="firm">Juanita P Aguilera</h2> DIRECTOR TREASURER <br>SANTIAGO BUSI.NET CHAMBER OF COMMERCE
+                <h2 class="firm">Juanita P Aguilera</h2> DIRECTOR TREASURER SANTIAGO BUSI.NET CHAMBER OF COMMERCE
             </section>
             <section class="business">
                 <img src="./images/business.jpg" alt="meet-chamber">
@@ -147,46 +141,65 @@
                 </p>
             </section>
 
+
+
+
         </div>
-
     </main>
-
     <footer class="home-grid ">
-        
-    <div class="card1">
-        
-        <img   class="logo-footer" src="./images/chile net.png" alt="imag footer">
-        <ul>
-            <li>
-                <p>
-                   Founded in 1991 by a group of Chilean executives residing in the county of Santiago, Chile.
+        <section class="social">
+            <img class="logo-footer" src="./images/chile net.png" alt="imag footer">
+            <ul>
+                <li>
+                    <p>
+                        Founded in 1991 by a group of Chilean executives residing in the county of Santiago, Chile.
                     <p id="copyright-info"> &copy; - Juanita P. Aguilera</p>
                     <p id="last-modified"></p>
-                </p>
-            </li>
-        </ul>
-       
-    </div>
-       
-        <div class =" card social">
+                    </p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="social">
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/tu_pagina"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/tu_perfil"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/tu_cuenta"><i class="fa fa-instagram"></i></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </li>
+                <li>
+                    <p>
+                        <i class="material-icons">location_on</i> Monjitas 392, 8320113 Santiago, Región
+                        Metropolitana
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <i class="fa fa-phone"></i> +56 2 230000
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <i class="fa fa-envelope"></i><a id="contac" href="mailto:santiagobusi.net@gmail.com"> Email Us!
+                        </a>
+                    </p>
+                </li>
+            </ul>
+
+        </section>
+
+        <div class="card social">
             <h3>Subscribe to our newsletter</h3>
             <!-- Form -->
-            <form  action="./gratitude.html" method="get">
+            <form action="./gratitude.html" method="get">
                 <!-- Email -->
                 <label for="email">Your email:</label><br>
-                <input type="email" id="email" name="email" required placeholder="example@email.com">
+                <input type="email" id="correo" name="email" required placeholder="example@email.com">
                 <!-- Submit Button -->
-                <button class="button"  type="submit">Subcribe</button>
+                <button class="button "><a class="button" href="./join.html">Subscribe</a></button>
             </form>
-        
-        <a href="https://www.facebook.com/tu_pagina"><i class="fa fa-facebook"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/tu_perfil"><i class="fa fa-linkedin"></i></a>
-        <a href="https://www.instagram.com/tu_cuenta"><i class="fa fa-instagram"></i>
-        </a>
-        <a href="#" class="fa fa-youtube"></a>
-   
-    </div>
+        </div>
 
     </footer>
     <!-- Script de JavaScript -->
