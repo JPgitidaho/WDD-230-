@@ -306,6 +306,8 @@ margin:0 100px;
   grid-column: span 3;
   grid-row: 2;
   background: linear-gradient(45deg, #15616dff, #0c3338);
+  text-align: center;
+  color: var(--papaya-whip);
 }
 
 
@@ -331,7 +333,7 @@ footer {
 .social a {
   justify-content: space-between;
   margin: 10px;
-  font-size: 3rem;
+  font-size: 2rem;
 
 }
 
@@ -543,6 +545,8 @@ li:nth-child(4) {
   padding: 20px;
   font-size: 1.5rem;
   letter-spacing: 1px;
+  background: linear-gradient(45deg, #15616dff, #0c3338);
+  color: var(--papaya-whip);
 
 }
 #cards{
