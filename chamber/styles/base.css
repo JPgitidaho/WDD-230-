@@ -110,6 +110,7 @@ picture img {
   left: 50%;
   position: absolute;
   box-shadow: 3px 3px 8px rgb(28, 28, 28);
+  padding: 15px 50px;
 }
 
 .logo, .logo-link{
@@ -149,15 +150,16 @@ text-align: center;
   text-align: left;
 }
 #banner {
+  position: absolute;
   color: var(--papaya-whip);
-  font-size: 1.rem;
+  font-size: 1.5rem;
   letter-spacing: 1px;
-  top: 16%;
-  height: auto;
+  top: 12%;
   width: 100%;
   padding: 5px 20px;
   text-align: left;
   background: var(--orange-wheel);
+  z-index: 2;
 }
 
 #closeBanner {
@@ -190,7 +192,7 @@ nav a:hover {
 
 .home-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
   gap: 20px;
 }
 
@@ -273,6 +275,7 @@ margin:50px  100px;
   background: linear-gradient(45deg, #15616dff, #0c3338);
   text-align: center;
   color: var(--papaya-whip);
+  padding: 20px;
 }
 
 
@@ -282,23 +285,24 @@ margin:50px  100px;
 
 footer {
   background-color: var(--caribbean-current-dark);
-  padding: 25px;
+  padding: 30px;
   text-align: left;
   color: var(--papaya-whip);
   margin-top: 10px;
   font-size: 20px;
 }
 .social {
-  margin-top: 50px;
   align-items: center;
   font-family: "Loto";
+  margin-top: 50px;
 }
 
 .social a {
-  font-size: 2rem;
-  padding: 10px;
+  font-size: 1.8rem;
+  padding: 15px;
   justify-content: space-between;
- 
+  color: var(--papaya-whip);
+
 }
 footer img {
   padding-left: 15px;
@@ -311,9 +315,7 @@ footer img {
 
 
 /* Estilos Discover **********************************************/
-.wrapper {
-  z-index: 2;
-}
+
 #sidebar {
   margin: 150px 10px;
   grid-column: 1;
@@ -336,25 +338,23 @@ footer img {
 }
 
 .section-disc {
-  padding-top: 40px;
+  padding: 20px;
   font-size: 20px;
-
 }
 
 .main-area1 img,
 .main-area2 img {
-  width: 100%;
+  width: 100%; /* Tamaño original de la imagen */
   height: auto;
-  filter: grayscale(100%) blur(5px); /* Convertir la imagen a blanco y negro y aplicar desenfoque */
-  transition: filter 0.3s ease-out;
-  box-shadow: 5px 5px 10px rgb(133, 132, 132);
+  filter: grayscale(100%) blur(5px); /* Convertir la imagen a blanco y negro */
+  transition: width 0.5s ease, transform 0.5s ease, filter 0.5s ease; /* Transición suave */
 }
 
 .main-area1 img:hover,
 .main-area2 img:hover {
-  filter: grayscale(0%); /* Restaurar la imagen a su estado original */
+  filter: grayscale(0%); /* Restaurar la imagen a color */
+  transform: scale(1.1); /* Agrandar al 110% al pasar el mouse */
 }
-
 
 #message-container {
   box-shadow: 5px 5px 10px rgb(133, 132, 132);
@@ -373,8 +373,28 @@ figcaption {
 #google-map,
 iframe {
   width: 100%;
-  height:500px;
+  height:300px;
   border: 0;
+}
+.zoomable {
+  overflow: hidden;
+  width: 100%;
+}
+
+.zoomable img {
+  width: 100%;
+  height: auto;
+  display: block;
+  animation: zoomAnimation 10s infinite ;
+}
+
+@keyframes zoomAnimation {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
 }
 
 /*  estilos para join ****************************/
@@ -472,7 +492,7 @@ li:nth-child(4) {
 
 /* Estilos generales para el directory ************************************/
 .grid-list {
-  margin-top: 10px;
+  margin: 10px;
   text-align: center;
 }
 .directory  {
@@ -482,14 +502,19 @@ li:nth-child(4) {
   letter-spacing: 1px;
   background: linear-gradient(45deg, #15616dff, #0c3338);
   color: var(--papaya-whip);
+}
+
+#cards {
+  text-align: center;
 
 }
-#cards{
-  text-align: center;
-  margin-top: 15pxpx;
+
+#cards img{
+  width: 60%;
+  height: 30%;
 }
-#cards.card {
-  width: 100%;
+#cards p {
+  padding: 0  15px;
 }
 /* Estilos para la vista de lista ******/
 .list-view#cards {
@@ -520,25 +545,6 @@ li:nth-child(4) {
   padding: 0;
 }
 
-.zoomable {
-  overflow: hidden;
-  width: 100%;
-}
 
-.zoomable img {
-  width: 100%;
-  height: auto;
-  display: block;
-  animation: zoomAnimation 10s infinite ;
-}
-
-@keyframes zoomAnimation {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.1);
-  }
-}
 
 

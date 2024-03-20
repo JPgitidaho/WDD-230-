@@ -42,4 +42,17 @@ document.addEventListener('DOMContentLoaded', function () {
       iframe.loading = 'lazy';
     }
   });
+  document.addEventListener("DOMContentLoaded", function () {
+    const images = document.querySelectorAll('.main-area1 img, .main-area2 img');
+  
+    images.forEach(image => {
+      image.addEventListener('click', function() {
+        if (!image.classList.contains('clicked')) {
+          image.classList.add('clicked');
+        } else {
+          image.classList.remove('clicked');
+        }
+      });
+    });
+  });
   
