@@ -33,18 +33,18 @@
 
 <body>
     <header id="miHeader">
-        <a class="logo-link"  href="./index.html">
+        <a class="logo-link" href="./index.html">
             <img class="logo" src="./images/chile net.png" alt="imag logo">
         </a>
-            <nav>
-                <a href="./index.html">Home</a>
-                <a href="./discover.html">Discover</a>
-                <a href="./directory.html">Directory</a>
-                <button class="button "><a href="./join.html">Book Now</a></button>
-            </nav>
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./discover.html">Discover</a>
+            <a href="./directory.html">Directory</a>
+            <button class="button "><a href="./join.html">Book Now</a></button>
+        </nav>
 
-            <button id="dark-mode-toggle" onclick="toggleDarkMode()" title="Toggle Dark Mode">🕶 Theme</button>
-            <button id="burger-icon" class="responsive-menu" onclick="toggleMenu()" title="Toggle Menu"></button>
+        <button id="dark-mode-toggle" onclick="toggleDarkMode()" title="Toggle Dark Mode">🕶 Theme</button>
+        <button id="burger-icon" class="responsive-menu" onclick="toggleMenu()" title="Toggle Menu"></button>
 
     </header>
 
@@ -108,22 +108,30 @@
                 </div>
             </section>
 
-            <section class="card card1">
-                
-                <ul>
-                    <li class="li-join">
-                        <h2>Elect to become a member and enjoy our benefits</h2>
-                    </li>
-                    <li>
-                        <p>
-                            Your business will also be able to offer its custom
-                            services to our community and promote your brand within
-                            our digital channels.
-                        </p>
-                    </li>
-                </ul>
+            <section class="card1 ">
+                    <img src="./images/img-compress/img-banner.jpg " alt="Pymes" class="image">
+                    <div class="overlay">
+                      <div class="text"><ul>
+                        <li>
+                            <h2>Elect to become a member and enjoy our benefits</h2>
+                        </li>
+                        <li>
+                            <p>
+                                Your business will also be able to offer its custom
+                                services to our community and promote your brand within
+                                our digital channels.
+                            </p>
+                        </li>
+                    </ul></div>
+                    </div>
+                 
             </section>
-            <section class="card card2">
+            <section class="card2">
+                <img src="./images/EVENTO-ANALISIS.jpg" alt="Avatar" class="image">
+
+                <div class="overlay">
+
+                    <div class="text">
                 <i class="material-icons">date_range</i>
                 <h2> Participation in Events</h2>
                 <p>
@@ -131,15 +139,25 @@
                     a wide range of events designed to
                     promote business opportunities for our members.
                 </p>
+                </div>
+                </div>
             </section>
-            <section class="card card3">
+            <section class="card3">
+                <img src="./images/pymes.jpg" alt="Avatar" class="image">
+
+                <div class="overlay">
+
+                    <div class="text">
                 <i class="material-icons">lightbulb</i>
                 <h2>Promotional Opportunities</h2>
                 <p>
                     The Chamber offers its members various possibilities
                     to promote their products and services.
                 </p>
+                 </div>
+                </div>
             </section>
+            
         </div>
     </main>
     <footer class="home-grid ">
@@ -156,47 +174,49 @@
             </ul>
         </section>
         <section class="social">
-            <ul>
+            <ul >
                 <li>
-                    <a href="https://www.facebook.com/tu_pagina"><i class="fa fa-facebook"></i></a>
-                    <a href="https://www.linkedin.com/in/tu_perfil"><i class="fa fa-linkedin"></i></a>
-                    <a href="https://www.instagram.com/tu_cuenta"><i class="fa fa-instagram"></i></a>
-                    <a href="#" class="fa fa-youtube"></a>
+                    <a class="fa-social"    href="https://www.facebook.com/tu_pagina"><i class="fa fa-facebook"></i></a>
+                    <a class="fa-social"    href="https://www.linkedin.com/in/tu_perfil"><i class="fa fa-linkedin"></i></a>
+                    <a class="fa-social"    href="https://www.instagram.com/tu_cuenta"><i class="fa fa-instagram"></i></a>
                 </li>
                 <li>
                     <p>
-                        <i class="material-icons">location_on</i> <a href="https://www.google.com/maps/place/Monjitas+392,+8320113+Santiago,+Regi%C3%B3n+Metropolitana/@-33.4366209,-70.6432271,17z/data=!3m1!4b1!4m6!3m5!1s0x9662c598f81d9481:0x2bb86b8c8a39a606!8m2!3d-33.4366209!4d-70.6432271!16s%2Fg%2F11cncf43qx?entry=ttu#:~:text=Monjitas%20392%2C%208320113%20Santiago%2C%20Regi%C3%B3n%20Metropolitana">Monjitas 392, 8320113 Santiago, Región
-                            Metropolitana</a>
+                        <i class="material-icons">location_on</i> <a class="contact"
+                            href="https://www.google.com/maps/place/Monjitas+392,+8320113+Santiago,+Regi%C3%B3n+Metropolitana/@-33.4366209,-70.6432271,17z/data=!3m1!4b1!4m6!3m5!1s0x9662c598f81d9481:0x2bb86b8c8a39a606!8m2!3d-33.4366209!4d-70.6432271!16s%2Fg%2F11cncf43qx?entry=ttu#:~:text=Monjitas%20392%2C%208320113%20Santiago%2C%20Regi%C3%B3n%20Metropolitana">Monjitas
+                            392, 8320113 Santiago, Región Metropolitana</a>
                     </p>
                 </li>
                 <li>
                     <p>
-                        <i class="fa fa-phone"></i> +56 2 230000
+                    <a class="contact" href="tel:+56223607000"><i class="material-icons">phone </i>  +56 2 230000</a> 
                     </p>
                 </li>
                 <li>
                     <p>
-                        <i class="fa fa-envelope"></i><a id="contac" href="mailto:santiagobusi.net@gmail.com"> Email Us!
+                    <a class="contact" href="mailto:santiagobusi.net@gmail.com"><i class="material-icons">email</i>  Email Us!
                         </a>
                     </p>
                 </li>
             </ul>
         </section>
-        <div class="card">
+        <div class="subscribe" >
             <hr>
             <h3>Subscribe to our newsletter</h3>
             <!-- Form -->
             <form action="./gratitude.html" method="get">
-                <!-- Email -->
-                <label for="email">Your email:</label><br>
-                <input type="email" id="correo" name="email" required placeholder="example@email.com">
+                <label for="nombre"> Name:</label>
+                <input type="text" id="name" name="nombre" required>
+                <label for="apellido">Last Name:</label>
+                <input type="text" id="lastName" name="apellido" required>
+                <label for="email">Your email:</label>
+                <input type="email" id="mail" name="email" required placeholder="example@email.com">
                 <!-- Submit Button -->
-                <a class="button" href="./join.html">Subscribe</a>
+                <button class="button"><a  href="./join.html">Subscribe</a></button>
             </form>
-            <hr>
         </div>
-        
-       
+
+
     </footer>
     <!-- Script de JavaScript -->
     <script src="./scripts/banner.js"></script>

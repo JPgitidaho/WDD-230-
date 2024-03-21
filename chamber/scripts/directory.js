@@ -33,8 +33,8 @@ async function getMemberData() {
                 image.src = member.image;
                 image.alt = `${member.name} Logo`;
                 image.loading = 'lazy';
-                image.width =200;
-                image.height = 100;
+                image.width =300;
+                image.height = 180;
                 card.appendChild(image);
             }
 

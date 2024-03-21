@@ -5,22 +5,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
   miHeader.addEventListener("mouseenter", function () {
     isHovered = true;
-    miHeader.style.backgroundColor = "#15616dff";
+    miHeader.style.backgroundColor = "#0c3338";
   });
 
   miHeader.addEventListener("mouseleave", function () {
     isHovered = false;
     if (window.scrollY <= miHeader.clientHeight) {
-      miHeader.style.backgroundColor = "transparent";
+      miHeader.style.backgroundColor = "#0c33388e";
     }
   });
 
   document.addEventListener("scroll", function () {
     if (!isHovered) {
       if (window.scrollY > miHeader.clientHeight) {
-        miHeader.style.backgroundColor = "#15616dff";
+        miHeader.style.backgroundColor = "#0c3338";
       } else {
-        miHeader.style.backgroundColor = "#15616dff";
+        miHeader.style.backgroundColor = "#0c3338";
       }
     }
   });
