@@ -121,8 +121,7 @@ picture img {
 
 .logo,
 .logo-link {
-  max-width: 100%;
-  margin-left: -100px;
+  max-width:75%;
 }
 
 .hero-img {
@@ -182,6 +181,17 @@ picture img {
   position: absolute;
   right: 50px;
   top: 20px;
+}
+
+#burger-icon {
+  display: none;
+}
+#weather-info {
+  display: grid;
+  margin: 30px;
+  text-align: center;
+  justify-content: space-around;
+  color: var(--papaya-whip);
 }
 button:hover{
   background: var(--rich-black);
@@ -286,12 +296,7 @@ nav a:hover {
   background: transparent;
 }
 
-#weather-info {
-  display: flex;
-  text-align: center;
-  justify-content: space-around;
-  color: var(--papaya-whip);
-}
+
 
 .weather {
   grid-column: span 3;
@@ -300,11 +305,6 @@ nav a:hover {
   text-align: center;
   color: var(--papaya-whip);
   padding: 20px;
-}
-
-
-#burger-icon {
-  display: none;
 }
 
 footer {
@@ -641,6 +641,8 @@ li:nth-child(4) {
 .card3:hover .overlay {
   bottom: 0;
   height: 100%;
+
+
 }
 
 .text {
@@ -655,3 +657,12 @@ li:nth-child(4) {
 
 
 
+@media screen and (max-width: 768px) {
+  .overlay {
+    display: grid; /* Oculta la superposición en pantallas pequeñas */
+  }
+  .image {
+    display: none; /* Oculta las imágenes en pantallas pequeñas */
+}
+
+}

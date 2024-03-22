@@ -56,6 +56,7 @@ function filterForecastData(forecastData) {
     // Function to display forecast weather information on the page
     function displayForecastWeather(forecastData) {
         const weatherInfoElement = document.getElementById('weather-info');
+        
         if (!weatherInfoElement) {
             console.error('Element with ID "weather-info" not found.');
             return;
@@ -67,7 +68,7 @@ function filterForecastData(forecastData) {
         // Loop through the forecast data and create HTML elements to display it
         forecastData.forEach(dayForecast => {
             const dayElement = document.createElement('div');
-            dayElement.classList.add('forecast-day');
+            dayElement.classList.add('home-grid');
 
             const dateElement = document.createElement('p');
             dateElement.textContent = dayForecast.date;
