@@ -1,15 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap");
 
 * {
-  max-width: 1800px;
+  max-width: 2000px;
 }
-
 :root {
   /* CSS HEX */
   --rich-black: #001524ff;
   --caribbean-current: #15616dff;
   --caribbean-current-dark: #0c3338;
-  --caribbean-current-transparent: #0c33388e;
+  --caribbean-current-transparent: #0c3338d0;
   --papaya-whip: #ffecd1ff;
   --orange-wheel: #ff7d00ff;
   --sienna: #78290fff;
@@ -64,13 +63,12 @@ $gradient-radial: radial-gradient(#001524ff, #15616dff, #ffecd1ff, #ff7d00ff, #7
 .dark-mode .gradient {
   background: transparent;
 }
-body {
+body, html {
   box-sizing: border-box;
-  padding: 0;
   transition: background-color 0.5s;
   background-color: var(--papaya-whip);
-  font-family: "Roboto Slab", "Lora", "Caveat";
-  font-size: 16px;
+  font-family: "Lato", "Lora", "Caveat";
+  font-size: 1rem;
 }
 
 p {
@@ -110,7 +108,9 @@ picture img {
   background: var(--orange-wheel);
   color: var(--papaya-whip);
 }
-
+.button-join {
+  justify-content: space-between;
+}
 .book {
   top: 52%;
   left: 50%;
@@ -121,7 +121,7 @@ picture img {
 
 .logo,
 .logo-link {
-  max-width:75%;
+  width:50%;
 }
 
 .hero-img {
@@ -137,13 +137,20 @@ picture img {
 .h1-hero {
   position: absolute;
   color: var(--caribbean-current-dark);
-  top: 35%;
+  top: 40%;
   left: 50%;
-  font-size: 4rem;
+  font-size: 3rem;
   transform: translate(-50%, -50%);
-  text-align: center;
+  text-align: left;
 }
 
+.book {
+  top: 52%;
+  left: 45%;
+  position: absolute;
+  box-shadow: 3px 3px 8px rgb(28, 28, 28);
+  padding: 10px 30px;
+}
 
 
 #miHeader {
@@ -186,13 +193,7 @@ picture img {
 #burger-icon {
   display: none;
 }
-#weather-info {
-  display: grid;
-  margin: 30px;
-  text-align: center;
-  justify-content: space-around;
-  color: var(--papaya-whip);
-}
+
 button:hover{
   background: var(--rich-black);
   color: var(--papaya-whip);
@@ -218,7 +219,7 @@ nav a:hover {
 
 .home-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 20px;
 }
 
@@ -234,7 +235,6 @@ nav a:hover {
 
 .material-icons {
   color: var(--caribbean-current);
-  font-size: 25px;
   margin-bottom: 10px;
 }
 
@@ -263,11 +263,7 @@ nav a:hover {
   box-shadow: 3px 3px 10px var(--caribbean-current);
 }
 
-.forecast-day p {
-  padding: 10px 30px;
-  text-align: center;
-  font-size: 1rem;
-}
+
 
 .card1 {
   grid-column: 1;
@@ -296,24 +292,28 @@ nav a:hover {
   background: transparent;
 }
 
+#weather-info .home-grid 
+ {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+   text-align: center;
+   color: var(--papaya-whip);
 
+ }
 
 .weather {
   grid-column: span 3;
-  grid-row: 2;
   background: linear-gradient(45deg, #15616dff, #0c3338);
   text-align: center;
   color: var(--papaya-whip);
-  padding: 20px;
+  
 }
 
 footer {
   background-color: var(--caribbean-current-dark);
-  padding: 45px;
   text-align: left;
   color: var(--papaya-whip);
   margin-top: 10px;
-  font-size: 20px;
 }
 footer img {
   width: 100%;
@@ -337,7 +337,7 @@ footer img {
 .fa {
   font-size: 1.5rem;
   border-radius: 50%;
-  padding:2% 3%;
+  padding:10px 15px;
   background-color: rgba(21, 97, 109, 0.253);
 }
 
@@ -394,20 +394,15 @@ margin: 15px ;
 .main-area1 img,
 .main-area2 img {
   width: 100%;
-  /* Tamaño original de la imagen */
   height: auto;
   filter: grayscale(100%) blur(5px);
-  /* Convertir la imagen a blanco y negro */
   transition: width 0.5s ease, transform 0.5s ease, filter 0.5s ease;
-  /* Transición suave */
 }
 
 .main-area1 img:hover,
 .main-area2 img:hover {
   filter: grayscale(0%);
-  /* Restaurar la imagen a color */
   transform: scale(1.1);
-  /* Agrandar al 110% al pasar el mouse */
 }
 
 #message-container {
@@ -435,47 +430,10 @@ iframe {
 /*  estilos para join ****************************/
 
 
-#formcon {
- width: 60%;
-  margin: 50px auto;
-  padding: 20px;
-  grid-column:4;
-  grid-row: 1;
-
-}
-
-.dark-mode #formcon {
-  background-color: transparent;
-}
-
-#formcon input,
-#formcon select,
-#formcon textarea {
-  width: 95%;
-  padding: 10px;
-  margin: 15px 0;
-  border: 1px solid var(--papaya-whip);
-  border-radius: 3px;
-}
-.contact-join a{
-  color: var(--rich-black);
-}
-.dark-mode .contact-join a {
-  color: var(--papaya-whip);
-}
-#formcon button {
-  color: var(--papaya-whip);
-  padding: 15px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-}
 .benefits {
   background:  linear-gradient(45deg, #78290fff,#ff7d00ff,#ff7d00ff,#78290fff);
-
-  margin: 50px;
   padding: 15px;
+  margin: 50px 0;
 }
 
 .benefits ul{
@@ -486,7 +444,6 @@ text-align: left;
 
 .li-join {
   font-family: "Roboto Slab";
-  font-size: 20px;
   text-align: left;
   color: var(--papaya-whip);
   padding: 30px;
@@ -496,7 +453,6 @@ text-align: left;
 }
 
 .li-h2 {
-  font-size: 40x;
   text-align: center;
   padding: 15px;
   color: var(--papaya-whip);
@@ -523,6 +479,41 @@ li:nth-child(4) {
   border-color: var(--orange-wheel);
 }
 
+#formcon {
+   margin: 50px ;
+   padding: 20px;
+   grid-column:4;
+   grid-row: 1;
+ 
+ }
+ 
+ .dark-mode #formcon {
+   background-color: transparent;
+ }
+ 
+ #formcon input,
+ #formcon select,
+ #formcon textarea {
+   width: 95%;
+   padding: 10px;
+   margin: 15px 0;
+   border: 1px solid var(--papaya-whip);
+   border-radius: 3px;
+ }
+ .contact-join a{
+   color: var(--rich-black);
+ }
+ .dark-mode .contact-join a {
+   color: var(--papaya-whip);
+ }
+ #formcon button {
+   color: var(--papaya-whip);
+   padding: 15px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   font-weight: bold;
+ }
 .card.gratitude-message {
   grid-column: 3;
   margin: 150px 100px;
@@ -552,14 +543,12 @@ li:nth-child(4) {
   color: var(--papaya-whip);
 }
 
-
-
 #cards img {
   width: 50%;
   padding-left: 100px;
 }
 
-#cards p, #cards a{
+#cards .home-grid p, #cards a{
   justify-content: space-around;
   padding: 0;
   text-align: center;
@@ -618,20 +607,21 @@ li:nth-child(4) {
   }
 }
 
+
+
+/**********/
 .image {
   display: block;
   width: 100%;
   height: auto;
 
 }
-
-/**********/
 .overlay {
   position: absolute;
   bottom: 100%;
   left: 0;
   right: 0;
-  background: var(--caribbean-current);
+  background: var(--caribbean-current-transparent);
   overflow: hidden;
   transition: .9s ease;
 }
@@ -655,14 +645,3 @@ li:nth-child(4) {
   transform: translate(-50%, -50%);
 }
 
-
-
-@media screen and (max-width: 768px) {
-  .overlay {
-    display: grid; /* Oculta la superposición en pantallas pequeñas */
-  }
-  .image {
-    display: none; /* Oculta las imágenes en pantallas pequeñas */
-}
-
-}

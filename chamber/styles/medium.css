@@ -1,11 +1,13 @@
 /* Media queries para pantallas medianas */
-@media screen and (max-width: 667px)  {
+@media screen  and (max-width:667px) and (min-width:320px)
+ {
   body {
-    font-size: small;
+    font-size: 1rem;
   }
   
   #dark-mode-toggle {
-  top:10%;
+  top:5px;
+  right: 10px;
     color: var(--papaya-whip);
   }
 
@@ -14,34 +16,28 @@
     border: none;
     cursor: pointer;
     background-color: transparent;
-    right: 10%;
-    top:25%;
-    font-size: 30px;
+    right: 20px;
+    top:50%;
     position: absolute;
 
   }
 
   #burger-icon::before {
-    content: '\2630';
+    content: '\2630MENU';
     color: var(--papaya-whip);
 
   }
 
   #burger-icon.active::before {
-    content: '✖';
+    content: '✖MENU';
   }
 
   #banner,
   .closeBanner {
     top: 50%;
-    font-size: 14px;
     width: 100%;
     z-index: 1;
   }
-
-.home-box {
-  margin: 30px;
-}
 
   .book{
     padding:5px 15px;
@@ -51,10 +47,10 @@
   
 
   .h1-hero {
-    font-size: 16px;
+    font-size: 1rem;
     top: 40%;
-    left: 40%;
-    text-align: left;
+    left:50%;
+    text-align: center;
 
   }
 
@@ -73,15 +69,10 @@
   .card {
     margin: 20px 0;
   }
-#weather-info
-  {
-  font-size: 16px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
 
 #formcon {
-  max-width: 100%;
+  width:90%;
+  margin: 0;
 }
 
 .wrapper {
@@ -111,11 +102,19 @@
   }
   
 .home-box {
-  margin: 30px;
+  margin: 0px;
 }
 
- 
+   .overlay {
+    display: grid; 
+  }
 
+  .button {
+    padding: 5px 10px;
+  }
+.logo {
+  width:100%;
+}
 }
 /*
 @media screen and (min-width: 480px)
