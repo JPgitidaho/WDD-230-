@@ -144,13 +144,6 @@ picture img {
   text-align: left;
 }
 
-.book {
-  top: 52%;
-  left: 45%;
-  position: absolute;
-  box-shadow: 3px 3px 8px rgb(28, 28, 28);
-  padding: 10px 30px;
-}
 
 
 #miHeader {
@@ -164,15 +157,15 @@ picture img {
 }
 
 #banner {
-  position: absolute;
+  top:15%;
+  width: 100%;
+  position:absolute;
   color: var(--papaya-whip);
-  font-size: 1.5rem;
+  font-size: 1rem;
   letter-spacing: 1px;
-  top: 15%;
-  padding: 5px 15px;
   text-align: left;
   background: var(--orange-wheel);
-  z-index: 2;
+  z-index: 3;
 }
 
 #closeBanner {
