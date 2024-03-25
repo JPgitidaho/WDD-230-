@@ -156,7 +156,7 @@ picture img {
 #miHeader {
   display: flex;
   position: fixed;
-  z-index: 2;
+  z-index: 3;
   width: 100%;
   justify-content: space-around;
   align-items: center;
@@ -168,9 +168,9 @@ picture img {
   color: var(--papaya-whip);
   font-size: 1.5rem;
   letter-spacing: 1px;
-  top: 12%;
+  top: 15%;
   width: 100%;
-  padding: 5px 20px;
+  padding: 5px 15px;
   text-align: left;
   background: var(--orange-wheel);
   z-index: 2;
@@ -219,7 +219,7 @@ nav a:hover {
 
 .home-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
   gap: 20px;
 }
 
