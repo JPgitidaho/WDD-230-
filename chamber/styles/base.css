@@ -256,13 +256,11 @@ nav a:hover {
 }
 
 
-
 .card1 {
   grid-column: 1;
   grid-row: 3;
   position: relative;
   width: 100%;
-
 }
 
 .card2 {
@@ -290,7 +288,6 @@ nav a:hover {
   grid-template-columns: 1fr 1fr 1fr 1fr ;
    text-align: center;
    color: var(--papaya-whip);
-
  }
 
 .weather {
@@ -298,7 +295,7 @@ nav a:hover {
   background: linear-gradient(45deg, #15616dff, #0c3338);
   text-align: center;
   color: var(--papaya-whip);
-  
+ 
 }
 
 footer {
@@ -426,6 +423,7 @@ iframe {
   background:  linear-gradient(45deg, #78290fff,#ff7d00ff,#ff7d00ff,#78290fff);
   padding: 15px;
   margin: 50px 0;
+  grid-column: 1/2;
 }
 
 .benefits ul{
@@ -474,7 +472,7 @@ li:nth-child(4) {
 #formcon {
    margin: 50px ;
    padding: 20px;
-   grid-column:4;
+   grid-column:3;
    grid-row: 1;
  
  }
