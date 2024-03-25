@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap");
 
-* {
-  max-width: 2000px;
-}
+
 :root {
   /* CSS HEX */
   --rich-black: #001524ff;
@@ -121,6 +119,7 @@ picture img {
 
 .logo,
 .logo-link {
+  margin-top: 10px;
   width:50%;
 }
 
@@ -355,7 +354,7 @@ margin: 15px ;
 /* Estilos Discover **********************************************/
 
 #sidebar {
-  margin: 150px 10px;
+  margin: 100px 0;
   grid-column: 1;
   padding: 20px;
   box-shadow: 5px 5px 10px rgb(28, 28, 28);
@@ -367,12 +366,10 @@ margin: 15px ;
 
 .main-area1 {
   grid-column: 2;
-  margin-top: 150px;
 }
 
 .main-area2 {
   grid-column: 3;
-  margin-top: 150px;
 }
 
 .section-disc {
@@ -382,6 +379,7 @@ margin: 15px ;
 
 .main-area1 img,
 .main-area2 img {
+  margin-top: 100px;
   width: 100%;
   height: auto;
   filter: grayscale(100%) blur(5px);
@@ -470,7 +468,7 @@ li:nth-child(4) {
 }
 
 #formcon {
-   margin: 50px ;
+   margin: 50px 0;
    padding: 20px;
    grid-column:3;
    grid-row: 1;
@@ -631,7 +629,7 @@ li:nth-child(4) {
   color: var(--papaya-whip);
   top: 50%;
   left: 50%;
-  -ms-transform: translate(-50%, -50%);
+  -ms-transform: translate(-40%, -40%);
   transform: translate(-50%, -50%);
 }
 

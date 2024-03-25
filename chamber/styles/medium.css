@@ -1,13 +1,12 @@
 /* Media queries para pantallas medianas */
-@media screen  and (max-width:667px) and (min-width:320px)
- {
+@media screen and (max-width:667px) {
   body {
     font-size: 1rem;
   }
-  
+
   #dark-mode-toggle {
-  top:5px;
-  right: 10px;
+    top: 5px;
+    right: 10px;
     color: var(--papaya-whip);
   }
 
@@ -16,8 +15,8 @@
     border: none;
     cursor: pointer;
     background-color: transparent;
-    right: 20px;
-    top:50%;
+    left: 40%;
+    top: 10%;
     position: absolute;
 
   }
@@ -25,7 +24,6 @@
   #burger-icon::before {
     content: '\2630MENU';
     color: var(--papaya-whip);
-
   }
 
   #burger-icon.active::before {
@@ -34,61 +32,60 @@
 
   #banner,
   .closeBanner {
-    top: 50%;
+    top: 5%;
     width: 100%;
-    z-index: 1;
+    z-index: 3;
   }
 
-  .book{
-    padding:5px 15px;
-    top: 60%;
+  .book {
+    font-size: 16px;
+    padding: 5px 15px;
+    top: 70%;
     left: 40%;
   }
-  
+
 
   .h1-hero {
     font-size: 1rem;
-    top: 40%;
-    left:50%;
+    top: 50%;
+    left: 50%;
     text-align: center;
 
   }
 
- nav {
+  nav {
     display: none;
     width: 100%;
   }
 
- nav.show {
+  nav.show {
     display: inline-flex;
     flex-direction: column;
     padding: 5px;
     text-align: left;
+    margin-top: 100px;
   }
 
   .card {
     margin: 20px 0;
   }
 
-#formcon {
-  width:90%;
-  margin: 0;
-}
+  #formcon {
+    width: 90%;
+    margin: 0;
+  }
 
-.wrapper {
-  grid-template-columns: 1fr;
-}
+  #sidebar {
+    grid-column: span 1;
+    margin: 100px 30px;
+  }
 
-#sidebar {
-  grid-column: span 1;
-  margin: 100px 30px;
-}
-
-.main-area1, .main-area2 {
-  grid-column: span 1;
-  margin: 0;
-  height: auto;
-}
+  .main-area1,
+  .main-area2 {
+    grid-column: span 1;
+    margin: 0;
+    height: auto;
+  }
 
   .home-grid {
     grid-template-columns: 1fr;
@@ -100,21 +97,23 @@
   footer {
     margin-top: 25px;
   }
-  
-.home-box {
-  margin: 0px;
-}
 
-   .overlay {
-    display: grid; 
+  .home-box {
+    margin: 0px;
+  }
+
+  .overlay {
+    display: grid;
   }
 
   .button {
     padding: 5px 10px;
   }
-.logo {
-  width:100%;
+
+  .logo {
+    width: 100%;
+  }
 }
-}
+
 /*
 @media screen and (min-width: 480px)
