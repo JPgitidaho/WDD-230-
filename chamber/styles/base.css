@@ -138,7 +138,7 @@ picture img {
   color: var(--caribbean-current-dark);
   top: 40%;
   left: 50%;
-  font-size: 3rem;
+  font-size: 4rem;
   transform: translate(-50%, -50%);
   text-align: left;
 }
