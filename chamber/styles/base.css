@@ -75,7 +75,6 @@ body, html {
 p {
   font-family: "Lato";
   padding: 10px;
-  font-size: 1.5rem;
 }
 
 ul,
@@ -216,7 +215,7 @@ nav a:hover {
 
 .home-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
   gap: 20px;
 }
 
@@ -536,6 +535,7 @@ li:nth-child(4) {
   margin: -150px  100px;
   position: relative;
   border-style: double;
+  text-align: center;
   padding: 50px;
   font-size: 1.5rem;
   letter-spacing: 1px;
