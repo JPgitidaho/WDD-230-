@@ -53,6 +53,15 @@ $gradient-bottom-left: linear-gradient(315deg, #001524ff, #15616dff, #ffecd1ff, 
 $gradient-radial: radial-gradient(#001524ff, #15616dff, #ffecd1ff, #ff7d00ff, #78290fff);*/
 }
 
+body, html {
+  max-width: 2000px;
+  box-sizing: border-box;
+  transition: background-color 0.5s;
+  background-color: var(--papaya-whip);
+  font-family: "Lato", "Lora", "Caveat";
+  font-size: 1rem;
+}
+
 .dark-mode {
   background: var(--caribbean-current-dark);
   color: var(--papaya-whip);
@@ -61,17 +70,12 @@ $gradient-radial: radial-gradient(#001524ff, #15616dff, #ffecd1ff, #ff7d00ff, #7
 .dark-mode .gradient {
   background: transparent;
 }
-body, html {
-  box-sizing: border-box;
-  transition: background-color 0.5s;
-  background-color: var(--papaya-whip);
-  font-family: "Lato", "Lora", "Caveat";
-  font-size: 1rem;
-}
+
 
 p {
   font-family: "Lato";
   padding: 10px;
+  font-size: 1.5rem;
 }
 
 ul,
@@ -79,6 +83,7 @@ a {
   text-decoration: none;
   list-style-type: none;
 }
+
 a {
   color: var(--papaya-whip);
 }
@@ -98,7 +103,6 @@ picture img {
   width: 100%;
 }
 
-
 .button {
   padding: 10px 20px;
   border-radius: 25px;
@@ -106,11 +110,13 @@ picture img {
   background: var(--orange-wheel);
   color: var(--papaya-whip);
 }
+
 .button-join {
   justify-content: space-between;
 }
+
 .book {
-  top: 52%;
+  top:60%;
   left: 50%;
   position: absolute;
   box-shadow: 3px 3px 8px rgb(28, 28, 28);
@@ -137,26 +143,24 @@ picture img {
   position: absolute;
   color: var(--caribbean-current-dark);
   top: 40%;
-  left: 50%;
+  left: 40%;
   font-size: 4rem;
   transform: translate(-50%, -50%);
   text-align: left;
 }
 
-
-
 #miHeader {
   display: flex;
   position: fixed;
-  z-index: 3;
+  z-index: 4;
   width: 100%;
   justify-content: space-around;
   align-items: center;
-  text-align: left;
+  
 }
 
 #banner {
-  top:15%;
+  top:20%;
   width: 100%;
   position:absolute;
   color: var(--papaya-whip);
@@ -177,7 +181,7 @@ picture img {
   border: none;
   cursor: pointer;
   position: absolute;
-  right: 50px;
+  right: 10px;
   top: 20px;
 }
 
@@ -210,7 +214,7 @@ nav a:hover {
 
 .home-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 20px;
 }
 
@@ -221,12 +225,14 @@ nav a:hover {
 .card {
   box-shadow: 3px 3px 10px var(--caribbean-current);
   border-radius: 3px;
-  padding: 30px;
+  padding: 20px;
+  margin: 30px 0;
 }
 
 .material-icons {
-  color: var(--caribbean-current);
-  margin-bottom: 10px;
+  color: var(--papaya-whip);
+  font-size: 1rem;
+  padding: 5px;
 }
 
 .li-join {
@@ -238,7 +244,7 @@ nav a:hover {
   font-family: "Licorice";
   font-size: 2rem;
   text-align: left;
-  margin-bottom: 0;
+padding: 20px;
 }
 
 .information {
@@ -246,49 +252,13 @@ nav a:hover {
 }
 
 .business img {
-  width: 97%;
-  height: 97%;
+  width: 100%;
+  height: auto;
   border-top: 5px solid var(--sienna);
   border-right: 5px solid var(--sienna);
   padding: 2px 2px;
   box-shadow: 3px 3px 10px var(--caribbean-current);
 }
-
-
-.card1 {
-  grid-column: 1;
-  grid-row: 3;
-  position: relative;
-  width: 100%;
-}
-
-.card2 {
-  grid-column: 2;
-  grid-row: 3;
-  position: relative;
-  width: 100%;
-
-}
-
-.card3 {
-  grid-column: 3;
-  grid-row: 3;
-  position: relative;
-  width: 100%;
-}
-
-.dark-mode .weather {
-  background: transparent;
-}
-
-#weather-info .home-grid 
- {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr ;
-   text-align: center;
-   color: var(--papaya-whip);
- }
-
 .weather {
   grid-column: span 3;
   background: linear-gradient(45deg, #15616dff, #0c3338);
@@ -296,18 +266,53 @@ nav a:hover {
   color: var(--papaya-whip);
  
 }
+.home-grid-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.card1 {
+  grid-column:1;
+}
+
+.card2 {
+  grid-column: 2;
+}
+
+.card3 {
+  grid-column:3;
+}
+
+.card1,
+.card2,
+.card3 {
+position: relative;
+ 
+}
+
+.dark-mode .weather {
+  background: transparent;
+}
+
+#weather-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+   text-align: center;
+   color: var(--papaya-whip);
+ }
 
 footer {
   background-color: var(--caribbean-current-dark);
   text-align: left;
   color: var(--papaya-whip);
-  margin-top: 10px;
+  margin-top: 20px;
+  margin-bottom: 0;
 }
 footer img {
   width: 100%;
 }
 .social {
-  margin: 70px 15px;
+  margin-top: 70px ;
+  margin-bottom: 0;
   align-items: center;
   font-family: "Loto";
   text-align: left;
@@ -356,7 +361,7 @@ margin: 15px ;
 #sidebar {
   margin: 100px 0;
   grid-column: 1;
-  padding: 20px;
+  padding: 0;
   box-shadow: 5px 5px 10px rgb(28, 28, 28);
 }
 
@@ -374,7 +379,6 @@ margin: 15px ;
 
 .section-disc {
   padding: 20px;
-  font-size: 20px;
 }
 
 .main-area1 img,
@@ -399,6 +403,10 @@ margin: 15px ;
   border: 1px solid var(--papaya-whip);
   color: var(--papaya-whip);
 
+}
+figure {
+  margin: 0 30px;
+  padding: 0 10px;
 }
 
 figcaption {
@@ -599,10 +607,10 @@ li:nth-child(4) {
 
 /**********/
 .image {
-  display: block;
+  display: grid;
   width: 100%;
   height: auto;
-
+  position: relative;
 }
 .overlay {
   position: absolute;
@@ -619,17 +627,16 @@ li:nth-child(4) {
 .card3:hover .overlay {
   bottom: 0;
   height: 100%;
-
-
 }
 
 .text {
   position: absolute;
   overflow: hidden;
   color: var(--papaya-whip);
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-40%, -40%);
-  transform: translate(-50%, -50%);
+  top: 30%;
+  left: 30%;
+  width: 80%;
+  -ms-transform: translate(-100%, -100%);
+  transform: translate(-30%, -30%);
 }
 

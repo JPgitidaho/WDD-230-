@@ -1,9 +1,33 @@
+
+
 /* Media queries para pantallas medianas */
-@media screen and (max-width:667px) {
-  body {
+@media screen and (max-width:1400px) {
+ .information {
+  grid-column: 1;
+ }
+
+ #weather-info {
+ grid-template-columns: 1fr 1fr ;
+}
+
+.home-grid-cards {
+  display: block;
+  grid-template-columns: 1fr ;
+}
+
+}
+
+  @media (min-width:320px) and  (max-width:667px) {
+
+ 
+  * {
     font-size: 1rem;
   }
-
+  p {
+    font-family: "Lato";
+    padding: 10px;
+    font-size: 1rem;
+  }
   #dark-mode-toggle {
     top: 5px;
     right: 10px;
@@ -15,59 +39,52 @@
     border: none;
     cursor: pointer;
     background-color: transparent;
-    left: 40%;
-    top: 10%;
+    left: 55%;
+    top: 15%;
     position: absolute;
-
+  
   }
-
+  
   #burger-icon::before {
     content: '\2630MENU';
     color: var(--papaya-whip);
   }
-
+  
   #burger-icon.active::before {
     content: '✖MENU';
+  }
+  
+  nav {
+    display: none;
+    width: 100%;
+  }
+  
+  nav.show {
+    display: inline-flex;
+    flex-direction: column;
+    padding: 5px;
+    text-align: center;
+    margin-top: 100px;
   }
 
   #banner,
   .closeBanner {
-    top: 5%;
-    width: 100%;
-    z-index: 3;
+    top:30px ; 
   }
 
   .book {
-    font-size: 16px;
     padding: 5px 15px;
-    top: 70%;
-    left: 40%;
+    top: 60%;
+    left: 45%;
   }
 
 
   .h1-hero {
     font-size: 1rem;
-    top: 50%;
-    left: 50%;
+    top: 40%;
+    left: 40%;
     text-align: center;
 
-  }
-
-  nav {
-    display: none;
-    width: 100%;
-  }
-
-  nav.show {
-    display: inline-flex;
-    flex-direction: column;
-    padding: 5px;
-    text-align: left;
-    margin-top: 100px;
-  }
-
-  .card {
-    margin: 20px 0;
   }
 
   #formcon {
@@ -77,43 +94,50 @@
 
   #sidebar {
     grid-column: span 1;
-    margin: 100px 30px;
+    margin: 50px 0;
   }
 
   .main-area1,
   .main-area2 {
     grid-column: span 1;
-    margin: 0;
+    margin: 0  15px;
+    padding: 0;
     height: auto;
   }
 
   .home-grid {
     grid-template-columns: 1fr;
     display: block;
-    margin: 15px 0;
 
   }
-
-  footer {
-    margin-top: 25px;
-  }
-
-  .home-box {
-    margin: 0px;
-  }
-
-  .overlay {
+#weather-info {
+  grid-template-columns: 1fr 1fr ;
+  text-align: center;
     display: grid;
   }
 
+#weather-info .card
+,#weather-info .card p {
+  margin:5px;
+  padding: 0;
+}
+
+  .home-box {
+    margin: 0;
+  }
+ 
+  .home-grid-cards {
+    display:block;
+    grid-template-columns: 1fr;
+  }
+  
   .button {
     padding: 5px 10px;
   }
 
-  .logo {
-    width: 100%;
+  .logo, .logo-link {
+margin: 0;
+left: 5%;
+width: 60%;
   }
-}
-
-/*
-@media screen and (min-width: 480px)
+  }

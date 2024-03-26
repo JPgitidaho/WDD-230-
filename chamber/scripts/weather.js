@@ -68,7 +68,7 @@ function filterForecastData(forecastData) {
         // Loop through the forecast data and create HTML elements to display it
         forecastData.forEach(dayForecast => {
             const dayElement = document.createElement('div');
-            dayElement.classList.add('home-grid');
+            dayElement.classList.add('card');
 
             const dateElement = document.createElement('p');
             dateElement.textContent = dayForecast.date;
