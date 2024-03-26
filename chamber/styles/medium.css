@@ -81,10 +81,11 @@
 
 
   .h1-hero {
-    font-size: 2rem;
-    top: 40%;
-    left: 40%;
-    text-align: center;
+    font-size: 1.5rem;
+    top: 30%;
+    left: 50%;
+    width: 80%;
+    text-align: left;
 
   }
 
