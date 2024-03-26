@@ -17,7 +17,7 @@
 
 }
 
-  @media (min-width:320px) and  (max-width:667px) {
+  @media (min-width:300px) and  (max-width:667px) {
 
  
   * {
@@ -76,6 +76,7 @@
     padding: 5px 15px;
     top: 60%;
     left: 45%;
+    font-size: 1rem;
   }
 
 
