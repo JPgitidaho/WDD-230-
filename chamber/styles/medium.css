@@ -140,4 +140,11 @@ margin: 0;
 left: 5%;
 width: 60%;
   }
+  #google-map,
+iframe {
+  
+  height: 650px;
+  
+
+  }
   }
