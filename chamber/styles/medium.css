@@ -1,7 +1,7 @@
 
 
 /* Media queries para pantallas medianas */
-@media screen and (max-width:1400px) {
+@media (max-width:1400px) {
  .information {
   grid-column: 1;
  }
