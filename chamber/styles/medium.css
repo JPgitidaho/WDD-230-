@@ -143,9 +143,17 @@ width: 60%;
   }
   #google-map,
 iframe {
-  
   height: 300px;
-  
 
   }
+.directory {
+    margin: 0px  10px;
+   padding: 0;
+
   }
+.grid-list {
+  margin: 10px 0 50px ;
+}
+
+}
+  
