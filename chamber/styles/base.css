@@ -107,8 +107,9 @@ picture img {
   padding: 10px 20px;
   border-radius: 25px;
   text-align: center;
-  background: var(--orange-wheel);
+  background: var(--caribbean-current-dark);
   color: var(--papaya-whip);
+
 }
 
 .button-join {
@@ -118,6 +119,7 @@ picture img {
 .book {
   top:60%;
   left: 50%;
+  font-size: 2rem;
   position: absolute;
   box-shadow: 3px 3px 8px rgb(28, 28, 28);
   padding: 15px 50px;
@@ -164,15 +166,15 @@ picture img {
   width: 100%;
   position:absolute;
   color: var(--papaya-whip);
-  font-size: 1rem;
+  font-size: 1.5rem;
   letter-spacing: 1px;
   text-align: left;
-  background: var(--orange-wheel);
+  background: var(--sienna);
   z-index: 3;
 }
 
 #closeBanner {
-  background-color: transparent;
+  background-color:var(--rich-black);
   margin-left: 10px;
 }
 
@@ -328,7 +330,7 @@ footer img {
 }
 
 .fa {
-  font-size: 1.5rem;
+  font-size:2rem;
   border-radius: 50%;
   padding:10px 15px;
   background-color: rgba(21, 97, 109, 0.253);
