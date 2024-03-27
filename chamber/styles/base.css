@@ -231,7 +231,7 @@ nav a:hover {
 }
 
 .material-icons {
-  color: var(--papaya-whip);
+  color: var(--caribbean-current);
   font-size: 1rem;
   padding: 5px;
 }
@@ -363,7 +363,7 @@ margin: 15px ;
 /* Estilos Discover **********************************************/
 
 #sidebar {
-  margin: 100px 0;
+  margin: 100px 20px;
   grid-column: 1;
   padding: 0;
   box-shadow: 5px 5px 10px rgb(28, 28, 28);
@@ -544,23 +544,33 @@ li:nth-child(4) {
 }
 
 #cards img {
-  width: 50%;
-  padding-left: 100px;
+  background-color: var(--papaya-whip);
+  width: 80%;
+  padding: 20px;
+  margin: 20px;
+  height: 200px;
+  box-shadow: 3px 3px 8px rgb(97, 96, 96);
+
 }
 
-#cards .home-grid p, #cards a{
+ #cards p, #cards a{
   justify-content: space-around;
   padding: 0;
   text-align: center;
   margin: 0;
   color: var(--rich-black);
 }
+
 #cards a:hover {
   color: var(--orange-wheel);
 }
-.dark-mode #cards a, #cards p{
+.dark-mode #cards p, 
+.dark-mode #cards a {
+  
   color: var(--papaya-whip);
 }
+  
+
 /* Estilos para la vista de lista ******/
 .list-view#cards {
   display: inline;
