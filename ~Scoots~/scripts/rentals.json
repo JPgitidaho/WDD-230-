@@ -1,0 +1,70 @@
+{
+  "rentals": [
+    {
+      "reservation": "Walk-In",
+      "rental_type": "~Honda Metro Scooter",
+      "max_persons": 1,
+      "half_day_3_hrs": {
+        "price": 20,
+        "full_day_price": 30
+      },
+      "name": "Honda Metro Scooter",
+      "img": "https://www.carlosjeeprental.com/wp-content/uploads/2023/05/DSC05053-2-opt.jpg"
+    },
+    {
+      "reservation": "Walk-In",
+      "rental_type": "~Honda Dio Scooter",
+      "max_persons": 2,
+      "half_day_3_hrs": {
+        "price": 30,
+        "full_day_price": 40
+      },
+      "name": "Honda Dio Scooter",
+      "img": "https://www.carlosjeeprental.com/wp-content/uploads/2023/05/DSC05053-2-opt.jpg"
+    },
+    {
+      "reservation": "Walk-In",
+      "rental_type": "~Honda PCX150 Scooter",
+      "max_persons": 2,
+      "half_day_3_hrs": {
+        "price": 40,
+        "full_day_price": 50
+      },
+      "name": "Honda PCX150 Scooter",
+      "img": "https://www.carlosjeeprental.com/wp-content/uploads/2023/05/DSC05053-2-opt.jpg"
+    },
+    {
+      "reservation": "Reservation",
+      "rental_type": "Honda Pioneer ATV",
+      "max_persons": 4,
+      "half_day_3_hrs": {
+        "price": 50,
+        "full_day_price": 70
+      },
+      "name": "Honda Pioneer ATV",
+      "img": "https://www.carlosjeeprental.com/wp-content/uploads/2023/05/DSC05053-2-opt.jpg"
+    },
+    {
+      "reservation": "Reservation",
+      "rental_type": "Jeep Wrangler - 4 door with a/c",
+      "max_persons": 5,
+      "half_day_3_hrs": {
+        "price": 70,
+        "full_day_price": 100
+      },
+      "name": "Jeep Wrangler - 4 door with a/c",
+      "img": "https://www.carlosjeeprental.com/wp-content/uploads/2023/05/DSC05053-2-opt.jpg"
+    },
+    {
+      "reservation": "Walk-In",
+      "rental_type": "Jeep Wrangler - 2 door",
+      "max_persons": 4,
+      "half_day_3_hrs": {
+        "price": 60,
+        "full_day_price": 85
+      },
+      "name": "Jeep Wrangler - 2 door",
+      "img": "https://www.carlosjeeprental.com/wp-content/uploads/2023/05/DSC05053-2-opt.jpg"
+    }
+  ]
+}

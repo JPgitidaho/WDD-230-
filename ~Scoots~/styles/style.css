@@ -1,0 +1,635 @@
+:root {
+    --azul: #133C55;
+    --turqueza: #30D5C8;
+    --arena: #F5F5DC;
+    --coral: #E68632;
+    --coral-ligth: #E89145;
+    --blanco: #FFFFFF;
+
+
+    --federal-blue: #03045eff;
+    --honolulu-blue: #0077b6ff;
+    --pacific-cyan: #00b4d8ff;
+    --non-photo-blue: #90e0efff;
+    --light-cyan: #caf0f8ff;
+    --nyanza: #d8f3dcff;
+
+    --celadon: #b7e4c7ff;
+    --celadon-2: #95d5b2ff;
+    --mint: #74c69dff;
+    --dark-green: #081c15ff;
+
+
+    --Azul-Turquesa: #1ABC9C;
+    --Verde-Lima: #2ECC71;
+    --Amarillo-Soleado: #F7DC6F;
+    --Naranja-Coral: #FFA500;
+    --Gris-Piedra: #D2D7D3;
+
+    --top: linear-gradient(0deg, #f5f5dcff, #ffffffff, #30d5c8ff, #133c55ff, #e68632ff, #e89145ff);
+    --right: linear-gradient(90deg, #f5f5dcff, #ffffffff, #30d5c8ff, #133c55ff, #e68632ff, #e89145ff);
+    --bottom: linear-gradient(180deg, #f5f5dcff, #ffffffff, #30d5c8ff, #133c55ff, #e68632ff, #e89145ff);
+    --left: linear-gradient(270deg, #f5f5dcff, #ffffffff, #30d5c8ff, #133c55ff, #e68632ff, #e89145ff);
+    --top-right: linear-gradient(45deg, #f5f5dcff, #30d5c8ff);
+    --bottom-right: linear-gradient(135deg, #f5f5dcff, #F7DC6F, #e68632ff);
+    --top-left: linear-gradient(225deg, #f5f5dcff, #ffffffff, #30d5c8ff, #133c55ff, #e68632ff, #e89145ff);
+    --bottom-left: linear-gradient(315deg, #f5f5dcff, #ffffffff, #30d5c8ff, #133c55ff, #e68632ff, #e89145ff);
+    --radial: radial-gradient(#f5f5dcff, #ffffffff, #30d5c8ff, #133c55ff, #e68632ff, #e89145ff);
+
+}
+
+/*
+font-family: "flood-std", sans-serif;
+font-weight: 400;
+font-style: normal;
+*/
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    background-color: var(--arena);
+    color: var(--azul)
+}
+
+
+a,
+a:hover {
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+header {
+    background-color: var(--arena);
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+.contact-header {
+    background-color: var(--azul);
+   padding-left: 70%;
+
+}
+
+.contact-header a {
+    display: inline-flex;
+    padding: 10px;
+    color: var(--Azul-Turquesa);
+
+}
+
+.menu-container {
+    padding: 0;
+    display: inline-flex;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: -10px;
+}
+
+ul,
+li {
+    list-style-type: none;
+
+}
+
+.logo img {
+    width: 30%;
+    height: auto;
+    align-items: center;
+    margin-left: 100px;
+    padding-top: 10px;
+}
+
+#nav {
+    align-items: center;
+    display: flex;
+}
+
+#nav ul li {
+    display: inline-flex;
+    text-align: right;
+    margin-left: 50px;
+
+}
+
+#nav ul li a {
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+
+#dark-mode-toggle {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 0;
+}
+
+#burger-icon {
+    display: none;
+}
+
+#currency-selector {
+    border: none;
+}
+
+button:hover {
+    background-color: var(--coral-ligth);
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+button {
+    background-color: var(--turqueza);
+    border: var(--honolulu-blue);
+    padding: 10px 30px;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 1.5rem;
+
+}
+
+.rental {
+    border-color: var(--turqueza);
+    background-color: var(--honolulu-blue);
+    letter-spacing: 2px;
+}
+
+
+#weather-banner {
+    display: inline-flex;
+    position: relative;
+    background: var(--top-right);
+    z-index: 3;
+  
+    color: var(--azul);
+    padding: 30px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#close-banner {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.fa-social {
+    font-size: 1.5rem;
+}
+
+.hero img {
+    width: 100%;
+}
+
+.hero {
+    position: relative;
+}
+
+.title-hero h1 {
+    font-size: 5rem;
+    font-size: "Lato";
+    top: 18%;
+    left: 5%;
+}
+
+.title-hero h2 {
+    font-size: 10rem;
+    font-family: "flood-std", sans-serif;
+    font-weight: 400px;
+    top: 22%;
+    left: 5%;
+    color: var(--arena);
+}
+
+.title-hero {
+    color: var(--arena);
+}
+
+.title-hero h1,
+.title-hero h2,
+.btn {
+    position: absolute;
+}
+
+.btn {
+    top: 60%;
+    left: 30%;
+    border-radius: 5px;
+    background-color: #0076b6;
+    padding: 10px 60px;
+    font-style: bold;
+}
+
+.home-box {
+    margin: 0 100px;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: auto;
+    gap: 20px;
+}
+
+.card {
+    max-width: 400px;
+    border: 1px solid var(--turqueza);
+    padding: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 20px;
+    box-shadow: 0 4px 8px var(--azul);
+    transition: transform 0.3s ease;
+    text-align: left;
+
+}
+
+.card:hover {
+    transform: translateY(-5px);
+
+}
+
+.card span {
+    color: var(--azul);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-info {
+    text-align: left;
+}
+
+
+.cards-container1 {
+    margin-top: 100px;
+    grid-row: 1;
+
+}
+
+.card-container1 .card {
+    grid-column: 2;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.see {
+    margin-left: 30px;
+    padding: 15px 50px;
+}
+
+.welcome {
+    font-size: 2.2rem;
+}
+
+
+
+.cards-container2 {
+    margin-bottom: 100px;
+}
+
+.cards-container3 {
+    margin-top: -100px;
+    border: none;
+    padding: 10px;
+    text-align: center;
+}
+
+.cards-container3 a {
+    color: #868e96;
+    font-size: 1.5rem;
+    margin-top: 100px;
+}
+
+.spans {
+    margin: 100px;
+    text-align: center;
+    color: var(--honolulu-blue);
+    font-size: 2rem;
+}
+
+.image-ofert {
+    margin-bottom: -150px;
+}
+
+.ofert {
+    text-align: center;
+    margin-top: 150px;
+    font-size: 1.7rem;
+}
+
+h3 {
+    color: var(--Azul-Turquesa);
+
+}
+
+h2 {
+    color: var(--azul);
+
+}
+
+/*weather*/
+.weather-container {
+    margin: 100px 0;
+}
+
+.weather {
+    background-image: url('../images/jeeps/cozumel-jeep.webp');
+    background-size: cover;
+    grid-column: 1;
+}
+
+.weather-text h3,
+.weather-text p {
+    background-color: transparent;
+    color: var(--azul);
+    grid-column: 2;
+    text-align: left;
+    font-size: 3rem;
+}
+
+.weather-btn {
+    padding: 10px 60px;
+    font-size: 2rem;
+}
+
+#weather-info {
+    font-family: 'Lato';
+    font-weight: bold;
+    padding-top: 10px;
+    text-align: center;
+    background-color: rgba(0, 118, 182, 0.856);
+    width: 50%;
+}
+
+#weather-info p {
+    padding: 0 35px;
+    color: var(--arena);
+
+}
+
+
+.contact-info span,
+.contact-info2 span, .contact-info2 h3, .contact-info h3 {
+    display: block;
+    padding: 3px;
+    font-size: 1.5rem;
+
+}
+
+.contact-info button,
+.contact-info2 button {
+    margin-top: 20px;
+}
+
+.contact-info {
+    grid-column: 1;
+    text-align: center;
+    margin-left: 200px;
+
+}
+
+.contact-info2 {
+    grid-column: 2;
+    text-align: center;
+    margin-right: 100px;
+
+}
+
+#formcon {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: auto;
+    margin: 100px 200px;
+}
+
+.form-1 {
+    grid-column: span 2;
+    margin: 0 100px;
+}
+
+.form-2 {
+    margin-left: 100px;
+}
+
+.form-3 {
+    grid-column: 2;
+    grid-row: 2;
+    margin-right: 100px;
+
+}
+
+.form-4 {
+    grid-column: span 2;
+    margin: 0 100px;
+
+}
+
+#formcon input,
+#formcon select,
+#formcon textarea {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid var(--honolulu-blue);
+    border-radius: 3px;
+}
+
+.card .gratitude-message {
+    text-align: center;
+    background-color: var(--turqueza);
+    margin: 150px 100px;
+    padding: 20px;
+    text-align: center;
+}
+
+#descripcion {
+    height: 150px;
+}
+
+/*Testimonies*/
+.carousel-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.carousel {
+    position: relative;
+
+}
+
+#testimonial-carousel {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+    width: 25%;
+    scroll-snap-align: start;
+}
+
+.card-text {
+    color: var(--dark-green);
+    font-family: "Licorice";
+    letter-spacing: 2px;
+    font-size: 1.7rem;
+
+}
+
+footer {
+    background-color: var(--azul);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+@media(min-width:1200px) {}
+
+@media(max-width:991px) {
+    html {
+        font-size: 1.1vw;
+    }
+
+    .home-grid {
+        display: block;
+        grid-template-columns: 1fr;
+    }
+
+    .card-container1 {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .contact-header a {
+        font-size: 16px;
+    }
+
+    #burger-icon {
+        display: block;
+        position: absolute;
+        /* Cambiado a fixed para que permanezca fijo mientras se desplaza */
+        top: 10px;
+        right: 10px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 1.5rem;
+
+    }
+
+    body.dark-mode #burger-icon::before {
+        color: #fff;
+    }
+
+    #burger-icon::before {
+        content: '\2630';
+        margin-right: 0.5rem;
+        /* Espaciado entre el icono y el texto */
+        color: black;
+        cursor: pointer;
+        /* Agrega un puntero al icono para indicar interactividad */
+    }
+
+    #burger-icon.active::before {
+        content: '✖';
+        /* Icono de X cuando está activo */
+    }
+
+
+    #nav {
+        display: none;
+    }
+
+    #nav.show {
+        display: block;
+        text-align: center;
+        background-color: #333;
+        color: #fff;
+
+    }
+
+    #nav ul {
+        display: block;
+    }
+
+    #nav a {
+        display: block;
+        text-align: center;
+    }
+
+}
+
+@media(max-width:767px) {
+    #weather {
+        display: block;
+    }
+
+    .carousel-item {
+        flex: 0 0 auto;
+        width: 100%;
+        scroll-snap-align: start;
+        background-color: #0076b6;
+        scroll-snap-type: x mandatory;
+    }
+
+    html {
+        font-size: 3.5vw;
+    }
+
+    body {
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    .home-grid {
+        display: block;
+        grid-template-columns: 1fr;
+    }
+
+    .card-container {
+        display: grid;
+    }
+
+    .h1-hero {
+        font-size: 1.5rem;
+
+    }
+
+    .intro {
+        top: 5%;
+        left: 5%;
+
+    }
+
+
+    .btn {
+
+        font-size: 1.2rem;
+    }
+
+    .carousel {
+        display: block;
+    }
+}

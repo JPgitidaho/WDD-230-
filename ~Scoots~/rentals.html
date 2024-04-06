@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Scoots es una empresa ficticia de alquiler de motos 
+    ubicada en la isla de Cozumel en el Mar Caribe. Ofrece servicios de alquiler de scooters, 
+    jeeps y vehículos todo terreno side-by-side.">    
+    <meta name="author" content="Juanita Perez Aguilera">
+    <title>~Scoots~</title>
+    <meta property="og:title" content="~Scoots~">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://jpgitidaho.github.io/WDD-230-/~Scoots~/images/hero-cozumel.webp">
+    <meta property="og:url" content="https://jpgitidaho.github.io/WDD-230-/~Scoots~">
+    <link rel="icon" href="./images/icon-scoots.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Licorice&family=Love+Light&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://coolors.co/001524-15616d-ffecd1-ff7d00-78290f">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link rel="stylesheet" href="./styles/normalice.css">
+    <link rel="stylesheet" href="./styles/style.css">
+	<link rel="stylesheet" href="./styles/medium.css">
+    <link rel="stylesheet" href="./styles/larger.css">
+
+</head>
+<body>
+    <header>
+		<div class="contact-header">
+			<a class="fa-social" href="https://www.facebook.com/tu_pagina"><i class="fa fa-facebook"></i></a>
+			<a class="fa-social" href="https://www.linkedin.com/in/tu_perfil"><i class="fa fa-linkedin"></i></a>
+			<a class="fa-social" href="https://www.instagram.com/tu_cuenta"><i class="fa fa-instagram"></i></a>
+			<a class="contact" href="tel:+56223607000"><i class="material-icons">phone </i> +56 2 230000</a>
+			<button id="dark-mode-toggle" onclick="toggleDarkMode()" title="Toggle Dark Mode"><i class="material-icons">brightness_3</i></button>
+		</div>
+
+		<button id="burger-icon" class="responsive-menu" onclick="toggleMenu()" title="Toggle Menu"></button>
+		<div class="menu-container">
+			<div class="logo">
+				<img src="./images/logo-scoots.png" alt="logo-img">
+				<a href="logo-link"></a>
+			</div>
+			<nav id="nav">
+				<ul>
+					<li> <select id="currency-selector" onchange="convertCurrency()">
+							<option>&#8364;</option>
+							<option value="usd"> USD</option>
+							<option value="eur">&#8364; EUR</option>
+							<option value="gbp">&#x00A3; GBP</option>
+						</select>
+					</li>
+					<li><button class="rental"><a href="rentals.html">Rental</a></button></li>
+					<li><button class="booking"><a href="bookings.html">Bookings</a></button></li>
+					<li><button class="booking"><a href="contact.html">Contact</a></button></li>
+
+				</ul>
+			</nav>
+		</div>
+	</header>
+    
+    <footer>
+
+		<p>© 2024 All rights reserved,~Scoots~</p>
+	</footer>
+	<!-- Script de JavaScript -->
+
+	<script src="./scripts/myHeader.js"></script>
+	<script src="./scripts/banner.js"></script>
+	<script src="./scripts/getdates-chamb.js"></script>
+	<script src="./scripts/darkMode.js"></script>
+	<script src="./scripts/weather.js"></script>
+	<script src="./scripts/carrusel.js"></script>
+
+</body>
+
+</html>

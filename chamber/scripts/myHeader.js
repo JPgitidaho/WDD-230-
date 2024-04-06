@@ -3,6 +3,13 @@ document.addEventListener("DOMContentLoaded", function () {
   const burgerIcon = document.getElementById("burger-icon");
   let isHovered = false;
 
+  burgerIcon.addEventListener("click", function () {
+    const nav = document.querySelector('nav');
+    nav.classList.toggle('show');
+    burgerIcon.classList.toggle("active");
+  });
+});
+
   miHeader.addEventListener("mouseenter", function () {
     isHovered = true;
     miHeader.style.backgroundColor = "#0c3338";
@@ -25,9 +32,4 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  burgerIcon.addEventListener("click", function () {
-    const nav = document.querySelector('nav');
-    nav.classList.toggle('show');
-    burgerIcon.classList.toggle("active");
-  });
-});
+ 

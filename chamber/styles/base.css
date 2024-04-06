@@ -108,7 +108,6 @@ picture img {
   text-align: center;
   background: var(--orange-wheel);
   color: var(--papaya-whip);
-
 }
 
 .button-join {
@@ -130,7 +129,7 @@ picture img {
   width:50%;
 }
 
-.hero-img {
+.hero img {
   width: 100%;
   margin-top: -100px;
 }
@@ -514,11 +513,12 @@ li:nth-child(4) {
    cursor: pointer;
    font-weight: bold;
  }
-.card.gratitude-message {
+.card .gratitude-message .home-grid {
   grid-column: 3;
   margin: 150px 100px;
   padding: 20px;
   text-align: center;
+  background-color: #0c3338;
 }
 
 #descripcion {
