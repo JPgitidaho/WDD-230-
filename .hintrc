@@ -3,34 +3,23 @@
     "development"
   ],
   "hints": {
-    "axe/forms": [
+    "axe/name-role-value": [
       "default",
       {
-        "select-name": "off",
-        "label": "off"
+        "link-name": "off"
       }
     ],
-    "disown-opener": "off",
     "axe/keyboard": [
       "default",
       {
         "nested-interactive": "off"
       }
     ],
-    "axe/name-role-value": [
-      "default",
-      {
-        "link-name": "off",
-        "button-name": "off"
-      }
-    ],
     "button-type": "off",
-    "compat-api/css": [
+    "axe/structure": [
       "default",
       {
-        "ignore": [
-          "mask-image"
-        ]
+        "list": "off"
       }
     ]
   }
