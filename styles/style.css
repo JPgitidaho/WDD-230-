@@ -81,7 +81,9 @@ header {
     color: var(--Azul-Turquesa);
 
 }
-
+.fa-social {
+    font-size: 2rem;
+}
 .menu-container {
     position: relative;
     background-color: var(--arena);
@@ -172,9 +174,7 @@ button {
     font-size: 2rem;
 }
 
-.fa-social {
-    font-size: 1rem;
-}
+
 
 .hero img {
     max-width: 100%;
