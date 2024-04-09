@@ -34,15 +34,18 @@ async function getWeather(city, country, type, hour = null) {
 
             // Create the content to display for today
             weatherInfo = `
-            <div class:"card">
+            <div class="home-grid">
+            <div class="card">
                 <p>WEATHER  NOW </p>
                 <p>${weatherDescription} </p>
-                <img src="http://openweathermap.org/img/wn/${weatherIconCode}.png" alt="Weather Icon">
+                <p><img src="http://openweathermap.org/img/wn/${weatherIconCode}.png" alt="Weather Icon"></p>
                 <p>tº: ${temperature} °C </p>
                 <p> Feels Like: ${feelsLike} °C </p>
                 <p> Humidity: ${humidity} % </p>
                 <p> Wind Speed: ${windSpeed} m/s </p>
                 </div>
+                </div>
+
             `;
         } else if (type === 'tomorrow') {
             // Find the forecast for tomorrow
@@ -64,12 +67,16 @@ async function getWeather(city, country, type, hour = null) {
 
             // Create the content to display for tomorrow
             weatherInfo = `
-            <div class:"card">
-                <p>TOMORROW </p>
-                <p>AT 15:00</p>
+            <div class="home-grid">
+            <div class="card">
+                <p>TOMORROW--AT 15:00</p>
                 <p>${weatherDescription} </p>
-                <img src="http://openweathermap.org/img/wn/${weatherIconCode}.png" alt="Weather Icon">
+                <p><img src="http://openweathermap.org/img/wn/${weatherIconCode}.png" alt="Weather Icon"></p>
                 <p>tº: ${temperature} °C</p>
+                <p> Feels Like: ${feelsLike} °C </p>
+                <p> Humidity: ${humidity} % </p>
+                <p> Wind Speed: ${windSpeed} m/s </p>
+                </div>
                 </div>
 
             `;
