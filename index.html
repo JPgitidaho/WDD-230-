@@ -2,126 +2,345 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 230 - Web Frontend Development-Juanita P. Aguilera-course assignment portal">
-    <meta name="author" content="Juanita Perez Aguilera">
-    <title>Juanita P. Aguilera - WDD 230 - Web Frontend Development</title>
-    <!-- Metapropiedades de Open Graph -->
-    <meta property="og:title" content="Juanita P. Aguilera - WDD 230 - Web Frontend Development">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://jpgitidaho.github.io/WDD-230-/">
-    <meta property="og:url" content="https://jpgitidaho.github.io/WDD-230-/">
-    <link rel="icon" href="./images/favicon1.ico" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap">
-    <!-- Link to the normalize CSS file -->
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
-
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Scoots es una empresa ficticia de alquiler de motos 
+    ubicada en la isla de Cozumel en el Mar Caribe. Ofrece servicios de alquiler de scooters, 
+    jeeps y vehículos todo terreno side-by-side.">
+	<meta name="author" content="Juanita Perez Aguilera">
+	<title>Cozumel Scooter, Jeep, and ATV Rentals | Scoots</title>
+	<meta name="description" content="Discover the thrill of exploring Cozumel by motorcycle with Scoots! 
+	We offer scooter, jeep, and all-terrain vehicle rentals. Book now and have an unforgettable experience 
+	on the Caribbean island.">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="https://jpgitidaho.github.io/WDD-230-/~Scoots~/images/hero-cozumel.webp">
+	<meta property="og:url" content="https://jpgitidaho.github.io/WDD-230-/~Scoots~">
+	<link rel="icon" href="./images/icon-scoots.ico" type="image/x-icon">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Licorice&family=Love+Light&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.typekit.net/int8dcq.css">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+		rel="stylesheet">
+	<link rel="preconnect" href="https://coolors.co/f5f5dc-ffffff-30d5c8-133c55-e68632-e89145">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="./styles/normalice.css">
+	<link rel="stylesheet" href="./styles/style.css">
+	<link rel="stylesheet" href="./styles/medium.css">
+	<link rel="stylesheet" href="./styles/larger.css">
 
 </head>
 
 <body>
-    <header class="container">
-        <button id="dark-mode-toggle" onclick="toggleDarkMode()" title="Toggle Dark Mode">🖤 Theme</button>
-        <button id="burger-icon" class="responsive-menu" onclick="toggleMenu()" title="Toggle Menu"></button>
+	<div id="weather-banner">
+		<div id="close-banner">&times;</div>
+		<p>La temperatura máxima para hoy en Cozumel es:<br><span id="max-temp">Cargando...</span><img id="weather-icon"
+				alt="Icono del tiempo"> </p>
 
-        <img src="images/my-img1.webp" alt="my-imag-profile">
-        <h1>Juanita P. Aguilera</h1>
-    </header>
-    <div id="menu-container">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="lesson03/chamber-site-plan.html">Chamber-site-plan</a></li>
-                <li><a href="./chamber/index.html">Chamber Commerce</a></li>
-                <li><a href="https://ejemplo.com" target="_blank" rel="noopener">BYU-Idaho</a></li>
-                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/moro/10?lang=eng&id=p3-p5#p3"
-                        target="_blank" rel="noopener">Scripture</a></li>
-            </ul>
-        </nav>
-    </div>
-    <div id="container">
-        <picture>
-            <source media="(max-width: 300px)" srcset="images/Concepcion-Chile-Temple-small.webp">
-            <source media="(min-width: 401px) and (orientation: landscape)"
-                srcset="images/Concepcion-Chile-Temple-large.webp">
-            <img src="images/Concepcion-Chile-Temple-large.webp"
-                alt="Templo en vista móvil y en orientación horizontal">
-        </picture>
-        <div id="temple-text">
-            Concepcion, Chile, Temple
-        </div>
-    </div>
-    <main class="grid">
-        <h2>WDD 230: Frontend Web Development</h2>
-        <section class="card">
-            <h3>Learning Activities</h3>
-            <ul>
-                <li>
-                    <a href="lesson01/holygrail.html">01 Holygrail | </a>
-                    <a href="lesson01/jspen.html">js-pen</a>
-                </li>
-                <li>
-                    <a href="lesson02/design-principles.html">02 Design Principles | </a>
-                    <a href="lesson02/design.html">Design | </a>
-                    <a href="lesson02/Media-query.html">Media-query-Example</a>
-                </li>
-                <li>
-                    <a href="lesson03/images/w3schools-screeshot.png">03 Combinators | </a>
-                    <a href="https://codepen.io/JPgitidaho/pen/eYXGqaX">Responsive Menu | </a>
-                    <a href="https://codepen.io/JPgitidaho/pen/ExMbjBN">Pseudo-element |</a>
-                    <a href="lesson03/images/images/landscape.webp">WebP</a>
-                </li>
-                <li>
-                    <a href="https://codepen.io/JPgitidaho/pen/VwRyGqo">04 Pseudo-class pen</a>
-                </li>
-                <li>
-                    <a href="lesson05/bom.html">05 Bom</a>
-                </li>
-                <li>
-                    <a href="lesson07/lazyload.html">07 Lazyload |</a><a href="./form/form.html"> Form</a>
-                </li>
-                <li>
-                    <a href="lesson09/new-ward-members.json">09 new-ward-members.json |</a>
-                    <a href="lesson09/prophets.html"> Prophets </a>
-                </li>
-                <li>
-                    <a href="lesson10/weather.html">10 OpenWeatherMap |</a>
-                </li>
+	</div>
+	<header>
+		<div class="contact-header">
+			<a class="contact" href="tel:+56223607000"><i class="material-icons">phone </i></a>
+			<a class="fa-social" href="https://www.facebook.com/tu_pagina"><i class="fa fa-facebook"></i></a>
+			<a class="fa-social" href="https://www.linkedin.com/in/tu_perfil"><i class="fa fa-linkedin"></i></a>
+			<a class="fa-social" href="https://www.instagram.com/tu_cuenta"><i class="fa fa-instagram"></i></a>
+			<button id="burger-icon" class="responsive-menu" onclick="toggleMenu()" title="Toggle Menu"></button>
+			<button id="dark-mode-toggle" onclick="toggleDarkMode()" title="Toggle Dark Mode"><i
+					class="material-icons">brightness_3</i></button>
+		</div>
+		<div class="menu-container">
+			<img src="./images/logo-scoots.png" alt="logo-img">
+			<a class="logo-link" href="./index.html"></a>
 
-            </ul>
-        </section>
+			<nav id="nav">
+				<select id="currency-selector" onchange="convertCurrency()">
+					<option>&#8364;</option>
+					<option value="usd"> USD</option>
+					<option value="eur">&#8364; EUR</option>
+					<option value="gbp">&#x00A3; GBP</option>
+				</select>
+				<button class="rental"><a href="rentals.html">Rental</a></button>
+				<button><a href="bookings.html">Bookings</a></button>
+				<button><a href="contact.html">Contact</a></button>
+			</nav>
+		</div>
+	</header>
 
-        <section class="card">
-            <h3>Weather</h3>
-            <div id="weather-info">
 
-            </div>
-            <div id="counter-info">
-                <p>Visitas:
-                    <span id="visit-counter">0</span>
-                </p>
-            </div>
+	<div class="hero">
+		<picture>
 
-        </section>
-        <section class="iframe">
-            <iframe id="google-map" title="Interactive Map of Santiago"
-                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d26408.832921712852!2d-70.7493888!3d-34.16925565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scl!4v1706273679226!5m2!1ses!2scl">
-            </iframe>
+			<img src="./images/hero-2.jpg" alt="hero image">
+		</picture>
+		<div class="title-hero">
+			<h1>¡Descubre Cozumel con </h1>
+			<h2>SCOOTS!</h2>
+		</div>
 
-        </section>
-    </main>
-    <footer>
-        <p id="copyright-info"> &copy; - Juanita P. Aguilera</p>
-        <p id="last-modified"></p>
-    </footer>
-    <script src="./scripts/getdates.js"></script>
-    <script src="./scripts/visitcount.js"></script>
-    <script src="./scripts/weather.js"></script>
+		<button class="btn"><a href="./rentals.html">Rent Now</a>
+		</button>
+	</div>
+	<main class="home-box">
+
+		<div class="welcome">
+			<h3>LO HACEMOS MEJOR!</h3>
+			<h2>
+				Disfruta de una gran
+				experiencia <br>de alquiler y comienza
+				tu aventura.
+			</h2>
+		</div>
+		<section class="cards-container1 home-grid">
+			<div class="card">
+				<h3>Scooters</h3>
+				<img src="./images/scooters/scooter-1.jpg" alt="">
+				<div class="card-info">
+					<p>Desde</p>
+					<span class="price" data-usd="20.00" data-original-usd="20.00">$20.00</span>
+					<button class="see"><a href="bookings.html">Ver Mas</a></button>
+				</div>
+			</div>
+
+			<div class="card">
+				<h3>Scooters</h3>
+				<img src="./images/scooters/scooter-2.jpg" alt="">
+				<div class="card-info">
+					<p>Desde</p>
+					<span class="price" data-usd="40.00" data-original-usd="40.00">$40.00</span>
+					<button class="see"><a href="bookings.html">Ver Mas</a></button>
+				</div>
+			</div>
+
+
+			<div class="card">
+				<h3>Honda Pioneer ATV</h3>
+				<img src="./images/cuatriciclos/Honda Pioneer ATV-2.jpg" alt="">
+				<div class="card-info">
+					<p>Desde</p>
+					<span class="price" data-usd="50.00" data-original-usd="50.00">$50.00</span>
+					<button class="see"><a href="bookings.html">Ver Mas</a></button>
+				</div>
+			</div>
+			<div class="card">
+				<h3>Jeep Wrangler</h3>
+				<img src="./images/jeeps/Inselrundfahrt-2.jpg" alt="">
+				<div class="card-info">
+					<p>Desde</p>
+					<span class="price" data-usd="60.00" data-original-usd="60.00">$60.00</span>
+					<button class="see"><a href="bookings.html">Ver Mas</a></button>
+				</div>
+
+			</div>
+			<div class="card">
+				<h3>Jeep Wrangler</h3>
+				<img src="./images/jeeps/cozumel-jeep-3.webp" alt="">
+				<div class="card-info">
+					<p>Desde</p>
+					<span class="price" data-usd="70.00" data-original-usd="70.00">$70.00</span>
+					<button class="see"><a href="bookings.html">Ver Mas</a></button>
+				</div>
+			</div>
+			<div class="card">
+				<h3>Jeep Wrangler</h3>
+				<img src="./images/jeeps/cozumel-jeep-3.webp" alt="">
+				<div class="card-info">
+					<p>Desde</p>
+					<span class="price" data-usd="70.00" data-original-usd="70.00">$70.00</span>
+					<button class="see"><a href="bookings.html">Ver Mas</a></button>
+				</div>
+			</div>
+		</section>
+
+
+		<div class="ofert">
+			<h3>ALQUILER COMO JAMAS HAZ VISTO</h3>
+			<h2>Busca, Reserva y Disfruta.</h2>
+		</div>
+		<div class="cards-container2 home-grid">
+			<div class="card-ofert">
+				<img class="image-ofert" src="./images/Diseño sin título/1.png" alt="">
+				<h2>Encuentra</h2>
+				<p>
+					<a href="rentals.html">Consultar disponibilidad y reserva tu vehículos y accesorios.</a>
+				</p>
+			</div>
+
+			<div class="card-ofert">
+				<img class="image-ofert" src="./images/Diseño sin título/2.png" alt="">
+				<h2>Reserva al mejor precio</h2>
+				<p>
+					<a href="bookings.html">Check-in en una de nuestras
+						ubicación conveniente o
+						disfrute de nuestra recogida y
+						devolucion gratuita.</a>
+				</p>
+
+			</div>
+			<div class="card-ofert">
+				<img class="image-ofert" src="./images/Diseño sin título/3.png" alt="">
+				<h2>Disfruta el viaje</h2>
+				<p>
+					<a href="contact.html">¡Llega a tu aventura
+						más rápido y empieze a disfrutar
+						su tiempo!</a>
+
+				</p>
+			</div>
+		</div>
+		<section>
+			<div class="spans">
+				<ul>
+					<li><span>
+							<i class="fa fa-check text-success mr-1"></i>
+							El seguro de responsabilidad civil está incluido.
+						</span></li>
+					<li><span>
+							<i class="fa fa-check text-success mr-1"></i>
+							Entrega gratuita a hoteles de Cozumel o Airbnbs para alquileres de 2+ días.
+						</span></li>
+					<li><span>
+							<i class="fa fa-check text-success mr-1"></i>
+							Pago a través de Google Pay, Apple Pay, efectivo, tarjeta de crédito, tarjeta de débito
+							o
+							venmo.
+						</span></li>
+					<li><span>
+							<i class="fa fa-check text-success mr-1"></i>
+							Los alquileres pueden devolverse a cualquiera de las dos ubicaciones físicas.
+						</span></li>
+				</ul>
+			</div>
+		</section>
+		<section class="weather-container home-grid">
+			<div class="weather-text">
+				<h3>
+					DISFRUTA DEL VIAJE Y <br>DEL MEJOR CLIMA EN COZUMEL
+				</h3>
+			</div>
+			<div id="weather-info"></div>
+
+		</section>
+
+		<section>
+			<div class="ofert">
+				<h2>
+					Our Locations
+				</h2>
+				<h3>
+					We are a local company operated by the owners. If you would
+					like to make a reservation or you have any questions, we can
+					be reached by one of the following methods
+				</h3>
+			</div>
+		</section>
+		<section class="location home-grid">
+			<div class="contact-info">
+				<div class="contact-text">
+					<h4>PLAYA DEL CARMEN</h4>
+					<span>Address</span>
+					<span> PR 00775 </span>
+					<span>scoots, PR 00775<a href="https://maps.app.goo.gl/wSUU9aanZiRPPCpd9">
+							<img src="https://maps.google.com/mapfiles/ms/icons/red-dot.png" alt="Ubicación">
+						</a></span>
+					<h4>CONTACT</h4>
+					<span>Benjamin Rivera Noriega </span>
+					<span><a href="mailto:santiagobusi.net@gmail.com"><i class="material-icons">email</i>
+							emailus@scootsrental.com
+						</a></span>
+					<span><a href="tel:+56223607000"><i class="material-icons">phone </i> +56 2
+							230000</a></span>
+					<button><a href="contact.html">see more</a></button>
+				</div>
+			</div>
+
+
+			<div class="contact-info2">
+				<div class="contact-text">
+					<h4>TERMINAL PUERTO MAYA</h4>
+					<span>Address</span>
+					<span>PR-251</span>
+					<span>scoots, PR 00775 <a href="https://maps.app.goo.gl/xbun8x4erdErMjMV9">
+							<img src="https://maps.google.com/mapfiles/ms/icons/red-dot.png" alt="Ubicación">
+						</a></span>
+					<h4>CONTACT</h4>
+					<span>Benjamin Rivera Noriega</span>
+					<span><a href="tel:+56223607000"><i class="material-icons">phone </i> +56 2
+							230000</a></span>
+
+					<span><a href="mailto:santiagobusi.net@gmail.com"><i class="material-icons">email</i>
+							emailus@scootsrental.com
+						</a></span>
+					<button><a href="contact.html">see more</a></button>
+				</div>
+			</div>
+
+		</section>
+
+
+		<div class="ofert">
+			<h2>Get in Touch!</h2>
+			<h3>Message Us</h3>
+		</div>
+		<section class="form home-grid">
+			<form id="formcon" action="./gratitude.html" method="get">
+				<div class="form-1">
+					<label for="topic">Select a topic</label>
+					<select id="membresia" name="membresia" required>
+						<option value="NP"> </option>
+						<option value="rental">Rentals</option>
+						<option value="complaints">Complaints</option>
+						<option value="other">Others</option>
+					</select>
+				</div>
+				<div class="form-2">
+					<label for="name">Name:</label>
+					<input type="text" id="nombre" name="nombre" required>
+				</div>
+				<div class="form-3">
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" required placeholder="example@email.com">
+				</div>
+				<div class="form-4">
+					<label for="descripcion"></label>
+					<textarea id="descripcion" name="descripcion"></textarea>
+					<button type="submit"><a href="gratitude.html">Submit Form</a></button>
+				</div>
+			</form>
+		</section>
+
+		<div class="ofert">
+			<h3>WHAT OUR CUSTOMERS SAY</h3>
+
+		</div>
+
+
+		<div class="carousel-container">
+			<div class="carousel home-grid">
+				<div id="testimonial-carousel">
+				</div>
+			</div>
+		</div>
+
+	</main>
+
+	<footer>
+
+		<p>© 2024 All rights reserved,~Scoots~</p>
+	</footer>
+	<!-- Script de JavaScript -->
+	<script src="./scripts/testimonies.js"></script>
+	<script src="./scripts/myHeader.js"></script>
+	<script src="./scripts/banner.js"></script>
+	<script src="./scripts/getdates-chamb.js"></script>
+	<script src="./scripts/darkMode.js"></script>
+	<script src="./scripts/weather.js"></script>
+	<script src="./scripts/carrusel.js"></script>
 
 </body>
 
