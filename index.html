@@ -52,23 +52,23 @@
 			<a class="fa-social" href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
 			<button id="burger-icon" class="responsive-menu" onclick="toggleMenu()" title="Toggle Menu"></button>
 			<button id="dark-mode-toggle" onclick="toggleDarkMode()" title="Toggle Dark Mode"><i
-					class="material-icons">brightness_3</i></button>
+				class="material-icons">brightness_3</i></button>
 		</div>
 		<div class="menu-container">
-			<img src="./images/logo-scoots.png" alt="logo-img">
-			<a class="logo-link" href="./index.html"></a>
-
+			<img class="logo" src="./images/logo-scoots.png" alt="logo-img">
+			<a class="logo" href="./index.html"></a>
+			<select id="currency-selector" onchange="convertCurrency()">
+				<option>&#8364;</option>
+				<option value="usd"> USD</option>
+				<option value="eur">&#8364; EUR</option>
+				<option value="gbp">&#x00A3; GBP</option>
+			</select>
 			<nav id="nav">
-				<select id="currency-selector" onchange="convertCurrency()">
-					<option>&#8364;</option>
-					<option value="usd"> USD</option>
-					<option value="eur">&#8364; EUR</option>
-					<option value="gbp">&#x00A3; GBP</option>
-				</select>
 				<button class="rental"><a href="rentals.html">Rental</a></button>
 				<button><a href="bookings.html">Bookings</a></button>
 				<button><a href="contact.html">Contact</a></button>
 			</nav>
+			
 		</div>
 	</header>
 

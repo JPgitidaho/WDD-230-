@@ -67,6 +67,7 @@ a:hover {
 p {
     padding: 10px;
 }
+
 ul,
 li {
     list-style-type: none;
@@ -75,8 +76,27 @@ li {
 h3 {
     color: var(--honolulu-blue);
 }
+
 h2 {
     color: var(--azul);
+}
+#weather-banner {
+    display: inline-flex;
+    position: fixed;
+    background: var(--top-right);
+    width: 100%;
+    z-index:4;
+    color: var(--azul);
+    text-align: center;
+    font-size: 1rem;
+}
+
+#close-banner {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    cursor: pointer;
+    font-size: 2rem;
 }
 header {
     width: 100%;
@@ -85,10 +105,14 @@ header {
 
 .contact-header {
     background-color: var(--azul);
+    position: fixed;
+    z-index: 3;
+    width: 100%;
 
 }
 
-.fa-social, .contact-header a {
+.fa-social,
+.contact-header a {
     font-size: 2rem;
     display: inline-flex;
     padding: 10px;
@@ -96,17 +120,19 @@ header {
 }
 
 .menu-container {
-    position: relative;
+    position: fixed;
+z-index: 2;
+margin-top: 40px;
+width: 100%;
     background-color: var(--arena);
-    z-index: 2;
-}
-
-.menu-container img {
-    width: 200px;
-    margin: 0 100px;
 }
 
 
+.logo {
+    width: 300px;
+    margin-left: 200px;
+    margin-bottom: -80px;
+}
 
 #nav {
     display: inline-flex;
@@ -126,8 +152,9 @@ header {
     border: none;
     cursor: pointer;
     position: absolute;
-    right: 60px;
-    top: 50px;
+    right: 10%;
+    top: 0;
+    color: var(--arena);
 }
 
 #burger-icon {
@@ -138,10 +165,11 @@ header {
 #currency-selector {
     border: none;
     background-color: var(--arena);
+    padding-left: 30px;
 }
 
 button:hover {
-    background-color: var(--coral);
+    background-color: var(--Naranja-Coral);
     transform: translateY(-5px);
     transition: transform 0.3s ease;
 }
@@ -166,41 +194,23 @@ button {
 }
 
 
-#weather-banner {
-    display: inline-flex;
-    position: fixed;
-    background: var(--top-right);
-    width: 100%;
-    z-index: 3;
-    color: var(--azul);
-    text-align: center;
-    font-size: 1rem;
-}
 
-#close-banner {
-    position: absolute;
-    top: 5px;
-    left: 10px;
-    cursor: pointer;
-    font-size: 2rem;
-}
 
 
 
 .hero img {
-    max-width: 100%;
+    width: 100%;
 }
 
 .hero {
     position: relative;
-
 }
 
 
 .title-h1 {
     font-family: "flood-std";
     font-size: 10rem;
-    top: 15%;
+    top: 30%;
     left: 10%;
 
 }
@@ -208,7 +218,7 @@ button {
 .title-h2 {
     font-family: "Lato";
     font-size: 5rem;
-    top: 10%;
+    top: 25%;
     left: 10%;
 
 }
@@ -221,7 +231,7 @@ button {
 }
 
 .btn {
-    top: 50%;
+    top: 60%;
     left: 40%;
     border-radius: 5px;
     background-color: var(--coral);
@@ -240,6 +250,17 @@ button {
     gap: 20px;
 }
 
+.welcome {
+    grid-row: 1;
+    grid-column: span 2;
+    margin: 100px 0;
+}
+
+.welcome h2,
+h3 {
+    font-size: 3rem;
+}
+
 .card {
     width: 320px;
     border: 1px solid var(--turqueza);
@@ -249,7 +270,6 @@ button {
     box-shadow: 0 4px 8px var(--azul);
     transition: transform 0.3s ease;
     text-align: left;
-
 }
 
 .card:hover {
@@ -282,11 +302,7 @@ button {
     padding: 15px 50px;
 }
 
-.welcome {
-    font-size: 2.2rem;
-    grid-row: 1;
-    width: 800px;
-}
+
 
 
 
@@ -367,10 +383,12 @@ button {
     margin: 100px;
 
 }
+
 .contact-text span a {
-    color: var(--arena);   
+    color: var(--arena);
 }
-.contact-text{
+
+.contact-text {
     padding: 10px 0;
     background-color: #2c8fccda;
     color: var(--arena);
@@ -501,7 +519,56 @@ footer {
 }
 
 
-@media(min-width:668px) and (max-width:1400px) {
+
+
+@media(min-width:668px) and (max-width:1450px) {
+    #burger-icon {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 35%;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 1.5rem;
+
+    }
+
+    #burger-icon::before {
+        content: '\2630';
+        color: var(--arena);
+        cursor: pointer;
+    }
+
+    #burger-icon.active::before {
+        content: '✖';
+    }
+
+
+    #nav {
+        display: none;
+    }
+
+    #nav.show {
+        display: block;
+        text-align: right;
+        background-color: var(--arena);
+    }
+
+
+    #nav button {
+        display: block;
+        width: 50%;
+        margin-left: 500px;
+        margin-top: 5px;
+    }
+
+    .logo {
+        width: 200px;
+        margin-top: 0px;
+        margin-bottom: -40px;
+    }
+
     .location {
         display: block;
         grid-column: 1fr;
@@ -526,10 +593,22 @@ footer {
         margin: 0;
     }
 
-    .title-hero h1 {
-        font-size: 4rem;
-    }
+  .title-h1 {
+    top: 40%;
+  }
+  .title-h2 {
+    top: 30%;
+    left: 5px;
 
+  }
+    .title-h1,
+    .title-h2 {
+        font-size: 3.5rem;
+    }
+.btn {
+    top:80%;
+    padding: 10px 30px;
+}
     .weather-text {
         font-size: 2rem;
         margin-top: 50px;
@@ -543,20 +622,16 @@ footer {
 }
 
 @media(min-width:320px) and (max-width:667px) {
-
-    .carousel-item .card,
-    .card {
-        width: 220px;
+    #weather-banner p {
+        margin: 0;
+        padding: 30px;
+        font-size: 1rem;
     }
 
-    body {
-        display: block;
-    }
 
-    .contact-header a {
-        font-size: 16px;
+    #weather-banner {
+        width: 300px;
     }
-
     #burger-icon {
         display: block;
         position: absolute;
@@ -569,16 +644,7 @@ footer {
 
     }
 
-    .home-grid {
-        display: block;
-        grid-template-columns: 1fr;
-    }
 
-    button {
-        padding: 10px 20px;
-        margin: 5px;
-
-    }
 
     #burger-icon::before {
         content: '\2630';
@@ -598,32 +664,72 @@ footer {
     #nav.show {
         display: block;
         text-align: right;
-        background-color: var(--azul);
-        color: #fff;
+        background-color: var(--arena);
 
     }
-
-
     #nav button {
         display: block;
-        background-color: var(--azul);
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 10px;
     }
+
+    .logo {
+        width: 150px;
+        margin-top: 0px;
+        margin-bottom: -30px;
+        margin-left: 10px;
+    }
+
+    .carousel-item .card,
+    .card {
+        width: 220px;
+    }
+
+    body {
+        display: block;
+    }
+
+    .contact-header a {
+        font-size: 16px;
+    }
+
+    .home-grid {
+        display: block;
+        grid-template-columns: 1fr;
+    }
+
+    button {
+        padding: 10px 20px;
+        margin: 5px;
+
+    }
+
+
 
     .hero {
         width: 100%;
+        position: relative;
     }
+  .hero img {
+    margin-top: 100px;
 
-
-    .title-hero h1 {
-        font-size: 2rem;
-
+  }
+  .title-h1 {
+    top: 50%;
+  }
+  .title-h2 {
+    top: 40%;
+  }
+    .title-h1,
+    .title-h2 {
+        font-size: 1.5rem;
     }
-
 
     .btn {
         font-size: 16px;
-        top: 50%;
-        padding: 5px 10px;
+        top: 60%;
+        padding: 10px 20px;
     }
 
     .welcome h3,
@@ -687,12 +793,15 @@ footer {
         margin: 30px;
     }
 
-    .weather-text {
+    .weather-text h3 {
         font-size: 1.5rem;
-        padding: 10px;
+        text-align: center;
+        margin:10px;
+        padding-top: 10px;
     }
-
-    #weather-info p {
+    
+    #weather-info p,
+    #weather-info h4 {
         display: block;
         font-size: 1rem;
         padding: 10px;
@@ -723,22 +832,12 @@ footer {
         width: 90%;
     }
 
-
-    #weather-banner {
-        width: 300px;
-    }
-
     .card-text,
     .card-title,
     .card-subtitle {
         padding: 10px;
     }
 
-    #weather-banner p {
-        margin: 0;
-        padding: 30px;
-        font-size: 1rem;
-    }
 
     span {
         padding: 10px;
