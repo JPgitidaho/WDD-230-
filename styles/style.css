@@ -139,8 +139,8 @@ button:hover {
 }
 
 button {
-    background-color: var(--turqueza);
-    border: var(--honolulu-blue);
+    background-color: var(--Azul-Turquesa);
+    border: var(--turqueza);
     padding: 10px 30px;
     font-weight: bold;
     border-radius: 5px;
@@ -285,7 +285,7 @@ grid-row: span 2;
 }
 
 .cards-container2 {
-    margin-top: -100px;
+    margin-top: 100px;
     border: none;
     padding: 10px;
     text-align: center;
