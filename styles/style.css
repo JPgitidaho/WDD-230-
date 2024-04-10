@@ -206,7 +206,7 @@ h3 {
 }
 
 .btn {
-    top: 60%;
+    top: 50%;
     left: 40%;
     border-radius: 5px;
     background-color: #0076b6;
@@ -304,7 +304,7 @@ grid-row: span 2;
 
 .ofert {
     text-align: center;
-    margin-top: 150px;
+    margin: 150px;
     font-size: 1.7rem;
 }
 
@@ -336,20 +336,16 @@ grid-row: span 2;
 
 }
 
-#weather-info {
+#weather-info  {
     color: var(--arena);
     font-family: 'Lato';
     text-align: center;
     font-size: 1.5rem;
-    background-color: #2c8fcccc;
-}
-
-#weather-info {
+    background-color: #2c8fccdd;
     display: inline-flex;
-
     grid-column: span 2;
-
 }
+
 
 #weather-info img {
     width: 25%;
@@ -400,7 +396,7 @@ grid-row: span 2;
 #formcon {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 100px ;
+    margin: 0 100px ;
 }
 
 .form-1,
@@ -491,6 +487,13 @@ footer {
 
 
 @media(min-width:668px) and (max-width:1400px) {
+    .location {
+        display: block;
+        grid-column: 1fr;
+    }
+    .contact-info2 {
+        margin-top: 20px;
+    }
     .carousel-item .card, .card {
         width: 250px;
     }
@@ -505,6 +508,15 @@ footer {
     .title-hero h1{
         font-size: 4rem;
     }
+    .weather-text{
+        font-size: 2rem;
+        margin-top: 50px;
+        grid-column: span 2;
+    }
+    .card-ofert3 {
+        grid-column: span 2;
+    }
+
 }
 @media(min-width:320px) and (max-width:667px) {
    
@@ -640,23 +652,17 @@ footer {
     }
     #testimonial-carousel, .carousel-item{
         margin:30px;
-        background-color: red;
     }
-    .weather-text h3 {
+    .weather-text {
         font-size: 1.5rem;
-        margin-top: -100px;
-    }
-
-    #weather-info {
-        display: block;
-        margin: 0;
-        padding: 0;
-        background-image: none;
-    }
-
-    #weather-info p {
-        font-size: 16px;
         padding: 10px;
+    }
+
+    #weather-info p{
+        display: block;
+        font-size: 1rem;
+        padding: 10px;
+        margin: 0 20px;
     }
 
     .contact-info,
