@@ -36,7 +36,7 @@ async function getWeather(city, country, type, hour = null) {
             weatherInfo = `
             <div class="home-grid">
             <div>
-                <p>WEATHER  NOW </p>
+                <h4>WEATHER  NOW </h4>
                 <p>${weatherDescription} </p>
                 <p><img src="http://openweathermap.org/img/wn/${weatherIconCode}.png" alt="Weather Icon"></p>
                 <p>tº: ${temperature} °C </p>
@@ -69,7 +69,7 @@ async function getWeather(city, country, type, hour = null) {
             weatherInfo = `
             <div class="home-grid">
             <div>
-                <p>TOMORROW--AT 15:00</p>
+                <h4>TOMORROW--AT 15:00</h4>
                 <p>${weatherDescription} </p>
                 <p><img src="http://openweathermap.org/img/wn/${weatherIconCode}.png" alt="Weather Icon"></p>
                 <p>tº: ${temperature} °C</p>

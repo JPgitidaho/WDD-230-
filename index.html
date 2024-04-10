@@ -47,9 +47,9 @@
 	<header>
 		<div class="contact-header">
 			<a class="contact" href="tel:+56223607000"><i class="material-icons">phone </i></a>
-			<a class="fa-social" href="https://www.facebook.com/tu_pagina"><i class="fa fa-facebook"></i></a>
-			<a class="fa-social" href="https://www.linkedin.com/in/tu_perfil"><i class="fa fa-linkedin"></i></a>
-			<a class="fa-social" href="https://www.instagram.com/tu_cuenta"><i class="fa fa-instagram"></i></a>
+			<a class="fa-social" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+			<a class="fa-social" href="https://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
+			<a class="fa-social" href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
 			<button id="burger-icon" class="responsive-menu" onclick="toggleMenu()" title="Toggle Menu"></button>
 			<button id="dark-mode-toggle" onclick="toggleDarkMode()" title="Toggle Dark Mode"><i
 					class="material-icons">brightness_3</i></button>
@@ -78,8 +78,9 @@
 
 			<img src="./images/hero-2.jpg" alt="hero image">
 		</picture>
-		<div class="title-hero">
-			<h1>¡Descubre Cozumel con SCOOTS!</h1>
+		<div>
+			<h2 class="title-h2">¡Descubre Cozumel con </h2>
+			<h1 class="title-h1">SCOOTS!</h1>
 
 		</div>
 
@@ -98,8 +99,17 @@
 		</div>
 		<section class="cards-container1 home-grid">
 			<div class="card">
+				<h3>Scooter</h3>
+				<img src="./images/scooters/metro-terreno.jpg" alt="Scooter-Metro">
+				<div class="card-info">
+					<p>Desde</p>
+					<span class="price" data-usd="70.00" data-original-usd="70.00">$70.00</span>
+					<button class="see"><a href="bookings.html">Ver Mas</a></button>
+				</div>
+			</div>
+			<div class="card">
 				<h3>Scooters</h3>
-				<img src="./images/scooters/scooter-1.jpg" alt="">
+				<img src="./images/scooters/scooter-1.jpg" alt="Scooter-Dio">
 				<div class="card-info">
 					<p>Desde</p>
 					<span class="price" data-usd="20.00" data-original-usd="20.00">$20.00</span>
@@ -109,7 +119,7 @@
 
 			<div class="card">
 				<h3>Scooters</h3>
-				<img src="./images/scooters/scooter-2.jpg" alt="">
+				<img src="./images/scooters/scooter-2.jpg" alt="Scooter-pcx150">
 				<div class="card-info">
 					<p>Desde</p>
 					<span class="price" data-usd="40.00" data-original-usd="40.00">$40.00</span>
@@ -120,7 +130,7 @@
 
 			<div class="card">
 				<h3>Honda Pioneer ATV</h3>
-				<img src="./images/cuatriciclos/Honda Pioneer ATV-2.jpg" alt="">
+				<img src="./images/cuatriciclos/Honda Pioneer ATV-2.jpg" alt="Honda Pioneer ATV">
 				<div class="card-info">
 					<p>Desde</p>
 					<span class="price" data-usd="50.00" data-original-usd="50.00">$50.00</span>
@@ -129,7 +139,7 @@
 			</div>
 			<div class="card">
 				<h3>Jeep Wrangler</h3>
-				<img src="./images/jeeps/Inselrundfahrt-2.jpg" alt="">
+				<img src="./images/jeeps/jeep-terreno-2puertas.jpg" alt="Jeep Wrangler">
 				<div class="card-info">
 					<p>Desde</p>
 					<span class="price" data-usd="60.00" data-original-usd="60.00">$60.00</span>
@@ -139,22 +149,14 @@
 			</div>
 			<div class="card">
 				<h3>Jeep Wrangler</h3>
-				<img src="./images/jeeps/cozumel-jeep-3.webp" alt="">
+				<img src="./images/jeeps/jeep-terreno4puertas.webp" alt="Jeep Wrangler">
 				<div class="card-info">
 					<p>Desde</p>
 					<span class="price" data-usd="70.00" data-original-usd="70.00">$70.00</span>
 					<button class="see"><a href="bookings.html">Ver Mas</a></button>
 				</div>
 			</div>
-			<div class="card">
-				<h3>Jeep Wrangler</h3>
-				<img src="./images/jeeps/cozumel-jeep-3.webp" alt="">
-				<div class="card-info">
-					<p>Desde</p>
-					<span class="price" data-usd="70.00" data-original-usd="70.00">$70.00</span>
-					<button class="see"><a href="bookings.html">Ver Mas</a></button>
-				</div>
-			</div>
+
 		</section>
 
 
@@ -309,7 +311,7 @@
 				<div class="form-4">
 					<label for="descripcion"></label>
 					<textarea id="descripcion" name="descripcion"></textarea>
-					<button type="submit"><a href="gratitude.html">Submit Form</a></button>
+					<button class="rental" type="submit"><a href="gratitude.html">Submit Form</a></button>
 				</div>
 			</form>
 		</section>

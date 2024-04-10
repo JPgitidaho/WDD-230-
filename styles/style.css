@@ -52,7 +52,6 @@ body {
 
 body {
     max-width: 2000px;
-    font-family: "Lato", sans-serif;
     font-size: 1rem;
     background-color: var(--arena);
     color: var(--azul)
@@ -62,9 +61,23 @@ body {
 a,
 a:hover {
     text-decoration: none;
-    color: var(--blanco);
+    color: var(--azul);
 }
 
+p {
+    padding: 10px;
+}
+ul,
+li {
+    list-style-type: none;
+}
+
+h3 {
+    color: var(--honolulu-blue);
+}
+h2 {
+    color: var(--azul);
+}
 header {
     width: 100%;
     background-color: var(--arena);
@@ -75,15 +88,13 @@ header {
 
 }
 
-.contact-header a {
+.fa-social, .contact-header a {
+    font-size: 2rem;
     display: inline-flex;
     padding: 10px;
-    color: var(--Azul-Turquesa);
+    color: var(--arena);
+}
 
-}
-.fa-social {
-    font-size: 2rem;
-}
 .menu-container {
     position: relative;
     background-color: var(--arena);
@@ -95,10 +106,7 @@ header {
     margin: 0 100px;
 }
 
-ul,
-li {
-    list-style-type: none;
-}
+
 
 #nav {
     display: inline-flex;
@@ -133,24 +141,27 @@ li {
 }
 
 button:hover {
-    background-color: var(--coral-ligth);
+    background-color: var(--coral);
     transform: translateY(-5px);
     transition: transform 0.3s ease;
 }
 
 button {
-    background-color: var(--Azul-Turquesa);
-    border: var(--turqueza);
+    border-color: var(--coral);
     padding: 10px 30px;
     font-weight: bold;
     border-radius: 5px;
     font-size: 1.5rem;
+}
+
+.rental a,
+.btn a {
+    color: var(--arena);
 
 }
 
 .rental {
-    border-color: var(--turqueza);
-    background-color: var(--honolulu-blue);
+    background-color: var(--coral);
     letter-spacing: 2px;
 }
 
@@ -185,21 +196,25 @@ button {
 
 }
 
-h3 {
-    color: var(--Azul-Turquesa);
-}
 
-
-
-.title-hero h1 {
-    font-family: "flood-std", sans-serif;
-    font-size: 7rem;
-    top: 5%;
+.title-h1 {
+    font-family: "flood-std";
+    font-size: 10rem;
+    top: 15%;
     left: 10%;
 
 }
 
-.title-hero h1,
+.title-h2 {
+    font-family: "Lato";
+    font-size: 5rem;
+    top: 10%;
+    left: 10%;
+
+}
+
+.title-h1,
+.title-h2,
 .btn {
     position: absolute;
 
@@ -209,15 +224,12 @@ h3 {
     top: 50%;
     left: 40%;
     border-radius: 5px;
-    background-color: #0076b6;
-    padding:20px 100px;
+    background-color: var(--coral);
+    padding: 20px 100px;
     font-style: bold;
-    color: var(--blanco);
+}
 
-}
-p {
-    padding: 10px;
-}
+
 .home-box {
     margin: 0 200px;
 }
@@ -281,7 +293,7 @@ p {
 
 .cards-container1 {
     margin-bottom: 100px;
-grid-row: span 2;
+    grid-row: span 2;
 }
 
 .cards-container2 {
@@ -330,13 +342,14 @@ grid-row: span 2;
 .weather-text h3 {
     color: var(--azul);
     grid-column: 1;
-    text-align: center;
+    text-align: left;
     font-size: 2rem;
-    margin: 20px;
+    margin: 80px;
 
 }
 
-#weather-info  {
+#weather-info {
+    padding: 50px 0;
     color: var(--arena);
     font-family: 'Lato';
     text-align: center;
@@ -355,8 +368,10 @@ grid-row: span 2;
     margin: 100px;
 
 }
-
-.contact-text {
+.contact-text span a {
+    color: var(--arena);   
+}
+.contact-text{
     padding: 10px 0;
     background-color: #2c8fccda;
     color: var(--arena);
@@ -365,7 +380,8 @@ grid-row: span 2;
     width: 100%;
 }
 
-.contact-text span, .contact-text h4 {
+.contact-text span,
+.contact-text h4 {
     display: block;
     padding: 10px;
 }
@@ -396,7 +412,7 @@ grid-row: span 2;
 #formcon {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 0 100px ;
+    margin: 0 100px;
 }
 
 .form-1,
@@ -463,7 +479,7 @@ grid-row: span 2;
 
 .carousel-item {
     flex: 0 0 auto;
-    width:40%;
+    width: 40%;
     scroll-snap-align: start;
 }
 
@@ -491,41 +507,53 @@ footer {
         display: block;
         grid-column: 1fr;
     }
+
     .contact-info2 {
         margin-top: 20px;
     }
-    .carousel-item .card, .card {
+
+    .carousel-item .card,
+    .card {
         width: 250px;
     }
+
     .carousel-item {
         flex: 0 0 auto;
-        width:45%;
+        width: 45%;
         scroll-snap-align: start;
-    } 
+    }
+
     .home-box {
         margin: 0;
     }
-    .title-hero h1{
+
+    .title-hero h1 {
         font-size: 4rem;
     }
-    .weather-text{
+
+    .weather-text {
         font-size: 2rem;
         margin-top: 50px;
         grid-column: span 2;
     }
+
     .card-ofert3 {
         grid-column: span 2;
     }
 
 }
+
 @media(min-width:320px) and (max-width:667px) {
-   
-    .carousel-item .card, .card {
+
+    .carousel-item .card,
+    .card {
         width: 220px;
     }
+
     body {
         display: block;
     }
+
     .contact-header a {
         font-size: 16px;
     }
@@ -543,7 +571,7 @@ footer {
     }
 
     .home-grid {
-        display:block;
+        display: block;
         grid-template-columns: 1fr;
     }
 
@@ -589,10 +617,10 @@ footer {
 
     .title-hero h1 {
         font-size: 2rem;
-    
+
     }
 
-   
+
     .btn {
         font-size: 16px;
         top: 50%;
@@ -604,20 +632,24 @@ footer {
         font-size: 1rem;
 
     }
+
     .welcome {
         margin: 30px;
         text-align: left;
     }
 
-.home-box {
-    margin:0 ;
-}
-.cards-container1 {
-    margin-left: 50px;
-}
-  .location {
-    margin: 10px;
-  }
+    .home-box {
+        margin: 0;
+    }
+
+    .cards-container1 {
+        margin-left: 50px;
+    }
+
+    .location {
+        margin: 10px;
+    }
+
     .see {
         margin: 0;
     }
@@ -650,15 +682,18 @@ footer {
         text-align: center;
 
     }
-    #testimonial-carousel, .carousel-item{
-        margin:30px;
+
+    #testimonial-carousel,
+    .carousel-item {
+        margin: 30px;
     }
+
     .weather-text {
         font-size: 1.5rem;
         padding: 10px;
     }
 
-    #weather-info p{
+    #weather-info p {
         display: block;
         font-size: 1rem;
         padding: 10px;
@@ -683,7 +718,7 @@ footer {
         margin-left: 10px;
     }
 
- 
+
 
     .carousel-item {
         width: 90%;
