@@ -230,7 +230,7 @@
 
     #formcon {
         margin: 10px;
-        width: 100%;
+        width: 90%;
     }
 
 
@@ -263,11 +263,12 @@
 #rentals .card {
     width: 300px;
 }
-
+a, a:hover {
+    font-size: 16px;
+}
 .contract-information {
         font-size: 1rem;
-        margin: 50px;
-   
+        margin:10px 50px;   
 }
 #rentals {
     display: block;
