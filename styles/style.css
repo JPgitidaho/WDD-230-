@@ -591,6 +591,11 @@ select {
     margin: 200px 50px;
     font-size: 1.5rem;
 }
+/* contact*/
+iframe {
+width: 100%;
+margin: 100px 0;
+}
 @media(min-width:668px) and (max-width:1450px) {
     table {
         font-size: 1rem;
