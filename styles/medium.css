@@ -172,6 +172,7 @@
 
     .see {
         margin: 0;
+        font-size: 16px;
     }
 
     .ofert {
@@ -203,7 +204,7 @@
 
     }
 
-    .weather-text h3 {
+    .weather-text {
         font-size: 1rem;
         text-align: center;
         margin: 10px;
@@ -228,13 +229,10 @@
     }
 
     #formcon {
-        margin: 0 0 0 30px;
+        margin: 10px;
+        width: 100%;
     }
 
-    .form {
-        margin-right: 50px;
-        margin-left: 10px;
-    }
 
     #testimonial-carousel,
     .carousel-item {
@@ -267,8 +265,8 @@
 }
 
 .contract-information {
-    margin-top: 50px;
         font-size: 1rem;
+        margin: 50px;
    
 }
 #rentals {
