@@ -3,7 +3,7 @@
     {
       "reservation": "Reservation",
       "walk_in": "Walk-In",
-      "rental_type": "~Honda Metro Scooter",
+      "rental_type": "Scooter",
       "max_persons": 1,
       "half_day_3_hrs": {
         "price": 20,
@@ -27,7 +27,7 @@
     {
       "reservation": "Reservation",
       "walk_in": "Walk-In",
-      "rental_type": "~Honda Dio Scooter",
+      "rental_type": "Scooter",
       "max_persons": 2,
       "half_day_3_hrs": {
         "price": 30,
@@ -45,13 +45,13 @@
         "price_full_day_walk-in_eur": 38.25,
         "price_full_day_walk-in_gbp": 33.75
       },
-      "name": "Honda Dio Scooter",
-      "img": "images/scooters/honda-Dio.jpg"
+      "name": "Honda Dio ",
+      "img": "images/scooters/-honda-dio.jpg"
     },
     {
       "reservation": "Reservation",
       "walk_in": "Walk-In",
-      "rental_type": "~Honda PCX150 Scooter",
+      "rental_type": "Scooter",
       "max_persons": 2,
       "half_day_3_hrs": {
         "price": 40,
@@ -70,12 +70,12 @@
         "price_full_day_walk-in_gbp": 41.25
       },
       "name": "Honda PCX150 Scooter",
-      "img": "images/scooters/honda-px-150-2.jpg"
+      "img": "images/scooters/honda-px-150.jpg"
     },
     {
       "reservation": "Reservation",
       "walk_in": "Walk-In",
-      "rental_type": "Honda Pioneer ATV",
+      "rental_type": "Honda Pioneer",
       "max_persons": 4,
       "half_day_3_hrs": {
         "price": 50,
@@ -99,7 +99,7 @@
     {
       "reservation": "Reservation",
       "walk_in": "Walk-In",
-      "rental_type": "Jeep Wrangler - 4 door with a/c",
+      "rental_type": "Jeep- 4 door",
       "max_persons": 5,
       "half_day_3_hrs": {
         "price": 70,
@@ -123,7 +123,7 @@
     {
       "reservation": "Reservation",
       "walk_in": "Walk-In",
-      "rental_type": "Jeep Wrangler - 2 door",
+      "rental_type": "Jeep- 2 door",
       "max_persons": 4,
       "half_day_3_hrs": {
         "price": 60,

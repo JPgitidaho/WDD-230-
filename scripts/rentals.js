@@ -9,18 +9,20 @@ async function fetchRentals() {
         // Crear la tabla
         const table = document.createElement('table');
         table.innerHTML = `
+        
             <thead>
                 <tr>
                     <th>Name</th>
                     <th>Max Persons</th>
-                    <th>3 Hrs Price(Reservation)</th>
-                    <th>Full Day Price(Reservation)</th>
-                    <th>3 Hrs Price (Walk-in)</th>
-                    <th>Full Day Price (Walk-in)</th>
+                    <th>3 Hrs (Reservation)</th>
+                    <th>Full Day (Reservation)</th>
+                    <th>3 Hrs (Walk-in)</th>
+                    <th>Full Day (Walk-in)</th>
                 </tr>
             </thead>
             <tbody>
             </tbody>
+            
         `;
         rentalTableContainer.appendChild(table);
         const tbody = table.querySelector('tbody');
@@ -29,13 +31,17 @@ async function fetchRentals() {
         data.rentals.forEach(rental => {
             const row = document.createElement('tr');
             row.innerHTML = `
+            
+
                 <td>${rental.name}</td>
                 <td>${rental.max_persons}</td>
                 <td>$${rental.half_day_3_hrs.price}</td>
                 <td>$${rental.full_day_price.price_full_day}</td>
                 <td>$${rental.half_day_3_hrs['half_day_3_hrs_walk-in']}</td>
                 <td>$${rental.full_day_price['price_full_day_walk-in']}</td>
+                
             `;
+           
             tbody.appendChild(row);
         });
 

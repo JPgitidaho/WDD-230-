@@ -2,70 +2,140 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Scoots es una empresa ficticia de alquiler de motos 
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Scoots es una empresa ficticia de alquiler de motos 
     ubicada en la isla de Cozumel en el Mar Caribe. Ofrece servicios de alquiler de scooters, 
-    jeeps y vehículos todo terreno side-by-side.">    
-    <meta name="author" content="Juanita Perez Aguilera">
-    <title>~Scoots~</title>
-    <meta property="og:title" content="~Scoots~">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://jpgitidaho.github.io/WDD-230-/~Scoots~/images/hero-cozumel.webp">
-    <meta property="og:url" content="https://jpgitidaho.github.io/WDD-230-/~Scoots~">
-    <link rel="icon" href="./images/icon-scoots.ico" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Licorice&family=Love+Light&display=swap" rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://coolors.co/001524-15616d-ffecd1-ff7d00-78290f">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-    <link rel="stylesheet" href="./styles/normalice.css">
-    <link rel="stylesheet" href="./styles/style.css">
+    jeeps y vehículos todo terreno side-by-side.">
+	<meta name="author" content="Juanita Perez Aguilera">
+	<title>Cozumel Scooter, Jeep, and ATV Rentals | Scoots</title>
+	<meta name="description" content="Discover the thrill of exploring Cozumel by motorcycle with Scoots! 
+	We offer scooter, jeep, and all-terrain vehicle rentals. Book now and have an unforgettable experience 
+	on the Caribbean island.">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="https://jpgitidaho.github.io/WDD-220-/~Scoots~/images/hero-cozumel.webp">
+	<meta property="og:url" content="https://jpgitidaho.github.io/WDD-220-/~Scoots~">
+	<link rel="icon" href="./images/icon-scoots.ico" type="image/x-icon">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Licorice&family=Love+Light&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.typekit.net/int8dcq.css">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,200;0,400;0,700;0,900;1,100;1,200;1,400;1,700;1,900&display=swap"
+		rel="stylesheet">
+	<link rel="preconnect" href="https://coolors.co/f5f5dc-ffffff-20d5c8-122c55-e68622-e89145">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="./styles/normalice.css">
+	<link rel="stylesheet" href="./styles/style.css">
 	<link rel="stylesheet" href="./styles/medium.css">
-    <link rel="stylesheet" href="./styles/larger.css">
+	<link rel="stylesheet" href="./styles/larger.css">
 
 </head>
+
 <body>
-    <header>
+	<div id="weather-banner">
+		<div id="close-banner">&times;</div>
+		<p>La temperatura máxima para hoy en Cozumel es:<br><span id="max-temp">Cargando...</span><img id="weather-icon"
+				alt="Icono del tiempo"> </p>
+
+	</div>
+	<header>
 		<div class="contact-header">
-			<a class="fa-social" href="https://www.facebook.com/tu_pagina"><i class="fa fa-facebook"></i></a>
-			<a class="fa-social" href="https://www.linkedin.com/in/tu_perfil"><i class="fa fa-linkedin"></i></a>
-			<a class="fa-social" href="https://www.instagram.com/tu_cuenta"><i class="fa fa-instagram"></i></a>
-			<a class="contact" href="tel:+56223607000"><i class="material-icons">phone </i> +56 2 230000</a>
+			<a class="contact" href="tel:+56222607000"><i class="material-icons">phone </i></a>
+			<a class="fa-social" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+			<a class="fa-social" href="https://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
+			<a class="fa-social" href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+			<button id="burger-icon" class="responsive-menu" onclick="toggleMenu()" title="Toggle Menu"></button>
 			<button id="dark-mode-toggle" onclick="toggleDarkMode()" title="Toggle Dark Mode"><i
-					class="material-icons">brightness_3</i></button>
+				class="material-icons">brightness_2</i></button>
 		</div>
-
-		<button id="burger-icon" class="responsive-menu" onclick="toggleMenu()" title="Toggle Menu"></button>
-
 		<div class="menu-container">
-			<div class="logo">
-				<img src="./images/logo-scoots.png" alt="logo-img">
-				<a href="logo-link"></a>
-			</div>
-			<nav id="nav">
-				<ul>
-					<li> <select id="currency-selector" onchange="convertCurrency()">
-							<option>&#8364;</option>
-							<option value="usd"> USD</option>
-							<option value="eur">&#8364; EUR</option>
-							<option value="gbp">&#x00A3; GBP</option>
-						</select>
-					</li>
-					<li><button class="rental"><a href="rentals.html">Rental</a></button></li>
-					<li><button class="booking"><a href="bookings.html">Bookings</a></button></li>
-					<li><button class="booking"><a href="contact.html">Contact</a></button></li>
+			
+			<a class="logo" href="./index.html"><img class="logo" src="./images/logo-scoots.png" alt="logo-img"></a>
 
-				</ul>
+			<nav id="nav">
+				<button class="rental"><a href="rentals.html">Rental</a></button>
+				<button><a href="bookings.html">Bookings</a></button>
+				<button><a href="contact.html">Contact</a></button>
 			</nav>
+			
 		</div>
 	</header>
+	<main class="home-box home-grid">
+        <section class="contract-information">
+            <h2>Información del Contrato de Alquiler</h2>
+            <ul>
+                <li><i class="fa fa-check text-success mr-1"></i>Se requiere un depósito de seguridad de $50 para confirmar las reservas.</li>
+                <li><i class="fa fa-check text-success mr-1"></i>Se requiere una licencia de conducir válida en mano en el momento del alquiler.</li>
+                <li><i class="fa fa-check text-success mr-1"></i>No se permite que los menores de 12 años viajen en los scooters.</li>
+                <li><i class="fa fa-check text-success mr-1"></i>El cargo por combustible no está incluido.</li>
+                <li><i class="fa fa-check text-success mr-1"></i>Kilometraje ilimitado.</li>
+                <li><i class="fa fa-check text-success mr-1"></i>El seguro de responsabilidad civil está incluido.</li>
+                <li><i class="fa fa-check text-success mr-1"></i>El seguro de daños está disponible para su compra.</li>
+                <li><i class="fa fa-check text-success mr-1"></i>Entrega gratuita a hoteles de Cozumel o Airbnbs para alquileres de 2+ días.</li>
+                <li><i class="fa fa-check text-success mr-1"></i>Pago a través de Google Pay, Apple Pay, efectivo, tarjeta de crédito, tarjeta de débito o Venmo.</li>
+                <li><i class="fa fa-check text-success mr-1"></i>Los alquileres pueden devolverse a cualquiera de las dos ubicaciones físicas.</li>
+            </ul>
+        </section>
+
+        <section class="reservation-form">
+            <h2>Formulario de Reservas</h2>
+            <form action="./gratitude.html" method="get">
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha" name="fecha" required>
+
+                <label for="periodo">Período:</label>
+                <select id="periodo" name="periodo" required>
+					<option ></option>
+                    <option value="medio-dia">Medio Día</option>
+                    <option value="dia-completo">Día Completo</option>
+                </select>
+
+                <label for="tipo-alquiler">Tipo de Alquiler:</label>
+                <select id="tipo-alquiler" name="tipo-alquiler" required>
+                    <option value="scooter">Scooter</option>
+                    <option value="ATV">ATV</option>
+                    <option value="jeep">Jeep</option>
+                </select>
+
+                <label for="numero">Número:</label>
+                <input type="text" id="numero" name="numero" required>
+
+                <!-- Otros campos del formulario como número de teléfono, nombre, correo electrónico, etc. -->
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="estado-pais">Estado o País de Origen:</label>
+                <input type="text" id="estado-pais" name="estado-pais" required>
+
+                <label for="linea-crucero">Línea de Crucero (si corresponde):</label>
+                <input type="text" id="linea-crucero" name="linea-crucero">
+
+                <label for="adaptaciones">Adaptaciones/Comentarios Especiales:</label>
+                <textarea id="adaptaciones" name="adaptaciones"></textarea>
+
+                <label for="lugar-entrega">Lugar de Entrega:</label>
+                <select id="lugar-entrega" name="lugar-entrega" required>
+                    <option value="playa-del-carmen">Playa del Carmen</option>
+                    <option value="puerta-maya">Puerta Maya</option>
+                </select>
+
+                <button type="submit">Enviar Reserva</button>
+            </form>
+        </section>
+    </main>
+
     <footer>
 
 		<p>© 2024 All rights reserved,~Scoots~</p>
