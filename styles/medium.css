@@ -1,5 +1,5 @@
 
-@media (min-width:320px) and (max-width:1120px) {
+@media (min-width:320px) and (max-width:1200px) {
 
       
     #burger-icon {
@@ -43,19 +43,51 @@
         width: 100%;
         margin-left: 0px;
         margin-top: 10px;
+    
+}
+
+.logo {
+    width: 150px;
+    margin-top: 0px;
+    margin-bottom: -30px;
+    margin-left: 10px;
+}
+
+.card {
+    width: 300px;
+}
+}
+
+@media(min-width:400px) and (max-width:900px)
+{
+    .carousel-item {
+        flex: 0 0 auto;
+        width: 55%;
+        scroll-snap-align: start;
+    }
+    .carousel-item .card{
+      max-width: 300px;
+      height: auto;
+    }
+    .card {
+        width: 300px;
     }
 }
 
-
-@media(min-width:320px) and (max-width:667px) {
-    #rentals {
-        display: block;
-        grid-column: 1fr;
+@media(min-width:320px) and (max-width:900px)
+{
+    .title-h1, .title-h2 {
+        font-size: 2.7rem;
     }
-    th {
-        writing-mode: vertical-lr; /* Cambia la orientación de escritura a vertical, de izquierda a derecha */
-        white-space: nowrap; /* Evita que los nombres se desborden en dispositivos móviles */
-      }
+    .title-h1 {
+        top: 60%;
+    }
+    .title-h2 {
+        top: 40%;
+    }
+}
+@media(min-width:320px) and (max-width:667px) {
+
     #weather-banner p {
         margin: 0;
         padding: 30px;
@@ -67,18 +99,9 @@
         width: 300px;
     }
 
-    .logo {
-        width: 150px;
-        margin-top: 0px;
-        margin-bottom: -30px;
-        margin-left: 10px;
-    }
 
-    .carousel-item .card,
-    .card {
-        width: 220px;
-    }
 
+  
     body {
         display: block;
     }
@@ -108,18 +131,7 @@
 
     }
 
-    .title-h1 {
-        top: 50%;
-    }
-
-    .title-h2 {
-        top: 40%;
-    }
-
-    .title-h1,
-    .title-h2 {
-        font-size: 1.5rem;
-    }
+    
 
     .btn {
         font-size: 16px;
@@ -183,10 +195,7 @@
 
     }
 
-    #testimonial-carousel,
-    .carousel-item {
-        margin: 30px;
-    }
+
 
     .weather-text h3 {
         font-size: 1.5rem;
@@ -221,18 +230,27 @@
         margin-left: 10px;
     }
 
-
-
+    #testimonial-carousel,
     .carousel-item {
-        width: 90%;
+        margin: 30px;
     }
+
 
     .card-text,
     .card-title,
     .card-subtitle {
         padding: 10px;
     }
-
+    .carousel-item {
+        flex: 0 0 auto;
+        width: 100%;
+        scroll-snap-align: start;
+    }
+    .carousel-item .card,
+    .card {
+      width: 250px;
+      height: auto;
+    }
 
     span {
         padding: 10px;
@@ -244,6 +262,15 @@
 
 .contract-information {
     margin-top: 50px;
+        font-size: 1rem;
+   
 }
-
+#rentals {
+    display: block;
+    grid-column: 1fr;
+}
+th {
+    writing-mode: vertical-lr; /* Cambia la orientación de escritura a vertical, de izquierda a derecha */
+    white-space: nowrap; /* Evita que los nombres se desborden en dispositivos móviles */
+  }
 }

@@ -43,15 +43,14 @@ font-family: "flood-std", sans-serif;
 font-weight: 400;
 font-style: normal;
 */
-*,
-html,
-body {
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    max-width: 2000px;
+    max-width: 1800px;
     font-size: 1rem;
     background-color: var(--arena);
     color: var(--azul)
@@ -145,14 +144,14 @@ header {
 
 .logo {
     width: 300px;
-    margin-left: 200px;
+    margin-left: 50px;
     margin-bottom: -80px;
 }
 
 #nav {
     display: inline-flex;
     justify-content: space-between;
-    padding: 5px 50px;
+    padding: 5px 10px;
 }
 
 
@@ -180,7 +179,7 @@ header {
 #currency-selector {
     border: none;
     background-color: var(--arena);
-    margin-left: 50px;
+    margin-left: 30px;
     width: 100px;
 }
 
@@ -221,17 +220,19 @@ button {
 
 .title-h1 {
     font-family: "flood-std";
-    font-size: 10rem;
-    top: 30%;
+    font-size: 8rem;
+    top: 40%;
     left: 10%;
+    color: var(--Naranja-Coral);
 
 }
 
 .title-h2 {
     font-family: "Lato";
-    font-size: 5rem;
-    top: 25%;
+    font-size: 4rem;
+    top: 30%;
     left: 10%;
+    color: var(--blanco);
 
 }
 
@@ -255,12 +256,12 @@ button {
 }
 
 .home-box {
-    margin: 0 200px;
+    margin: 0 100px;
 }
 
 .home-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-rows: auto;
     gap: 20px;
 }
@@ -277,7 +278,7 @@ button {
 }
 
 .card {
-    width: 320px;
+    width: 300px;
     border: 1px solid var(--turqueza);
     padding: 20px;
     border-radius: 5px;
@@ -368,12 +369,13 @@ button {
 }
 
 
-.weather-text h3 {
+.weather-text  {
     color: var(--azul);
     grid-column: 1;
-    text-align: left;
-    font-size: 2rem;
+    text-align: center;
+    font-size: 1.7rem;
     margin: 80px;
+    padding: 20px;
 
 }
 
@@ -548,7 +550,7 @@ th, td {
     border: 1px solid var(--arena);
     padding: 8px;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
 
 }
 th {
@@ -561,13 +563,11 @@ display: grid;
     grid-template-columns: 1fr 1fr;  
 }
 #rentals .card {
-    width: 600px;
-    font-size: 1.5rem;   
+    width: 80%;
+    margin:  30px;  
     
 }
-#rentals img {
-    width:100%;
-}
+
 /**booking*/
 .contract-information {
     position: relative;
@@ -595,4 +595,7 @@ select {
 iframe {
 width: 100%;
 margin: 100px 0;
+}
+.contract-information{
+    font-size: 2rem;
 }
