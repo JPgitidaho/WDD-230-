@@ -57,6 +57,9 @@ body {
     color: var(--azul)
 }
 
+body.dark-mode {
+    background: var(--azul);
+}
 
 a,
 a:hover {
@@ -73,19 +76,22 @@ li {
     list-style-type: none;
 }
 
+.dark-mode h3,
+.dark-mode h2,
 h3 {
-    color: var(--honolulu-blue);
+    color: var(--Azul-Turquesa);
 }
 
 h2 {
     color: var(--azul);
 }
+
 #weather-banner {
     display: inline-flex;
     position: fixed;
     background: var(--top-right);
     width: 100%;
-    z-index:4;
+    z-index: 4;
     color: var(--azul);
     text-align: center;
     font-size: 1rem;
@@ -98,6 +104,7 @@ h2 {
     cursor: pointer;
     font-size: 2rem;
 }
+
 header {
     width: 100%;
     background-color: var(--arena);
@@ -108,8 +115,12 @@ header {
     position: fixed;
     z-index: 3;
     width: 100%;
-
 }
+
+.dark-mode .menu-container {
+    background-color: var(--azul);
+}
+
 
 .fa-social,
 .contact-header a {
@@ -121,9 +132,9 @@ header {
 
 .menu-container {
     position: fixed;
-z-index: 2;
-margin-top: 40px;
-width: 100%;
+    z-index: 2;
+    margin-top: 40px;
+    width: 100%;
     background-color: var(--arena);
 }
 
@@ -152,7 +163,7 @@ width: 100%;
     border: none;
     cursor: pointer;
     position: absolute;
-    right: 10%;
+    right: 3%;
     top: 0;
     color: var(--arena);
 }
@@ -193,11 +204,6 @@ button {
     letter-spacing: 2px;
 }
 
-
-
-
-
-
 .hero img {
     width: 100%;
 }
@@ -227,7 +233,10 @@ button {
 .title-h2,
 .btn {
     position: absolute;
+}
 
+.dark-mode .title-h2 {
+    color: var(--azul);
 }
 
 .btn {
@@ -257,7 +266,7 @@ button {
 }
 
 .welcome h2,
-h3 {
+.welcome h3 {
     font-size: 3rem;
 }
 
@@ -415,6 +424,8 @@ h3 {
     background-position: center;
     background-size: cover;
     margin: 0;
+    width: 100%;
+
 
 }
 
@@ -424,6 +435,8 @@ h3 {
     background-size: cover;
     grid-column: 2;
     grid-row: 1;
+
+
 }
 
 #formcon {
@@ -517,56 +530,42 @@ footer {
     width: 100%;
     margin-top: 20px;
 }
+/*****rental*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid var(--arena);
+    padding: 8px;
+    text-align: center;
+    font-size: 1.5rem;
 
+}
+th {
+    background-color: var(--Azul-Turquesa);
 
-
+}
+#rentals {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  
+}
+#rentals .card {
+    width: 500px;
+    margin-left: 30px;
+    font-size: 1.5rem;
+    
+}
 
 @media(min-width:668px) and (max-width:1450px) {
-    #burger-icon {
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 35%;
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-        font-size: 1.5rem;
 
-    }
-
-    #burger-icon::before {
-        content: '\2630';
-        color: var(--arena);
-        cursor: pointer;
-    }
-
-    #burger-icon.active::before {
-        content: '✖';
-    }
-
-
-    #nav {
-        display: none;
-    }
-
-    #nav.show {
-        display: block;
-        text-align: right;
-        background-color: var(--arena);
-    }
-
-
-    #nav button {
-        display: block;
-        width: 50%;
-        margin-left: 500px;
-        margin-top: 5px;
-    }
-
+ 
     .logo {
         width: 200px;
-        margin-top: 0px;
-        margin-bottom: -40px;
+        margin-top: 20px;
+        margin-bottom: -60px;
+        margin-left: 50px;
     }
 
     .location {
@@ -590,25 +589,29 @@ footer {
     }
 
     .home-box {
-        margin: 0;
+        margin: 50px;
     }
 
-  .title-h1 {
-    top: 40%;
-  }
-  .title-h2 {
-    top: 30%;
-    left: 5px;
+    .title-h1 {
+        top: 40%;
+    }
 
-  }
+    .title-h2 {
+        top: 30%;
+        left: 5px;
+
+    }
+
     .title-h1,
     .title-h2 {
         font-size: 3.5rem;
     }
-.btn {
-    top:80%;
-    padding: 10px 30px;
-}
+
+    .btn {
+        top: 80%;
+        padding: 10px 30px;
+    }
+
     .weather-text {
         font-size: 2rem;
         margin-top: 50px;
@@ -621,31 +624,17 @@ footer {
 
 }
 
-@media(min-width:320px) and (max-width:667px) {
-    #weather-banner p {
-        margin: 0;
-        padding: 30px;
-        font-size: 1rem;
-    }
-
-
-    #weather-banner {
-        width: 300px;
-    }
+@media (min-width:320px) and (max-width:1120px) {
     #burger-icon {
         display: block;
         position: absolute;
         top: 0;
-        right: 30%;
+        right: 20%;
         background-color: transparent;
         border: none;
         cursor: pointer;
         font-size: 1.5rem;
-
     }
-
-
-
     #burger-icon::before {
         content: '\2630';
         color: var(--arena);
@@ -667,11 +656,29 @@ footer {
         background-color: var(--arena);
 
     }
+
+    .dark-mode #nav {
+        background-color: var(--azul);
+    }
+
     #nav button {
         display: block;
         width: 100%;
         margin-left: 0px;
         margin-top: 10px;
+    }
+}
+
+@media(min-width:320px) and (max-width:667px) {
+    #weather-banner p {
+        margin: 0;
+        padding: 30px;
+        font-size: 1rem;
+    }
+
+
+    #weather-banner {
+        width: 300px;
     }
 
     .logo {
@@ -705,22 +712,24 @@ footer {
 
     }
 
-
-
     .hero {
         width: 100%;
         position: relative;
     }
-  .hero img {
-    margin-top: 100px;
 
-  }
-  .title-h1 {
-    top: 50%;
-  }
-  .title-h2 {
-    top: 40%;
-  }
+    .hero img {
+        margin-top: 100px;
+
+    }
+
+    .title-h1 {
+        top: 50%;
+    }
+
+    .title-h2 {
+        top: 40%;
+    }
+
     .title-h1,
     .title-h2 {
         font-size: 1.5rem;
@@ -796,10 +805,10 @@ footer {
     .weather-text h3 {
         font-size: 1.5rem;
         text-align: center;
-        margin:10px;
+        margin: 10px;
         padding-top: 10px;
     }
-    
+
     #weather-info p,
     #weather-info h4 {
         display: block;
