@@ -22,7 +22,7 @@
         "price_full_day_walk-in_gbp": 26.25
       },
       "name": "Honda Metro Scooter",
-      "img": "file:/images/scooters/metro-terreno.jpg"
+      "img": "images/scooters/honda-metro.png"
     },
     {
       "reservation": "Reservation",
@@ -46,7 +46,7 @@
         "price_full_day_walk-in_gbp": 33.75
       },
       "name": "Honda Dio Scooter",
-      "img": "https://github.com/JPgitidaho/WDD-230-/blob/main/images/scooters/scooter-2.jpg"
+      "img": "images/scooters/honda-Dio.jpg"
     },
     {
       "reservation": "Reservation",
