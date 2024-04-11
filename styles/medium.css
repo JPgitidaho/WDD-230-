@@ -80,7 +80,8 @@
         font-size: 1.7rem;
     }
     .title-h1 {
-        top: 60%;
+        top: 50%;
+        left: 40%;
     }
     .title-h2 {
         top: 40%;
@@ -158,7 +159,7 @@
     }
 
     .home-box {
-        margin: 20px;
+        margin: 0px;
     }
 
     .cards-container1 {
@@ -202,10 +203,8 @@
 
     }
 
-
-
     .weather-text h3 {
-        font-size: 1.5rem;
+        font-size: 1rem;
         text-align: center;
         margin: 10px;
         padding-top: 10px;

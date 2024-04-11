@@ -93,7 +93,8 @@ h2 {
     display: inline-flex;
     position: fixed;
     background: var(--top-right);
-    width: 100%;
+    width: 50%;
+    margin:10px 50px;
     z-index: 4;
     color: var(--azul);
     text-align: center;
@@ -105,7 +106,7 @@ h2 {
     top: 5px;
     left: 10px;
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 header {
@@ -190,11 +191,10 @@ button:hover {
 }
 
 button {
-    border-color: var(--Azul-Turquesa);
-    background-color: var(--turqueza);
+    border: 1px solid var(--turqueza);
     padding: 10px 30px;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 5px ;
     font-size: 1.5rem;
 }
 
@@ -223,7 +223,7 @@ button {
     font-size: 8rem;
     top: 40%;
     left: 10%;
-    color: var(--Naranja-Coral);
+    color: var(--federal-blue);
 
 }
 
@@ -232,7 +232,7 @@ button {
     font-size: 4rem;
     top: 30%;
     left: 10%;
-    color: var(--blanco);
+    color: var(--federal-blue);
 
 }
 
@@ -256,7 +256,7 @@ button {
 }
 
 .home-box {
-    margin: 0 100px;
+    margin: 100px;
 }
 
 .home-grid {
@@ -278,19 +278,17 @@ button {
 }
 
 .card {
-    width: 300px;
+    width: 100%;
     border: 1px solid var(--turqueza);
     padding: 20px;
     border-radius: 5px;
     margin: 20px 0;
-    box-shadow: 0 4px 8px var(--azul);
     transition: transform 0.3s ease;
     text-align: left;
 }
 
 .card:hover {
     transform: translateY(-5px);
-
 }
 
 .card span {
@@ -311,7 +309,7 @@ button {
 
 
 .price {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 
@@ -447,31 +445,12 @@ button {
 }
 
 #formcon {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: block;
     margin: 0 100px;
+    width: 50%;
+    justify-self: center;
 }
 
-.form-1,
-.form-2,
-.form-3,
-.form-4,
-.form-4 button {
-    margin-top: 10px;
-}
-
-.form-1 {
-    grid-column: 1;
-}
-
-.form-3 {
-    grid-column: span 2;
-    grid-row: 2;
-}
-
-.form-4 {
-    grid-column: span 2;
-}
 
 #formcon input,
 #formcon select,
@@ -577,14 +556,20 @@ display: grid;
 input[type="text"],
 input[type="tel"],
 input[type="email"],
+input[type="date"],
+button[type="submit"],
 textarea,
-select {
+select
+ {
     width: 100%;
     padding: 10px;
     border: 1px solid var(--turqueza);
     border-radius: 5px;
     margin-bottom: 10px;
     box-sizing: border-box;
+}
+.dark-mode label {
+    color: var(--turqueza);
 }
 
 .reservation-form {
