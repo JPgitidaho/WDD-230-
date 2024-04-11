@@ -186,7 +186,8 @@ button:hover {
 }
 
 button {
-    border-color: var(--coral);
+    border-color: var(--Azul-Turquesa);
+    background-color: var(--turqueza);
     padding: 10px 30px;
     font-weight: bold;
     border-radius: 5px;
@@ -307,7 +308,7 @@ button {
 }
 
 .see {
-    margin-left: 30px;
+    justify-self: center;
     padding: 15px 50px;
 }
 

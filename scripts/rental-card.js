@@ -50,10 +50,12 @@ function convertCurrency() {
             <section class="home-grid">
                 <h2>${rental.name}</h2>
                 <img src="${rental.img}" alt="${rental.name}">
+                <button class="see"><a href="bookings.html">Rental Now</a></button>
                 <p>Maximum persons: <i class="material-icons">person</i> ${rental.max_persons}</p>
                 <p>Half day price (3 hours) with reservation: <span class="half-day-price">${currencySymbol} ${halfDayPrice}</span></p>
                 <p>Full day price with reservation: <span class="full-day-price">${currencySymbol} ${fullDayPrice}</span></p>
-            </section>`;
+            
+                </section>`;
 
             // Agregar la tarjeta de alquiler al contenedor
             rentalsContainer.appendChild(rentalCard);

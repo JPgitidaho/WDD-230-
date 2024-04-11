@@ -22,7 +22,7 @@
         "price_full_day_walk-in_gbp": 26.25
       },
       "name": "Honda Metro Scooter",
-      "img": "https://github.com/JPgitidaho/WDD-230-/blob/main/images/scooters/scooter-1.jpg"
+      "img": "file:/images/scooters/metro-terreno.jpg"
     },
     {
       "reservation": "Reservation",
@@ -70,7 +70,7 @@
         "price_full_day_walk-in_gbp": 41.25
       },
       "name": "Honda PCX150 Scooter",
-      "img": "https://github.com/JPgitidaho/WDD-230-/blob/main/images/scooters/honda-px-150-2.jpg"
+      "img": "images/scooters/honda-px-150-2.jpg"
     },
     {
       "reservation": "Reservation",
@@ -94,7 +94,7 @@
         "price_full_day_walk-in_gbp": 60
       },
       "name": "Honda Pioneer ATV",
-      "img": "https://github.com/JPgitidaho/WDD-230-/blob/main/images/cuatriciclos/Honda%20Pioneer%20ATV-3.jpg"
+      "img": "images/cuatriciclos/Honda Pioneer-ATV.jpg"
     },
     {
       "reservation": "Reservation",
@@ -118,7 +118,7 @@
         "price_full_day_walk-in_gbp": 93.75
       },
       "name": "Jeep Wrangler - 4 door with a/c",
-      "img": "https://github.com/JPgitidaho/WDD-230-/blob/main/images/jeeps/jeep-4puertas.jpg"
+      "img": "images/jeeps/jeep-terreno4puertas.webp"
     },
     {
       "reservation": "Reservation",
@@ -142,7 +142,7 @@
         "price_full_day_walk-in_gbp": 67.50
       },
       "name": "Jeep Wrangler - 2 door",
-      "img": "https://github.com/JPgitidaho/WDD-230-/blob/main/images/jeeps/jeep-terreno-2puertas.jpg"
+      "img": "images/jeeps/jeep-terreno-2puertas.jpg"
     }
   ]
 }
