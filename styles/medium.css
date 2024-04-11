@@ -74,10 +74,10 @@
     }
 }
 
-@media(min-width:320px) and (max-width:900px)
+@media(min-width:320px) and (max-width:500px)
 {
     .title-h1, .title-h2 {
-        font-size: 2.7rem;
+        font-size: 1.7rem;
     }
     .title-h1 {
         top: 60%;
@@ -85,6 +85,13 @@
     .title-h2 {
         top: 40%;
     }
+}
+@media(min-width:501px) and (max-width:800px)
+{
+    .title-h1, .title-h2 {
+        font-size: 2.5rem;
+    }
+
 }
 @media(min-width:320px) and (max-width:667px) {
 
