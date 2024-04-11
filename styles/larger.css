@@ -64,7 +64,6 @@
     .cards-container2 .card-ofert3 {
         grid-column: span 2;
         grid-row: 2;
-        background-color: brown;
     }
     #rentals, #rentalTableContainer {
         display: grid;
