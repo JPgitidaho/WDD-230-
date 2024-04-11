@@ -74,73 +74,74 @@
 	</div>
 	<main class="home-box home-grid">
         <section class="contract-information">
-            <h2>Información del Contrato de Alquiler</h2>
-            <ul>
-                <li><i class="fa fa-check text-success mr-1"></i>Se requiere un depósito de seguridad de $50 para confirmar las reservas.</li>
-                <li><i class="fa fa-check text-success mr-1"></i>Se requiere una licencia de conducir válida en mano en el momento del alquiler.</li>
-                <li><i class="fa fa-check text-success mr-1"></i>No se permite que los menores de 12 años viajen en los scooters.</li>
-                <li><i class="fa fa-check text-success mr-1"></i>El cargo por combustible no está incluido.</li>
-                <li><i class="fa fa-check text-success mr-1"></i>Kilometraje ilimitado.</li>
-                <li><i class="fa fa-check text-success mr-1"></i>El seguro de responsabilidad civil está incluido.</li>
-                <li><i class="fa fa-check text-success mr-1"></i>El seguro de daños está disponible para su compra.</li>
-                <li><i class="fa fa-check text-success mr-1"></i>Entrega gratuita a hoteles de Cozumel o Airbnbs para alquileres de 2+ días.</li>
-                <li><i class="fa fa-check text-success mr-1"></i>Pago a través de Google Pay, Apple Pay, efectivo, tarjeta de crédito, tarjeta de débito o Venmo.</li>
-                <li><i class="fa fa-check text-success mr-1"></i>Los alquileres pueden devolverse a cualquiera de las dos ubicaciones físicas.</li>
-            </ul>
-        </section>
-
-        <section class="reservation-form">
-            <h2>Formulario de Reservas</h2>
-            <form action="./gratitude.html" method="get">
-                <label for="fecha">Fecha:</label>
-                <input type="date" id="fecha" name="fecha" required>
-
-                <label for="periodo">Período:</label>
-                <select id="periodo" name="periodo" required>
+			<h2>Rental Contract Information</h2>
+			<ul>
+				<li><i class="fa fa-check text-success mr-1"></i>A $50 security deposit is required to confirm bookings.</li>
+				<li><i class="fa fa-check text-success mr-1"></i>A valid driver's license is required on hand at the time of rental.</li>
+				<li><i class="fa fa-check text-success mr-1"></i>Children under 12 are not allowed to ride scooters.</li>
+				<li><i class="fa fa-check text-success mr-1"></i>Fuel charge is not included.</li>
+				<li><i class="fa fa-check text-success mr-1"></i>Unlimited mileage.</li>
+				<li><i class="fa fa-check text-success mr-1"></i>Public liability insurance is included.</li>
+				<li><i class="fa fa-check text-success mr-1"></i>Damage insurance is available for purchase.</li>
+				<li><i class="fa fa-check text-success mr-1"></i>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+				<li><i class="fa fa-check text-success mr-1"></i>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or Venmo.</li>
+				<li><i class="fa fa-check text-success mr-1"></i>Rentals can be returned to either of the two physical locations.</li>
+			</ul>
+		</section>
+		
+		<section class="reservation-form">
+			<h2>Reservation Form</h2>
+			<form action="./gratitude.html" method="get">
+				<label for="fecha">Date:</label>
+				<input type="date" id="fecha" name="fecha" required>
+		
+				<label for="periodo">Period:</label>
+				<select id="periodo" name="periodo" required>
 					<option ></option>
-                    <option value="medio-dia">Medio Día</option>
-                    <option value="dia-completo">Día Completo</option>
-                </select>
-
-                <label for="tipo-alquiler">Tipo de Alquiler:</label>
-                <select id="tipo-alquiler" name="tipo-alquiler" required>
-                    <option value="scooter">Scooter</option>
-                    <option value="ATV">ATV</option>
-                    <option value="jeep">Jeep</option>
-                </select>
-
-                <label for="numero">Número:</label>
-                <input type="text" id="numero" name="numero" required>
-
-                <!-- Otros campos del formulario como número de teléfono, nombre, correo electrónico, etc. -->
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-
-                <label for="telefono">Teléfono:</label>
-                <input type="tel" id="telefono" name="telefono" required>
-
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="estado-pais">Estado o País de Origen:</label>
-                <input type="text" id="estado-pais" name="estado-pais" required>
-
-                <label for="linea-crucero">Línea de Crucero (si corresponde):</label>
-                <input type="text" id="linea-crucero" name="linea-crucero">
-
-                <label for="adaptaciones">Adaptaciones/Comentarios Especiales:</label>
-                <textarea id="adaptaciones" name="adaptaciones"></textarea>
-
-                <label for="lugar-entrega">Lugar de Entrega:</label>
-                <select id="lugar-entrega" name="lugar-entrega" required>
-                    <option value="playa-del-carmen">Playa del Carmen</option>
-                    <option value="puerta-maya">Puerta Maya</option>
-                </select>
-
-                <button type="submit">Enviar Reserva</button>
-            </form>
-        </section>
-    </main>
+					<option value="half-day">Half Day</option>
+					<option value="full-day">Full Day</option>
+				</select>
+		
+				<label for="rental-type">Rental Type:</label>
+				<select id="rental-type" name="rental-type" required>
+					<option value="scooter">Scooter</option>
+					<option value="ATV">ATV</option>
+					<option value="jeep">Jeep</option>
+				</select>
+		
+				<label for="number">Number:</label>
+				<input type="text" id="number" name="number" required>
+		
+				<!-- Other form fields like phone number, name, email, etc. -->
+				<label for="nombre">Name:</label>
+				<input type="text" id="nombre" name="nombre" required>
+		
+				<label for="telefono">Phone:</label>
+				<input type="tel" id="telefono" name="telefono" required>
+		
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+		
+				<label for="state-country">State or Country of Origin:</label>
+				<input type="text" id="state-country" name="state-country" required>
+		
+				<label for="cruise-line">Cruise Line (if applicable):</label>
+				<input type="text" id="cruise-line" name="cruise-line">
+		
+				<label for="adaptations">Adaptations/Special Comments:</label>
+				<textarea id="adaptations" name="adaptations"></textarea>
+		
+				<label for="delivery-location">Delivery Location:</label>
+				<select id="delivery-location" name="delivery-location" required>
+					<option value="playa-del-carmen">Playa del Carmen</option>
+					<option value="puerta-maya">Puerta Maya</option>
+				</select>
+		
+				<button type="submit">Submit Reservation</button>
+			</form>
+		</section>
+		</main>
+		
 
     <footer>
 
