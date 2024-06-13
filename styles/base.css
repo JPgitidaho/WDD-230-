@@ -67,12 +67,12 @@ body.dark-mode #dark-mode-toggle {
 }
 
 header img {
-  margin: 10px 10px;
-  max-width: 200px;
+  margin: 20px 10px;
+  max-width:200px;
   height: auto;
-  border-radius: 5%;
-  box-shadow: 0 0 30px#252525;
   overflow: hidden;
+  border-color: #84889d;
+  border-style: double;
 }
 
 header h1 {
