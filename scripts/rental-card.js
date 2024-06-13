@@ -53,8 +53,8 @@ function convertCurrency() {
                 <h2>${rental.rental_type}</h2>
                 <button class="see"><a href="bookings.html">Rental Now</a></button>
                 <p>Maximum persons: <i class="material-icons">person</i> ${rental.max_persons}</p>
-                <p>Half day price (3 hours) with reservation: <span class="half-day-price">${currencySymbol} ${halfDayPrice}</span></p>
-                <p>Full day price with reservation: <span class="full-day-price">${currencySymbol} ${fullDayPrice}</span></p>
+                <p>Half day  with reservation: <span class="half-day-price"> ${currencySymbol} ${halfDayPrice}</span></p>
+                <p>Full day  with reservation: <span class="full-day-price">${currencySymbol} ${fullDayPrice}</span></p>
                 
                 </section>`;
 

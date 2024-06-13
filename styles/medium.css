@@ -53,9 +53,7 @@
     margin-left: 10px;
 }
 
-.card {
-    width: 300px;
-}
+
 }
 
 @media(min-width:400px) and (max-width:900px)
@@ -69,12 +67,11 @@
       max-width: 300px;
       height: auto;
     }
-    .card {
-        width: 300px;
-    }
+ 
+    
 }
 
-@media(min-width:320px) and (max-width:500px)
+@media(min-width:320px) and (max-width:800px)
 {
     .title-h1, .title-h2 {
         font-size: 1.7rem;
@@ -87,13 +84,7 @@
         top: 40%;
     }
 }
-@media(min-width:501px) and (max-width:800px)
-{
-    .title-h1, .title-h2 {
-        font-size: 2.5rem;
-    }
 
-}
 @media(min-width:320px) and (max-width:667px) {
 
     #weather-banner p {
@@ -106,9 +97,6 @@
     #weather-banner {
         width: 300px;
     }
-
-
-
   
     body {
         display: block;
@@ -163,7 +151,8 @@
     }
 
     .cards-container1 {
-        margin-left: 50px;
+        margin: 50px;
+     
     }
 
     .location {
@@ -250,9 +239,9 @@
         width: 100%;
         scroll-snap-align: start;
     }
-    .carousel-item .card,
-    .card {
-      width: 250px;
+    .carousel-item .card
+     {
+      width: 200px;
       height: auto;
     }
 
